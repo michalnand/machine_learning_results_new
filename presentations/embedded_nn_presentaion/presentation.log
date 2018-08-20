@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.9)  20 AUG 2018 07:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.10)  20 AUG 2018 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1608,8 +1608,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  23798 strings out of 492982
- 426543 string characters out of 6134897
- 662558 words of memory out of 5000000
+ 426543 string characters out of 6134896
+ 662561 words of memory out of 5000000
  26759 multiletter control sequences out of 15000+600000
  22369 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

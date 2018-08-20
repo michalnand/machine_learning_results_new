@@ -132,9 +132,9 @@ examples :
 
 \begin{itemize}
 
-\item Energy is scalar property
-\item Velocity is vector, defined as $\frac{d\vec{x}}{dt}$
-\item Rotation matrix
+\item Energy is {\bf Scalar} property of Time-translation symetry
+\item Velocity is {\bf Vector}, defined as $\frac{d\vec{x}}{dt}$
+\item Rotation {\bf Matrix}
 \item RGB color image is {\bf Tensor} (3rd order vector)
 \item RGBA color image is {\bf Tensor} (4th order vector)
 
@@ -172,7 +172,7 @@ for (unsigned x = 0; x < input_width; x++)
       sum+= kernel[ky][kx]*input[y + ky][x + kx];
     }
 
-    output[y][x] = sum;
+    output[y + kernel_height/2][x + kernel_width/2] = sum;
   }
 }
 \end{lstlisting}
@@ -331,7 +331,7 @@ void convolution()
   for (unsigned y = 0; y < input_height; y++)
   for (unsigned x = 0; x < input_width; x++)
   {
-      float sum = 0.0;
+      int sum = 0;
 
       for (unsigned ky = 0; ky < kernel_size; ky++)
       for (unsigned kx = 0; kx < kernel_size; kx++)
@@ -339,7 +339,7 @@ void convolution()
         sum+= kernel[ky][kx]*input[y + ky][x + kx];
       }
 
-      output[y][x] = sum;
+      output[y + kernel_size/2][x + kernel_size/2] = (sum*scale)/127;
     }
   }
 }
@@ -371,7 +371,7 @@ void convolution()
   for (unsigned y = 0; y < input_height; y++)
   for (unsigned x = 0; x < input_width; x++)
   {
-      float sum = 0.0;
+      int sum = 0;
 
       if (kernel_size == 3)
       {
@@ -387,7 +387,8 @@ void convolution()
         sum+= kernel[2][1]*input[y + 2][x + 1];
         sum+= kernel[2][2]*input[y + 2][x + 2];
       }
-      output[y][x] = sum;
+
+      output[y + kernel_size/2][x + kernel_size/2] = (sum*scale)/127;
     }
   }
 }

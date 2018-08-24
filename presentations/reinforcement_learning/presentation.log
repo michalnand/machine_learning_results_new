@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.10)  23 AUG 2018 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.10)  24 AUG 2018 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1410,189 +1410,102 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count188
  (./presentation.nav)
-<../pictures/arm_cortex.jpg, id=16, 385.44pt x 172.2435pt>
-File: ../pictures/arm_cortex.jpg Graphic file (type jpg)
-<use ../pictures/arm_cortex.jpg>
-Package pdftex.def Info: ../pictures/arm_cortex.jpg  used on input line 96.
-(pdftex.def)             Requested size: 57.81349pt x 25.8354pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 96.
+<../../pictures/rl_square.jpg, id=16, 4694.53876pt x 4681.49pt>
+File: ../../pictures/rl_square.jpg Graphic file (type jpg)
+<use ../../pictures/rl_square.jpg>
+Package pdftex.def Info: ../../pictures/rl_square.jpg  used on input line 84.
+(pdftex.def)             Requested size: 187.74957pt x 187.2277pt.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+Overfull \vbox (12.83781pt too high) detected at line 84
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../pictures/rl_square.j
+pg>]
+<../../pictures/pacman.jpg, id=31, 168.8182pt x 216.81pt>
+File: ../../pictures/pacman.jpg Graphic file (type jpg)
+<use ../../pictures/pacman.jpg>
+Package pdftex.def Info: ../../pictures/pacman.jpg  used on input line 116.
+(pdftex.def)             Requested size: 84.40889pt x 108.40472pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 96.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 96.
+line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<../pictures/nvidia.png, id=17, 755.82375pt x 301.125pt>
-File: ../pictures/nvidia.png Graphic file (type png)
-<use ../pictures/nvidia.png>
-Package pdftex.def Info: ../pictures/nvidia.png  used on input line 96.
-(pdftex.def)             Requested size: 75.58679pt x 30.11426pt.
+<../../pictures/doom.jpg, id=32, 1027.84pt x 770.88pt>
+File: ../../pictures/doom.jpg Graphic file (type jpg)
+<use ../../pictures/doom.jpg>
+Package pdftex.def Info: ../../pictures/doom.jpg  used on input line 116.
+(pdftex.def)             Requested size: 154.16934pt x 115.627pt.
 
-[1
+Overfull \hbox (0.52441pt too wide) in paragraph at lines 116--116
+ [] 
+ []
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../pictures/arm_cortex.jpg
-> <../pictures/nvidia.png>]
-<../pictures/robot_ascender.jpg, id=34, 3141.7375pt x 2285.53876pt>
-File: ../pictures/robot_ascender.jpg Graphic file (type jpg)
-<use ../pictures/robot_ascender.jpg>
-Package pdftex.def Info: ../pictures/robot_ascender.jpg  used on input line 113
-.
-(pdftex.def)             Requested size: 219.94409pt x 160.00406pt.
- [2
+<../../pictures/chess.jpg, id=33, 2544.50626pt x 1550.79375pt>
+File: ../../pictures/chess.jpg Graphic file (type jpg)
+<use ../../pictures/chess.jpg>
+Package pdftex.def Info: ../../pictures/chess.jpg  used on input line 116.
+(pdftex.def)             Requested size: 127.23276pt x 77.54422pt.
+[2
 
- <../pictures/robot_ascender.jpg>] [3
+ <../../pictures/pacman.jpg> <../../pictures/doom.jpg> <../../pictures/chess.jp
+g>]
+<../../diagrams/rl_mechanism.png, id=42, 566.82353pt x 388.98265pt>
+File: ../../diagrams/rl_mechanism.png Graphic file (type png)
+<use ../../diagrams/rl_mechanism.png>
+Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 13
+4.
+(pdftex.def)             Requested size: 170.04837pt x 116.69568pt.
+ [3
 
-]
-\openout4 = `presentation.vrb'.
+ <../../diagrams/rl_mechanism.png>]
+<../../diagrams/rl_trivial.png, id=50, 283.41176pt x 246.56824pt>
+File: ../../diagrams/rl_trivial.png Graphic file (type png)
+<use ../../diagrams/rl_trivial.png>
+Package pdftex.def Info: ../../diagrams/rl_trivial.png  used on input line 148.
 
+(pdftex.def)             Requested size: 113.36269pt x 98.62553pt.
+ [4
 
-(./presentation.vrb
-<../diagrams/convolution_2d.png, id=54, 752.8125pt x 354.32375pt>
-File: ../diagrams/convolution_2d.png Graphic file (type png)
-<use ../diagrams/convolution_2d.png>
-Package pdftex.def Info: ../diagrams/convolution_2d.png  used on input line 4.
-(pdftex.def)             Requested size: 150.55983pt x 70.86348pt.
+ <../../diagrams/rl_trivial.png>]
+<../../diagrams/rl_trivial_trap.png, id=57, 283.41176pt x 246.56824pt>
+File: ../../diagrams/rl_trivial_trap.png Graphic file (type png)
+<use ../../diagrams/rl_trivial_trap.png>
+Package pdftex.def Info: ../../diagrams/rl_trivial_trap.png  used on input line
+ 163.
+(pdftex.def)             Requested size: 113.36269pt x 98.62553pt.
+[5
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-)
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 19.
+ <../../diagrams/rl_trivial_trap.png>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 185.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <6> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 19.
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 27.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 27.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 27.
-
-) [4
-
- <../diagrams/convolution_2d.png>]
-<../diagrams/pooling.png, id=64, 853.1875pt x 599.23875pt>
-File: ../diagrams/pooling.png Graphic file (type png)
-<use ../diagrams/pooling.png>
-Package pdftex.def Info: ../diagrams/pooling.png  used on input line 188.
-(pdftex.def)             Requested size: 170.63448pt x 119.84563pt.
- [5
-
- <../diagrams/pooling.png (PNG copy)>]
-<../diagrams/cnn.jpg, id=71, 475.7775pt x 357.335pt>
-File: ../diagrams/cnn.jpg Graphic file (type jpg)
-<use ../diagrams/cnn.jpg>
-Package pdftex.def Info: ../diagrams/cnn.jpg  used on input line 197.
-(pdftex.def)             Requested size: 237.88815pt x 178.66705pt.
-[6
-
- <../diagrams/cnn.jpg>]
-<../diagrams/dense_net.png, id=78, 1553.805pt x 477.785pt>
-File: ../diagrams/dense_net.png Graphic file (type png)
-<use ../diagrams/dense_net.png>
-Package pdftex.def Info: ../diagrams/dense_net.png  used on input line 222.
-(pdftex.def)             Requested size: 310.7555pt x 95.5553pt.
-
-Overfull \hbox (3.46562pt too wide) in paragraph at lines 222--222
- [] 
- []
-
-[7
-
- <../diagrams/dense_net.png (PNG copy)>]
-<../pictures/mnist.jpg, id=86, 481.8pt x 361.35pt>
-File: ../pictures/mnist.jpg Graphic file (type jpg)
-<use ../pictures/mnist.jpg>
-Package pdftex.def Info: ../pictures/mnist.jpg  used on input line 256.
-(pdftex.def)             Requested size: 96.35829pt x 72.2687pt.
-<../diagrams/cnn_architecture.png, id=87, 2441.12pt x 642.4pt>
-File: ../diagrams/cnn_architecture.png Graphic file (type png)
-<use ../diagrams/cnn_architecture.png>
-Package pdftex.def Info: ../diagrams/cnn_architecture.png  used on input line 2
-56.
-(pdftex.def)             Requested size: 341.75447pt x 89.93538pt.
-
-Overfull \hbox (34.4646pt too wide) in paragraph at lines 256--256
- [] 
- []
-
-
-Overfull \vbox (8.96101pt too high) detected at line 256
- []
-
-[8
-
- <../pictures/mnist.jpg> <../diagrams/cnn_architecture.png (PNG copy)>]
-\openout4 = `presentation.vrb'.
-
-
-(./presentation.vrb) [9
-
-]
-<../diagrams/nn_memory.png, id=100, 875.27pt x 117.43875pt>
-File: ../diagrams/nn_memory.png Graphic file (type png)
-<use ../diagrams/nn_memory.png>
-Package pdftex.def Info: ../diagrams/nn_memory.png  used on input line 310.
-(pdftex.def)             Requested size: 262.58302pt x 35.23189pt.
- [10
-
- <../diagrams/nn_memory.png (PNG copy)>]
-\openout4 = `presentation.vrb'.
-
-
-(./presentation.vrb) [11
-
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb) [12
-
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb)
-[13
-
-]
-<../pictures/stm32_screenshot.jpg, id=131, 1140.26pt x 641.39626pt>
-File: ../pictures/stm32_screenshot.jpg Graphic file (type jpg)
-<use ../pictures/stm32_screenshot.jpg>
-Package pdftex.def Info: ../pictures/stm32_screenshot.jpg  used on input line 4
-53.
-(pdftex.def)             Requested size: 285.0643pt x 160.34866pt.
- [14
-
- <../pictures/stm32_screenshot.jpg>] [15
+) [6
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-<../pictures/me.jpg, id=161, 360.34625pt x 641.39626pt>
-File: ../pictures/me.jpg Graphic file (type jpg)
-<use ../pictures/me.jpg>
-Package pdftex.def Info: ../pictures/me.jpg  used on input line 486.
+<../../pictures/me.jpg, id=88, 360.34625pt x 641.39626pt>
+File: ../../pictures/me.jpg Graphic file (type jpg)
+<use ../../pictures/me.jpg>
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 199.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
- [16
+ [7
 
- <../pictures/me.jpg>]
+ <../../pictures/me.jpg>]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1602,46 +1515,33 @@ Package pdftex.def Info: ../pictures/me.jpg  used on input line 486.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
-
-(./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
+ (./presentation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
  ) 
 Here is how much of TeX's memory you used:
- 23807 strings out of 492982
- 426675 string characters out of 6134896
- 662588 words of memory out of 5000000
- 26765 multiletter control sequences out of 15000+600000
- 22369 words of font info for 62 fonts, out of 8000000 for 9000
+ 23176 strings out of 492982
+ 419775 string characters out of 6134896
+ 623335 words of memory out of 5000000
+ 26178 multiletter control sequences out of 15000+600000
+ 18695 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,15n,105p,803b,1587s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfs
-s1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt
-0800.pfb>
-Output written on presentation.pdf (16 pages, 1560888 bytes).
+ 56i,15n,62p,803b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
+fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
+
+Output written on presentation.pdf (7 pages, 4076569 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

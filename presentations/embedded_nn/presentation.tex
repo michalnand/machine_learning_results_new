@@ -80,14 +80,14 @@
 \begin{column}{0.5\textwidth}
 
   \begin{figure}
-    \includegraphics[scale=0.15]{../pictures/arm_cortex.jpg}
+    \includegraphics[scale=0.15]{../../pictures/arm_cortex.jpg}
   \end{figure}
 
 \end{column}
 \begin{column}{0.5\textwidth}  %%<--- here
 
   \begin{figure}
-  \includegraphics[scale=0.1]{../pictures/nvidia.png}
+  \includegraphics[scale=0.1]{../../pictures/nvidia.png}
   \end{figure}
 
 \end{column}
@@ -106,7 +106,7 @@
 \end{itemize}
 
   \begin{figure}
-    \includegraphics[scale=0.07]{../pictures/robot_ascender.jpg}
+    \includegraphics[scale=0.07]{../../pictures/robot_ascender.jpg}
   \end{figure}
 
 
@@ -146,7 +146,7 @@ examples :
 {\bf Basic math - discrete convolution}
 
 \begin{figure}
-  \includegraphics[scale=0.2]{../diagrams/convolution_2d.png}
+  \includegraphics[scale=0.2]{../../diagrams/convolution_2d.png}
 \end{figure}
 
 \lstset{language=C++,
@@ -179,10 +179,42 @@ for (unsigned x = 0; x < input_width; x++)
 \end{frame}
 
 
+
+
+\begin{frame}[fragile]
+{\bf Basic math - activation function}
+
+tanh, sigmoid, gaussian, {\bf RELU}, leaky RELU ...
+\begin{figure}
+  \includegraphics[scale=0.2]{../../pictures/activation.png}
+\end{figure}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\[ f(x) =
+  \begin{cases}
+    x       & \quad \text{if } x > 0\\
+    0       & \quad \text{otherwise}
+  \end{cases}
+\]
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+\[ \frac{df(x)}{dx} =
+  \begin{cases}
+    1       & \quad \text{if } x > 0\\
+    0       & \quad \text{otherwise}
+  \end{cases}
+\]
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
 \begin{frame}{\bf Basic math - pooling}
 
 \begin{figure}
-  \includegraphics[scale=0.2]{../diagrams/pooling.png}
+  \includegraphics[scale=0.2]{../../diagrams/pooling.png}
 \end{figure}
 
 \end{frame}
@@ -191,7 +223,7 @@ for (unsigned x = 0; x < input_width; x++)
 \begin{frame}{\bf Convolutional neural network - CNN}
 
   \begin{figure}
-    \includegraphics[scale=0.5]{../diagrams/cnn.jpg}
+    \includegraphics[scale=0.5]{../../diagrams/cnn.jpg}
   \end{figure}
 
 \end{frame}
@@ -215,7 +247,7 @@ DenseNet k = 24                                                    & 100        
 \end{table}
 
   \begin{figure}
-    \includegraphics[scale=0.2]{../diagrams/dense_net.png}
+    \includegraphics[scale=0.2]{../../diagrams/dense_net.png}
   \end{figure}
 
 
@@ -239,7 +271,7 @@ DenseNet k = 24                                                    & 100        
 \begin{column}{0.5\textwidth}  %%<--- here
 
 \begin{figure}
-  \includegraphics[scale=0.2]{../pictures/mnist.jpg}
+  \includegraphics[scale=0.2]{../../pictures/mnist.jpg}
 \end{figure}
 
 \end{column}
@@ -250,7 +282,7 @@ Tested architecture
 C8 - P2 - D8 - D8 - P2 - D8 - D8 - D8 - D8 - FC
 
 \begin{figure}
-  \includegraphics[scale=0.14]{../diagrams/cnn_architecture.png}
+  \includegraphics[scale=0.14]{../../diagrams/cnn_architecture.png}
 \end{figure}
 
 \end{frame}
@@ -304,7 +336,7 @@ use double buffer memory trick
 \end{itemize}
 
 \begin{figure}
-  \includegraphics[scale=0.3]{../diagrams/nn_memory.png}
+  \includegraphics[scale=0.3]{../../diagrams/nn_memory.png}
 \end{figure}
 
 \end{frame}
@@ -447,7 +479,7 @@ ldrsb.w	fp, [r0, #-22]
 \end{itemize}
 
 \begin{figure}
-  \includegraphics[scale=0.25]{../pictures/stm32_screenshot.jpg}
+  \includegraphics[scale=0.25]{../../pictures/stm32_screenshot.jpg}
 \end{figure}
 
 \end{frame}
@@ -476,11 +508,12 @@ ldrsb.w	fp, [r0, #-22]
 \begin{frame}{\bf Q\&A}
 
 \begin{figure}
-  \includegraphics[scale=0.25]{../pictures/me.jpg}
+  \includegraphics[scale=0.25]{../../pictures/me.jpg}
 \end{figure}
 
 \centering {
 michal chovanec (michal.nand@gmail.com)
+\url{www.youtube.com/channel/UCzVvP2ou8v3afNiVrPAHQGg}
 }
 
 \end{frame}

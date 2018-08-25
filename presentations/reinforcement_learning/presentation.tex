@@ -145,6 +145,15 @@ two possible strategies
     \includegraphics[scale=0.4]{../../diagrams/rl_trivial.png}
   \end{figure}
 
+\begin{align*}
+  Q(s, a) = R(s, a)
+\end{align*}
+
+where \\
+  $s$ is state \\
+  $a$ is action \\
+  $R(s, a)$ is reward \\
+
 \end{frame}
 
 
@@ -160,7 +169,84 @@ two possible strategies, greedy = trap
     \includegraphics[scale=0.4]{../../diagrams/rl_trivial_trap.png}
   \end{figure}
 
+  \begin{align*}
+    Q(s, a) = R(s, a) + FutureReward
+  \end{align*}
+
 \end{frame}
+
+
+\begin{frame}{\bf Q learning}
+
+\begin{align*}
+Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
+\end{align*}
+
+where \\
+$s$ is state \\
+$a$ is action \\
+$s'$ is next state \\
+$a'$ is best action in next state \\
+$R(s, a)$ is reward \\
+$\gamma \in \langle 0, 1 \rangle$ is discount factor \\
+
+\end{frame}
+
+
+\begin{frame}{\bf Q learning}
+
+\begin{align*}
+Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
+\end{align*}
+
+\begin{figure}
+  \includegraphics[scale=0.3]{../../diagrams/q_learning_detail.png}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{\bf Q learning - stochastic}
+
+
+\begin{align*}
+Q(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q(s', a') \\
+\Delta Q(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q(s', a') - Q(s, a)
+\end{align*}
+
+\begin{align*}
+\Delta Q(s, a) &= \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a') - Q(s, a)) \\
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a'))
+\end{align*}
+
+\end{frame}
+
+
+\begin{frame}{\bf SARSA learning}
+
+\begin{align*}
+\Delta Q(s, a) &= \alpha(R(s, a) + \gamma Q(s', a') - Q(s, a)) \\
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
+\end{align*}
+
+\begin{figure}
+  \includegraphics[scale=0.23]{../../diagrams/sarsa_learning_detail.png}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf SARSA learning}
+
+TODO : in points, illustrate algorithm
+
+\end{frame}
+
+
+
+
+
 
 
 

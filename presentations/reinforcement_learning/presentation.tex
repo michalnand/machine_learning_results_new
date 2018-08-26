@@ -21,6 +21,7 @@
 
 \usepackage{lipsum}
 \usepackage{verbatim}
+\usepackage{transparent}
 
 \newcommand\Wider[2][3em]{%
 \makebox[\linewidth][c]{%
@@ -61,8 +62,8 @@
 
 
 %-------------------------------------------------------------------------------------
-\title{\bf Reinforcement learning}
-\author{Michal CHOVANEC, PhD}
+\title{\color{white} \bf Reinforcement learning}
+\author{\color{white} Michal CHOVANEC, PhD}
 
 
 %\setbeamertemplate{footline}[frame number]{}
@@ -72,17 +73,35 @@
 \date[EURP]{}
 \begin{document}
 
-\begin{frame}
-\titlepage
+{
+    \usebackgroundtemplate
+    {
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil
 
-\vspace{-50pt}
-  \begin{figure}[htc]
-    \includegraphics[scale=0.04]{../../pictures/rl_square.jpg}
-  \end{figure}
+        {\includegraphics[width=5.05in]{../../pictures/rl_square_2.jpg}}
+
+        \hfil}\vfil}
+    }
+    \begin{frame}
+
+    %\titlepage
 
 
-\end{frame}
+    { \vfill
+     \vfill
+     \vfill
+     \vfill
+     \vfill
 
+      {
+        \hfill {\LARGE \color{white} \bf Reinforcement learning} \\
+        \hfill {\LARGE \color{white} Michal CHOVANEC, PhD} \\
+      }
+    }
+
+
+    \end{frame}
+}
 
 \begin{frame}{\bf Reinforcement learning}
 
@@ -159,7 +178,7 @@ where \\
 
 \begin{frame}{\bf Making decisions}
 
-two possible strategies, greedy = trap
+two possible strategies, {\color{red} greedy = trap}
 \begin{itemize}
   \item strategy 1 : S0->S1, score = 1.0
   \item strategy 2 : S0->S2->S3, score = 2.0 + (-20.0) = -18
@@ -222,6 +241,32 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a
 \end{frame}
 
 
+\begin{frame}{\bf Q learning}
+
+\begin{itemize}
+  \item {\color{red} \bf obtain reward} \\
+        reward = env.get\_reward();
+
+  \item {\color{red} \bf update state} \\
+        state\_old = state; \\
+        state = env.get\_observation(); \\
+
+  \item {\color{red} \bf select action} \\
+        action\_old = action; \\
+        action = select\_action(Q(state)); \\
+
+  \item {\color{red} \bf process learning} \\
+    Q(state\_old, action\_old)+= $\alpha$(reward + $\gamma$ $\max \limits_{a'}$Q(state, a') - Q(state\_old, action\_old))
+
+  \item {\color{red} \bf execute action}
+    env.action(action);
+
+\end{itemize}
+
+
+\end{frame}
+
+
 \begin{frame}{\bf SARSA learning}
 
 \begin{align*}
@@ -239,7 +284,26 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
 
 \begin{frame}{\bf SARSA learning}
 
-TODO : in points, illustrate algorithm
+\begin{itemize}
+  \item {\color{red} \bf obtain reward} \\
+        reward = env.get\_reward();
+
+  \item {\color{red} \bf update state} \\
+        state\_old = state; \\
+        state = env.get\_observation(); \\
+
+  \item {\color{red} \bf select action} \\
+        action\_old = action; \\
+        action = select\_action(Q(state)); \\
+
+  \item {\color{red} \bf process learning} \\
+    Q(state\_old, action\_old)+= $\alpha$(reward + $\gamma$Q(state, action) - Q(state\_old, action\_old))
+
+  \item {\color{red} \bf execute action}
+    env.action(action);
+
+\end{itemize}
+
 
 \end{frame}
 

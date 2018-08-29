@@ -94,8 +94,8 @@
      \vfill
 
       {
-        \hfill {\LARGE \color{white} \bf Reinforcement learning} \\
-        \hfill {\LARGE \color{white} Michal CHOVANEC, PhD} \\
+        \hfill {\LARGE \color{red} \bf Reinforcement learning} \\
+        \hfill {\LARGE \color{red} Michal CHOVANEC, PhD} \\
       }
     }
 
@@ -190,6 +190,27 @@ two possible strategies, {\color{red} greedy = trap}
 
   \begin{align*}
     Q(s, a) = R(s, a) + FutureReward
+  \end{align*}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf Making decisions}
+
+three possible strategies
+\begin{itemize}
+  \item strategy 1 : S0->S1, score = 10.0
+  \item strategy 2 : S0->S2->S3, score = -2.0 + (-20.0) = -22
+  \item strategy 3 : S0->S2->S4, score = -2.0 + ( 20.0) =  18
+\end{itemize}
+
+  \begin{figure}
+    \includegraphics[scale=0.22]{../../diagrams/rl_trap.png}
+  \end{figure}
+
+  \begin{align*}
+    Q(s, a) = R(s, a) + max(FutureRewards)
   \end{align*}
 
 \end{frame}
@@ -310,6 +331,19 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
 
 
 
+\begin{frame}{\bf Q-learning vs SARSA - cliff example}
+
+\begin{align*}
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a')) \\
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
+\end{align*}
+
+
+\begin{figure}
+  \includegraphics[scale=0.35]{../../diagrams/cliff_diagram.png}
+\end{figure}
+
+\end{frame}
 
 
 

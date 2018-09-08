@@ -134,6 +134,25 @@
 \end{frame}
 
 
+\begin{frame}{\bf Reinforcement learning}
+
+
+\begin{enumerate}
+ \item supervised learning based on human player \\
+             \begin{align*}
+               action &= F(observation) \\
+               loss   &= \Big(required\_action - F(observation)\Big)^2
+             \end{align*}
+ \item RL method \\
+             \begin{align*}
+               action &= F(observation) \\
+               loss   &= \Big(required\_action - F(observation)\Big)^2
+             \end{align*}
+             {\bf \color{red} required\_action = ?}
+\end{enumerate}
+
+\end{frame}
+
 
 \begin{frame}{\bf Reinforcement learning}
 
@@ -250,13 +269,9 @@ Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
 
 \begin{align*}
 Q(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q(s', a') \\
-\Delta Q(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q(s', a') - Q(s, a)
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q(s', a')\Big)
 \end{align*}
 
-\begin{align*}
-\Delta Q(s, a) &= \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a') - Q(s, a)) \\
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a'))
-\end{align*}
 
 \end{frame}
 
@@ -276,9 +291,9 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a
         action = select\_action(Q(state)); \\
 
   \item {\color{red} \bf process learning} \\
-    Q(state\_old, action\_old)+= $\alpha$(reward + $\gamma$ $\max \limits_{a'}$Q(state, a') - Q(state\_old, action\_old))
+    Q(state\_old, action\_old)+= $\alpha$(reward + $\gamma$ $\max \limits_{a'}$Q(state, a') - Q(state\_old, action\_old));
 
-  \item {\color{red} \bf execute action}
+  \item {\color{red} \bf execute action} \\
     env.action(action);
 
 \end{itemize}
@@ -290,8 +305,8 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a
 \begin{frame}{\bf SARSA learning}
 
 \begin{align*}
-\Delta Q(s, a) &= \alpha(R(s, a) + \gamma Q(s', a') - Q(s, a)) \\
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
+\Delta Q(s, a) &= \alpha\Big(R(s, a) + \gamma Q(s', a') - Q(s, a)\Big) \\
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
 \end{align*}
 
 \begin{figure}
@@ -317,9 +332,9 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
         action = select\_action(Q(state)); \\
 
   \item {\color{red} \bf process learning} \\
-    Q(state\_old, action\_old)+= $\alpha$(reward + $\gamma$Q(state, action) - Q(state\_old, action\_old))
+    Q(state\_old, action\_old)+= $\alpha$(reward + $\gamma$Q(state, action) - Q(state\_old, action\_old));
 
-  \item {\color{red} \bf execute action}
+  \item {\color{red} \bf execute action} \\
     env.action(action);
 
 \end{itemize}
@@ -333,8 +348,8 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
 \begin{frame}{\bf Q-learning vs SARSA - cliff example}
 
 \begin{align*}
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma \max \limits_{a'} Q(s', a')) \\
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q(s', a')\Big) \\
+Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
 \end{align*}
 
 
@@ -343,6 +358,33 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
 \end{figure}
 
 \end{frame}
+
+
+\begin{frame}{\bf Deep reinforcement learning}
+
+Possible states in some games \\
+
+\begin{itemize}
+ \item {\bf tic-tac-toe} 26830 states\\
+ \item {\bf 2048}  $44 096 709 674 720 289$ states \\
+ \item {\bf atoms in observable universe} $10^{82}$
+ \item {\bf chess} $10^{120}$ states \\
+ \item {\bf GO} $10^{170}$ states \\
+\end{itemize}
+
+% \includegraphics[scale=0.1]{../../pictures/universe_atoms.png} \\
+
+storing Q values
+
+\begin{itemize}
+ \item table \\
+ \item linear combination of features, $ Q(s, a) = \sum_{i=1}^{N} w_iF_i(s, a) $
+ \item neural network
+\end{itemize}
+
+
+\end{frame}
+
 
 
 \begin{frame}{\bf Q table example}
@@ -373,41 +415,30 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha(R(s, a) + \gamma Q(s', a'))
 
 \end{frame}
 
-\begin{frame}{\bf Deep reinforcement learning}
 
-Possible states in some games \\
 
-\begin{itemize}
- \item {\bf tic-tac-toe} 26830 states\\
- \item {\bf 2048}  $44 096 709 674 720 289$ states \\
- \item {\bf atoms in observable universe} $10^{82}$
- \item {\bf chess} $10^{120}$ states \\
- \item {\bf GO} $10^{170}$ states \\
-\end{itemize}
 
-\includegraphics[scale=0.1]{../../pictures/universe_atoms.png} \\
+\begin{frame}{\bf Neural network for $Q(s, a)$ approximation - \\ Q networks}
 
-storing Q values
-
-\begin{itemize}
- \item table \\
- \item linear combination of features, $ Q(s, a) = \sum_{i=1}^{N} w_iF_i(s, a) $
- \item neural network
-\end{itemize}
-
+\centering
+\includegraphics[scale=0.18]{../../diagrams/q_net.png}
 
 \end{frame}
 
-
-
-\begin{frame}{\bf Deep reinforcement learning}
-
-deep neural network for Q(s, a) approximation -
-Q networks
+\begin{frame}{\bf Neural network for $Q(s, a)$ approximation - \\ Q networks}
 
 \centering
-\includegraphics[scale=0.4]{../../diagrams/q_net.png}
+\includegraphics[scale=0.15]{../../diagrams/q_net.png}
 
+\begin{align*}
+SARSA : Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
+\end{align*}
+
+\begin{align*}
+  loss   &= \Big(required\_value - Q(state, action)\Big)^2 \\
+  loss   &= \Big(Q(s, a) - Q'(s, a)\Big)^2 \\
+  loss   &= \Big(R(s, a) + \gamma Q(s', a') - Q'(s, a)\Big)^2
+\end{align*}
 
 \end{frame}
 
@@ -442,6 +473,11 @@ Q networks
 \centering {
 michal chovanec (michal.nand@gmail.com)
 \url{www.youtube.com/channel/UCzVvP2ou8v3afNiVrPAHQGg}
+}
+
+\centering {
+github
+\url{https://github.com/michalnand}
 }
 
 \end{frame}

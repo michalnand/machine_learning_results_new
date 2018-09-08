@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.10)  1 SEP 2018 10:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.10)  8 SEP 2018 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1491,125 +1491,130 @@ Package pdftex.def Info: ../../pictures/chess.jpg  used on input line 134.
 [2
 
  <../../pictures/pacman.jpg> <../../pictures/doom.jpg> <../../pictures/chess.jp
-g>]
-<../../diagrams/rl_mechanism.png, id=44, 566.82353pt x 388.98265pt>
+g>] [3
+
+]
+<../../diagrams/rl_mechanism.png, id=56, 566.82353pt x 388.98265pt>
 File: ../../diagrams/rl_mechanism.png Graphic file (type png)
 <use ../../diagrams/rl_mechanism.png>
-Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 15
-2.
+Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 17
+1.
 (pdftex.def)             Requested size: 170.04837pt x 116.69568pt.
- [3
+ [4
 
  <../../diagrams/rl_mechanism.png>]
-<../../diagrams/rl_trivial.png, id=52, 283.41176pt x 246.56824pt>
+<../../diagrams/rl_trivial.png, id=63, 283.41176pt x 246.56824pt>
 File: ../../diagrams/rl_trivial.png Graphic file (type png)
 <use ../../diagrams/rl_trivial.png>
-Package pdftex.def Info: ../../diagrams/rl_trivial.png  used on input line 175.
+Package pdftex.def Info: ../../diagrams/rl_trivial.png  used on input line 194.
 
 (pdftex.def)             Requested size: 113.36269pt x 98.62553pt.
 
-Overfull \vbox (15.45734pt too high) detected at line 175
+Overfull \vbox (15.45734pt too high) detected at line 194
  []
 
-[4
+[5
 
  <../../diagrams/rl_trivial.png>]
-<../../diagrams/rl_trivial_trap.png, id=62, 283.41176pt x 246.56824pt>
+<../../diagrams/rl_trivial_trap.png, id=71, 283.41176pt x 246.56824pt>
 File: ../../diagrams/rl_trivial_trap.png Graphic file (type png)
 <use ../../diagrams/rl_trivial_trap.png>
 Package pdftex.def Info: ../../diagrams/rl_trivial_trap.png  used on input line
- 194.
+ 213.
 (pdftex.def)             Requested size: 113.36269pt x 98.62553pt.
- [5
+ [6
 
  <../../diagrams/rl_trivial_trap.png>]
-<../../diagrams/rl_trap.png, id=69, 425.11765pt x 525.72882pt>
+<../../diagrams/rl_trap.png, id=78, 425.11765pt x 525.72882pt>
 File: ../../diagrams/rl_trap.png Graphic file (type png)
 <use ../../diagrams/rl_trap.png>
-Package pdftex.def Info: ../../diagrams/rl_trap.png  used on input line 215.
+Package pdftex.def Info: ../../diagrams/rl_trap.png  used on input line 234.
 (pdftex.def)             Requested size: 93.52617pt x 115.66069pt.
 
-[6
+[7
 
- <../../diagrams/rl_trap.png>] [7
+ <../../diagrams/rl_trap.png>] [8
 
 ]
-<../../diagrams/q_learning_detail.png, id=87, 708.52942pt x 478.96588pt>
+<../../diagrams/q_learning_detail.png, id=95, 708.52942pt x 478.96588pt>
 File: ../../diagrams/q_learning_detail.png Graphic file (type png)
 <use ../../diagrams/q_learning_detail.png>
 Package pdftex.def Info: ../../diagrams/q_learning_detail.png  used on input li
-ne 245.
+ne 264.
 (pdftex.def)             Requested size: 212.56047pt x 143.69087pt.
- [8
+ [9
 
- <../../diagrams/q_learning_detail.png>] [9
+ <../../diagrams/q_learning_detail.png>] [10
 
-] [10
+] [11
 
 ]
-<../../diagrams/sarsa_learning_detail.png, id=106, 708.52942pt x 705.6953pt>
+<../../diagrams/sarsa_learning_detail.png, id=114, 708.52942pt x 705.6953pt>
 File: ../../diagrams/sarsa_learning_detail.png Graphic file (type png)
 <use ../../diagrams/sarsa_learning_detail.png>
 Package pdftex.def Info: ../../diagrams/sarsa_learning_detail.png  used on inpu
-t line 301.
+t line 316.
 (pdftex.def)             Requested size: 162.95833pt x 162.3065pt.
- [11
 
- <../../diagrams/sarsa_learning_detail.png>] [12
-
-]
-<../../diagrams/cliff_diagram.png, id=119, 602.37045pt x 474.45255pt>
-File: ../../diagrams/cliff_diagram.png Graphic file (type png)
-<use ../../diagrams/cliff_diagram.png>
-Package pdftex.def Info: ../../diagrams/cliff_diagram.png  used on input line 3
-45.
-(pdftex.def)             Requested size: 210.83281pt x 166.06087pt.
-
-Overfull \vbox (7.95761pt too high) detected at line 345
+Overfull \vbox (8.89995pt too high) detected at line 316
  []
 
-[13
+[12
 
- <../../diagrams/cliff_diagram.png>]
+ <../../diagrams/sarsa_learning_detail.png>] [13
+
+]
+<../../diagrams/cliff_diagram.png, id=128, 602.37045pt x 474.45255pt>
 File: ../../diagrams/cliff_diagram.png Graphic file (type png)
 <use ../../diagrams/cliff_diagram.png>
 Package pdftex.def Info: ../../diagrams/cliff_diagram.png  used on input line 3
-74.
-(pdftex.def)             Requested size: 120.47195pt x 94.88882pt.
- [14
+60.
+(pdftex.def)             Requested size: 210.83281pt x 166.06087pt.
+
+Overfull \vbox (14.06781pt too high) detected at line 360
+ []
+
+[14
+
+ <../../diagrams/cliff_diagram.png>] [15
 
 ]
-<../../pictures/universe_atoms.png, id=135, 722.7pt x 504.88625pt>
-File: ../../pictures/universe_atoms.png Graphic file (type png)
-<use ../../pictures/universe_atoms.png>
-Package pdftex.def Info: ../../pictures/universe_atoms.png  used on input line 
-399.
-(pdftex.def)             Requested size: 72.27423pt x 50.49158pt.
- [15
-
- <../../pictures/universe_atoms.png (PNG copy)>]
-<../../diagrams/q_net.png, id=145, 532.04033pt x 142.63815pt>
-File: ../../diagrams/q_net.png Graphic file (type png)
-<use ../../diagrams/q_net.png>
-Package pdftex.def Info: ../../diagrams/q_net.png  used on input line 412.
-(pdftex.def)             Requested size: 212.81236pt x 57.05423pt.
+File: ../../diagrams/cliff_diagram.png Graphic file (type png)
+<use ../../diagrams/cliff_diagram.png>
+Package pdftex.def Info: ../../diagrams/cliff_diagram.png  used on input line 4
+16.
+(pdftex.def)             Requested size: 120.47195pt x 94.88882pt.
  [16
 
+]
+<../../diagrams/q_net.png, id=150, 1690.55118pt x 425.11765pt>
+File: ../../diagrams/q_net.png Graphic file (type png)
+<use ../../diagrams/q_net.png>
+Package pdftex.def Info: ../../diagrams/q_net.png  used on input line 426.
+(pdftex.def)             Requested size: 304.28609pt x 76.51787pt.
+ [17
+
  <../../diagrams/q_net.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 433.
+File: ../../diagrams/q_net.png Graphic file (type png)
+<use ../../diagrams/q_net.png>
+Package pdftex.def Info: ../../diagrams/q_net.png  used on input line 443.
+(pdftex.def)             Requested size: 253.57173pt x 63.7649pt.
+ [18
 
+]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 464.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [17
+) [19
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-<../../pictures/me.jpg, id=177, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=192, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 447.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 483.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
- [18
+ [20
 
  <../../pictures/me.jpg>]
 \tf@nav=\write6
@@ -1621,43 +1626,46 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 447.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 450.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 486.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 486.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23272 strings out of 492982
- 421157 string characters out of 6134896
- 627289 words of memory out of 5000000
- 26237 multiletter control sequences out of 15000+600000
- 20227 words of font info for 54 fonts, out of 8000000 for 9000
+ 23318 strings out of 492982
+ 422016 string characters out of 6134896
+ 628289 words of memory out of 5000000
+ 26275 multiletter control sequences out of 15000+600000
+ 26172 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,62p,803b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1728.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on presentation.pdf (18 pages, 4462865 bytes).
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+si8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss10
+95.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1728.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx144
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sftt1095.pfb>
+Output written on presentation.pdf (20 pages, 4520672 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

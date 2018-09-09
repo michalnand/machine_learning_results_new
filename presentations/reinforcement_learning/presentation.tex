@@ -102,6 +102,17 @@
     \end{frame}
 }
 
+
+\begin{frame}{\bf Reinforcement learning}
+
+"Master Kihara will listen to noise of fire"
+\begin{figure}
+  \includegraphics[scale=0.3]{../../pictures/tatara.jpg}
+\end{figure}
+
+\end{frame}
+
+
 \begin{frame}{\bf Reinforcement learning}
 
 \begin{itemize}
@@ -237,7 +248,7 @@ three possible strategies
 \begin{frame}{\bf Q learning}
 
 \begin{align*}
-Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
+Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q'(s', a')
 \end{align*}
 
 where \\
@@ -254,7 +265,7 @@ $\gamma \in \langle 0, 1 \rangle$ is discount factor \\
 \begin{frame}{\bf Q learning}
 
 \begin{align*}
-Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
+Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q'(s', a')
 \end{align*}
 
 \begin{figure}
@@ -268,8 +279,8 @@ Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
 
 
 \begin{align*}
-Q(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q(s', a') \\
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q(s', a')\Big)
+Q(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q'(s', a') \\
+Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q'(s', a')\Big)
 \end{align*}
 
 
@@ -305,8 +316,7 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q(s
 \begin{frame}{\bf SARSA learning}
 
 \begin{align*}
-\Delta Q(s, a) &= \alpha\Big(R(s, a) + \gamma Q(s', a') - Q(s, a)\Big) \\
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
+Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\Big)
 \end{align*}
 
 \begin{figure}
@@ -348,8 +358,8 @@ Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
 \begin{frame}{\bf Q-learning vs SARSA - cliff example}
 
 \begin{align*}
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q(s', a')\Big) \\
-Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
+Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q'(s', a')\Big) \\
+Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\Big)
 \end{align*}
 
 
@@ -431,32 +441,113 @@ storing Q values
 \includegraphics[scale=0.15]{../../diagrams/q_net.png}
 
 \begin{align*}
-SARSA : Q(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
+SARSA : Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\Big)
 \end{align*}
 
 \begin{align*}
   loss   &= \Big(required\_value - Q(state, action)\Big)^2 \\
-  loss   &= \Big(Q(s, a) - Q'(s, a)\Big)^2 \\
-  loss   &= \Big(R(s, a) + \gamma Q(s', a') - Q'(s, a)\Big)^2
+  loss   &= \Big(Q'(s, a) - Q(s, a)\Big)^2 \\
+  loss   &= \Big(R(s, a) + \gamma Q'(s', a') - Q(s, a)\Big)^2
 \end{align*}
 
 \end{frame}
+
+
+
+
+
+\begin{frame}{\bf Training network}
+
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+
+      \begin{figure}
+        \includegraphics[scale=0.12]{../../diagrams/q_net_unrolled.png}
+      \end{figure}
+
+  \end{column}
+  \begin{column}{0.5\textwidth}  %%<--- here
+
+      \begin{align*}
+        \Delta Q'(s_0, a_0) &= \alpha\Big(R(s_0, a_0) + \gamma Q'(s_1, a_1)\Big) \\
+        \Delta Q'(s_1, a_1) &= \alpha\Big(R(s_1, a_1) + \gamma Q'(s_2, a_2)\Big) \\
+        \Delta Q'(s_2, a_2) &= \alpha\Big(R(s_2, a_2) + \gamma Q'(s_3, a_3)\Big) \\
+        ... \\
+        \Delta Q'(s_{n}, a_{n}) &= \alpha\Big(R(s_{n}, a_{n}) + \gamma Q'(s_{n+1}, a_{n+1})\Big)
+      \end{align*}
+
+  \end{column}
+\end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}{\bf Training network}
+
+\begin{enumerate}
+\item computer temporary $Q_t$ batch
+      \begin{align*}
+        Q_t (s_0, a_0) &= R(s_0, a_0) + \gamma Q_t(s_1, a_1) \\
+        Q_t(s_1, a_1) &= R(s_1, a_1) + \gamma Q_t(s_2, a_2) \\
+        Q_t(s_2, a_2) &= R(s_2, a_2) + \gamma Q_t(s_3, a_3) \\
+        ... \\
+        Q_t(s_n, a_n) &= R(s_{n+1}, a_{n+1})
+      \end{align*}
+
+\item train neural network using
+      \begin{align*}
+        Q_{new}(s_i, a_i) &= (1 - \alpha)Q_{old}(s_i, a_i) + \alpha Q_t(s_i, a_i)
+      \end{align*}
+
+\end{enumerate}
+
+
+\end{frame}
+
+
+\begin{frame}{\bf Examples}
+
+
+\begin{figure}
+\includegraphics[scale=0.11]{../../pictures/go_cnn_architecture.png}
+\end{figure}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+  \begin{figure}
+    \includegraphics[scale=0.22]{../../pictures/catcher.png}
+  \end{figure}
+
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+
+  \begin{figure}
+  \includegraphics[scale=0.19]{../../pictures/go.png}
+  \end{figure}
+
+\end{column}
+\end{columns}
+
+
+
+\end{frame}
+
+
 
 
 \begin{frame}{\bf Usefull links}
 
 {\tiny
   \begin{thebibliography}{9}
-    \bibitem {}ImageNet Classification with Deep Convolutional Neural Networks \url{https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}
-    \bibitem {}Alex Krizhevsky web, \url{https://www.cs.toronto.edu/~kriz/}
-    \bibitem {}Deep Belief Nets in C++ and CUDA C: Volume III \url{https://www.amazon.com/Deep-Belief-Nets-CUDA-Convolutional/dp/1530895189}
-    \bibitem {}Deep Learning (Adaptive Computation and Machine Learning \url{https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618}
-    \bibitem {}Densely Connected Convolutional Networks \url{https://arxiv.org/pdf/1608.06993.pdf}
+    \bibitem {}Richard S. Sutton : Reinforcement Learning: An Introduction \\ \url{https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262193981}
+    \bibitem {}Maxim Lapan : Deep reinforcement learning \\ \url{https://www.amazon.com/Practical-Reinforcement-Learning-Maxim-Lapan/dp/1788834240}
 
-    \bibitem {}MNIST dataset \url{http://yann.lecun.com/exdb/mnist/}
-    \bibitem {}Digital signal processing for STM32 microcontrollers using CMSIS \url{https://www.st.com/resource/en/application_note/dm00273990.pdf}
-
-    \bibitem {}CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs \url{https://arxiv.org/pdf/1801.06601.pdf}
+    \bibitem {}Andrej Karpathy : Pong from pixels \\ \url{http://karpathy.github.io/2016/05/31/rl/}
+    \bibitem {}CHRISTOPHER  J.C.H. WATKINS : Q-learning \\ \url{http://www.gatsby.ucl.ac.uk/~dayan/papers/cjch.pdf}
+    \bibitem {}Mohit Sewak : Practical Convolutional Neural \\ Networks \url{https://www.amazon.com/Practical-Convolutional-Neural-Networks-Implement/dp/1788392302}
+    \bibitem {}Densely Connected Convolutional Networks \\ \url{https://arxiv.org/pdf/1608.06993.pdf}
 
   \end{thebibliography}
 }
@@ -484,10 +575,3 @@ github
 
 
 \end{document}
-
-
-
-
-%% \bibitem {Deep Belief Nets in C++ and CUDA C: Volume III \url{https://www.amazon.com/Deep-Belief-Nets-CUDA-Convolutional/dp/1530895189}}
-%% \bibitem {Deep Learning (Adaptive Computation and Machine Learning) \url{https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618}}
-%% \bibitem {Densely Connected Convolutional Networks \url{https://arxiv.org/pdf/1608.06993.pdf}}

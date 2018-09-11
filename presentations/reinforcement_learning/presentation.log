@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.10)  9 SEP 2018 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.10)  11 SEP 2018 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1506,7 +1506,7 @@ g>] [4
 File: ../../diagrams/rl_mechanism.png Graphic file (type png)
 <use ../../diagrams/rl_mechanism.png>
 Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 18
-2.
+4.
 (pdftex.def)             Requested size: 170.04837pt x 116.69568pt.
  [5
 
@@ -1514,11 +1514,11 @@ Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 18
 <../../diagrams/rl_trivial.png, id=70, 283.41176pt x 246.56824pt>
 File: ../../diagrams/rl_trivial.png Graphic file (type png)
 <use ../../diagrams/rl_trivial.png>
-Package pdftex.def Info: ../../diagrams/rl_trivial.png  used on input line 205.
+Package pdftex.def Info: ../../diagrams/rl_trivial.png  used on input line 207.
 
 (pdftex.def)             Requested size: 113.36269pt x 98.62553pt.
 
-Overfull \vbox (15.45734pt too high) detected at line 205
+Overfull \vbox (15.45734pt too high) detected at line 207
  []
 
 [6
@@ -1528,7 +1528,7 @@ Overfull \vbox (15.45734pt too high) detected at line 205
 File: ../../diagrams/rl_trivial_trap.png Graphic file (type png)
 <use ../../diagrams/rl_trivial_trap.png>
 Package pdftex.def Info: ../../diagrams/rl_trivial_trap.png  used on input line
- 224.
+ 226.
 (pdftex.def)             Requested size: 113.36269pt x 98.62553pt.
  [7
 
@@ -1536,7 +1536,7 @@ Package pdftex.def Info: ../../diagrams/rl_trivial_trap.png  used on input line
 <../../diagrams/rl_trap.png, id=86, 425.11765pt x 525.72882pt>
 File: ../../diagrams/rl_trap.png Graphic file (type png)
 <use ../../diagrams/rl_trap.png>
-Package pdftex.def Info: ../../diagrams/rl_trap.png  used on input line 245.
+Package pdftex.def Info: ../../diagrams/rl_trap.png  used on input line 247.
 (pdftex.def)             Requested size: 93.52617pt x 115.66069pt.
 
 [8
@@ -1548,7 +1548,7 @@ Package pdftex.def Info: ../../diagrams/rl_trap.png  used on input line 245.
 File: ../../diagrams/q_learning_detail.png Graphic file (type png)
 <use ../../diagrams/q_learning_detail.png>
 Package pdftex.def Info: ../../diagrams/q_learning_detail.png  used on input li
-ne 275.
+ne 277.
 (pdftex.def)             Requested size: 212.56047pt x 143.69087pt.
  [10
 
@@ -1561,7 +1561,7 @@ ne 275.
 File: ../../diagrams/sarsa_learning_detail.png Graphic file (type png)
 <use ../../diagrams/sarsa_learning_detail.png>
 Package pdftex.def Info: ../../diagrams/sarsa_learning_detail.png  used on inpu
-t line 326.
+t line 328.
 (pdftex.def)             Requested size: 162.95833pt x 162.3065pt.
  [13
 
@@ -1572,10 +1572,10 @@ t line 326.
 File: ../../diagrams/cliff_diagram.png Graphic file (type png)
 <use ../../diagrams/cliff_diagram.png>
 Package pdftex.def Info: ../../diagrams/cliff_diagram.png  used on input line 3
-70.
+72.
 (pdftex.def)             Requested size: 210.83281pt x 166.06087pt.
 
-Overfull \vbox (14.06781pt too high) detected at line 370
+Overfull \vbox (14.06781pt too high) detected at line 372
  []
 
 [15
@@ -1586,7 +1586,7 @@ Overfull \vbox (14.06781pt too high) detected at line 370
 File: ../../diagrams/cliff_diagram.png Graphic file (type png)
 <use ../../diagrams/cliff_diagram.png>
 Package pdftex.def Info: ../../diagrams/cliff_diagram.png  used on input line 4
-26.
+28.
 (pdftex.def)             Requested size: 120.47195pt x 94.88882pt.
  [17
 
@@ -1594,32 +1594,31 @@ Package pdftex.def Info: ../../diagrams/cliff_diagram.png  used on input line 4
 <../../diagrams/q_net.png, id=157, 1690.55118pt x 425.11765pt>
 File: ../../diagrams/q_net.png Graphic file (type png)
 <use ../../diagrams/q_net.png>
-Package pdftex.def Info: ../../diagrams/q_net.png  used on input line 436.
+Package pdftex.def Info: ../../diagrams/q_net.png  used on input line 438.
 (pdftex.def)             Requested size: 304.28609pt x 76.51787pt.
  [18
 
  <../../diagrams/q_net.png>]
 File: ../../diagrams/q_net.png Graphic file (type png)
 <use ../../diagrams/q_net.png>
-Package pdftex.def Info: ../../diagrams/q_net.png  used on input line 453.
-(pdftex.def)             Requested size: 253.57173pt x 63.7649pt.
- [19
+Package pdftex.def Info: ../../diagrams/q_net.png  used on input line 454.
+(pdftex.def)             Requested size: 219.77936pt x 55.26723pt.
+
+Overfull \vbox (7.43898pt too high) detected at line 454
+ []
+
+[19
 
 ]
 <../../diagrams/q_net_unrolled.png, id=175, 1275.35294pt x 1327.78412pt>
 File: ../../diagrams/q_net_unrolled.png Graphic file (type png)
 <use ../../diagrams/q_net_unrolled.png>
 Package pdftex.def Info: ../../diagrams/q_net_unrolled.png  used on input line 
-483.
+484.
 (pdftex.def)             Requested size: 153.03575pt x 159.32721pt.
 
-Overfull \hbox (61.61414pt too wide) detected at line 483
+Overfull \hbox (56.00302pt too wide) detected at line 484
 []
- []
-
-
-Overfull \hbox (4.70863pt too wide) detected at line 483
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [20
@@ -1631,30 +1630,25 @@ Overfull \hbox (4.70863pt too wide) detected at line 483
 File: ../../pictures/go_cnn_architecture.png Graphic file (type png)
 <use ../../pictures/go_cnn_architecture.png>
 Package pdftex.def Info: ../../pictures/go_cnn_architecture.png  used on input 
-line 535.
+line 536.
 (pdftex.def)             Requested size: 240.25835pt x 70.66422pt.
 <../../pictures/catcher.png, id=189, 803.0pt x 632.3625pt>
 File: ../../pictures/catcher.png Graphic file (type png)
 <use ../../pictures/catcher.png>
-Package pdftex.def Info: ../../pictures/catcher.png  used on input line 535.
-(pdftex.def)             Requested size: 176.66054pt x 139.12018pt.
-
-Overfull \hbox (23.01561pt too wide) in paragraph at lines 535--535
- [] 
- []
-
+Package pdftex.def Info: ../../pictures/catcher.png  used on input line 536.
+(pdftex.def)             Requested size: 144.53375pt x 113.82033pt.
 <../../pictures/go.png, id=190, 903.375pt x 743.77875pt>
 File: ../../pictures/go.png Graphic file (type png)
 <use ../../pictures/go.png>
-Package pdftex.def Info: ../../pictures/go.png  used on input line 535.
+Package pdftex.def Info: ../../pictures/go.png  used on input line 536.
 (pdftex.def)             Requested size: 171.64304pt x 141.31943pt.
 
-Overfull \hbox (17.99811pt too wide) in paragraph at lines 535--535
+Overfull \hbox (17.99811pt too wide) in paragraph at lines 536--536
  [] 
  []
 
 
-Overfull \vbox (18.14928pt too high) detected at line 535
+Overfull \vbox (18.14928pt too high) detected at line 536
  []
 
 [22
@@ -1669,7 +1663,7 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [23
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-<../../pictures/me.jpg, id=221, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=222, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
 Package pdftex.def Info: ../../pictures/me.jpg  used on input line 574.
@@ -1722,10 +1716,10 @@ lic/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx144
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/te
 xmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/publ
 ic/cm-super/sftt1095.pfb>
-Output written on presentation.pdf (24 pages, 5017617 bytes).
+Output written on presentation.pdf (24 pages, 5019077 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
+ 315 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
  50 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

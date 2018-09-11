@@ -117,7 +117,7 @@
 
 \begin{itemize}
   \item learn from punishment and rewards
-  \item learn to play a game with unknow rules
+  \item learn to play a game with unknown rules
 \end{itemize}
 
 \begin{columns}
@@ -159,7 +159,9 @@
                action &= F(observation) \\
                loss   &= \Big(required\_action - F(observation)\Big)^2
              \end{align*}
-             {\bf \color{red} required\_action = ?}
+             {\bf \color{red} required\_action = ?} \\
+             {\bf \color{green} maximize\_score}
+
 \end{enumerate}
 
 \end{frame}
@@ -248,7 +250,7 @@ three possible strategies
 \begin{frame}{\bf Q learning}
 
 \begin{align*}
-Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q'(s', a')
+Q'(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
 \end{align*}
 
 where \\
@@ -265,7 +267,7 @@ $\gamma \in \langle 0, 1 \rangle$ is discount factor \\
 \begin{frame}{\bf Q learning}
 
 \begin{align*}
-Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q'(s', a')
+Q'(s, a) = R(s, a) + \gamma \max \limits_{a'} Q(s', a')
 \end{align*}
 
 \begin{figure}
@@ -279,8 +281,8 @@ Q(s, a) = R(s, a) + \gamma \max \limits_{a'} Q'(s', a')
 
 
 \begin{align*}
-Q(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q'(s', a') \\
-Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q'(s', a')\Big)
+Q'(s, a) &= R(s, a) + \gamma \max \limits_{a'} Q(s', a') \\
+Q'(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q(s', a')\Big)
 \end{align*}
 
 
@@ -316,7 +318,7 @@ Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q'
 \begin{frame}{\bf SARSA learning}
 
 \begin{align*}
-Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\Big)
+Q'(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
 \end{align*}
 
 \begin{figure}
@@ -358,8 +360,8 @@ Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\Big)
 \begin{frame}{\bf Q-learning vs SARSA - cliff example}
 
 \begin{align*}
-Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q'(s', a')\Big) \\
-Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\Big)
+Q'(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma \max \limits_{a'} Q(s', a')\Big) \\
+Q'(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
 \end{align*}
 
 
@@ -438,16 +440,15 @@ storing Q values
 \begin{frame}{\bf Neural network for $Q(s, a)$ approximation - \\ Q networks}
 
 \centering
-\includegraphics[scale=0.15]{../../diagrams/q_net.png}
+\includegraphics[scale=0.13]{../../diagrams/q_net.png}
 
 \begin{align*}
-SARSA : Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\Big)
+SARSA : Q'(s, a) &= (1-\alpha)Q(s, a) + \alpha\Big(R(s, a) + \gamma Q(s', a')\Big)
 \end{align*}
-
 \begin{align*}
-  loss   &= \Big(required\_value - Q(state, action)\Big)^2 \\
-  loss   &= \Big(Q'(s, a) - Q(s, a)\Big)^2 \\
-  loss   &= \Big(R(s, a) + \gamma Q'(s', a') - Q(s, a)\Big)^2
+  loss   &= \sum_{i=1}^{N} \Big(target\_value_i - resulted\_value_i\Big)^2 \\
+  L   &= \sum_{i=1}^{N} \Big(Q(s_i, a_i) - \hat{Q}(s_i, a_i)\Big)^2 \\
+  L   &= \sum_{i=1}^{N} \Big(R(s_i, a_i) + \gamma Q(s'_i, a_i') - \hat{Q}(s_i, a_i)\Big)^2
 \end{align*}
 
 \end{frame}
@@ -469,11 +470,11 @@ SARSA : Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\B
   \begin{column}{0.5\textwidth}  %%<--- here
 
       \begin{align*}
-        \Delta Q'(s_0, a_0) &= \alpha\Big(R(s_0, a_0) + \gamma Q'(s_1, a_1)\Big) \\
-        \Delta Q'(s_1, a_1) &= \alpha\Big(R(s_1, a_1) + \gamma Q'(s_2, a_2)\Big) \\
-        \Delta Q'(s_2, a_2) &= \alpha\Big(R(s_2, a_2) + \gamma Q'(s_3, a_3)\Big) \\
+        \Delta \hat{Q} (s_0, a_0) &= \alpha\Big(R(s_0, a_0) + \gamma \hat{Q}(s_1, a_1)\Big) \\
+        \Delta \hat{Q}(s_1, a_1) &= \alpha\Big(R(s_1, a_1) + \gamma \hat{Q}(s_2, a_2)\Big) \\
+        \Delta \hat{Q}(s_2, a_2) &= \alpha\Big(R(s_2, a_2) + \gamma \hat{Q}(s_3, a_3)\Big) \\
         ... \\
-        \Delta Q'(s_{n}, a_{n}) &= \alpha\Big(R(s_{n}, a_{n}) + \gamma Q'(s_{n+1}, a_{n+1})\Big)
+        \Delta \hat{Q}(s_{n}, a_{n}) &= \alpha\Big(R(s_{n}, a_{n}) + \gamma \hat{Q}(s_{n+1}, a_{n+1})\Big)
       \end{align*}
 
   \end{column}
@@ -486,7 +487,7 @@ SARSA : Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\B
 \begin{frame}{\bf Training network}
 
 \begin{enumerate}
-\item computer temporary $Q_t$ batch
+\item compute temporary $Q_t$ batch
       \begin{align*}
         Q_t (s_0, a_0) &= R(s_0, a_0) + \gamma Q_t(s_1, a_1) \\
         Q_t(s_1, a_1) &= R(s_1, a_1) + \gamma Q_t(s_2, a_2) \\
@@ -517,7 +518,7 @@ SARSA : Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\B
 \begin{column}{0.5\textwidth}
 
   \begin{figure}
-    \includegraphics[scale=0.22]{../../pictures/catcher.png}
+    \includegraphics[scale=0.18]{../../pictures/catcher.png}
   \end{figure}
 
 \end{column}
@@ -541,14 +542,13 @@ SARSA : Q(s, a) &= (1-\alpha)Q'(s, a) + \alpha\Big(R(s, a) + \gamma Q'(s', a')\B
 
 {\tiny
   \begin{thebibliography}{9}
+    \bibitem {}Andrej Karpathy : Pong from pixels \\ \url{http://karpathy.github.io/2016/05/31/rl/}
     \bibitem {}Richard S. Sutton : Reinforcement Learning: An Introduction \\ \url{https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262193981}
     \bibitem {}Maxim Lapan : Deep reinforcement learning \\ \url{https://www.amazon.com/Practical-Reinforcement-Learning-Maxim-Lapan/dp/1788834240}
-
-    \bibitem {}Andrej Karpathy : Pong from pixels \\ \url{http://karpathy.github.io/2016/05/31/rl/}
-    \bibitem {}CHRISTOPHER  J.C.H. WATKINS : Q-learning \\ \url{http://www.gatsby.ucl.ac.uk/~dayan/papers/cjch.pdf}
     \bibitem {}Mohit Sewak : Practical Convolutional Neural \\ Networks \url{https://www.amazon.com/Practical-Convolutional-Neural-Networks-Implement/dp/1788392302}
+    \bibitem {}CHRISTOPHER  J.C.H. WATKINS : Q-learning \\ \url{http://www.gatsby.ucl.ac.uk/~dayan/papers/cjch.pdf}
     \bibitem {}Densely Connected Convolutional Networks \\ \url{https://arxiv.org/pdf/1608.06993.pdf}
-
+    \bibitem {}Mastering the Game of Go without Human Knowledge \\ \url{https://deepmind.com/documents/119/agz_unformatted\_nature.pdf}
   \end{thebibliography}
 }
 

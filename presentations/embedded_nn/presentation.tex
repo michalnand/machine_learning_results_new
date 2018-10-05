@@ -131,31 +131,24 @@ target                                                       & bits & features  
 
 
 
-\begin{frame}{\bf Basic math}
+\begin{frame}{\bf Convolutional neural network}
 
 
-\begin{table}[]
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{name} & \textbf{marking}            & \textbf{dimension} & \textbf{C++ example}          \\ \hline
-scalar        & $s$                         & 0                  & float s;                      \\ \hline
-vector        & $\vec{v}$                   & 1                  & float v{[}10{]};              \\ \hline
-matrix        & \bf{M} & 2                  & float m{[}5{]}{[}7{]};        \\ \hline
-tensor        & \bf{T} & 3 .. N             & float t{[}6{]}{[}8{]}{[}3{]}; \\ \hline
-\end{tabular}
-\end{table}
+\begin{figure}
+  \includegraphics[scale=0.2]{../../diagrams/cnn_architecture_example.png}
+\end{figure}
 
-examples :
 
 \begin{itemize}
-
-\item Energy is {\bf Scalar} property of Time-translation symetry
-\item Velocity is {\bf Vector}, defined as $\frac{d\vec{x}}{dt}$
-\item Rotation {\bf Matrix}
-\item RGB color image is {\bf Tensor} (3rd order vector)
-\item Color movie is {\bf Tensor} (4th order vector)
-
+  \item input tensor (image)
+  \item convolutional layer
+  \item dense convolutional layer
+  \item relu layer (nonlinearity)
+  \item pooling layer
+  \item full connected layer
 \end{itemize}
+
+
 \end{frame}
 
 

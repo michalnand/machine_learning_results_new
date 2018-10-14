@@ -98,12 +98,31 @@
 
 \begin{frame}{\bf Motivation}
 
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
 \begin{itemize}
   \item build smarter robots
   \item embedded particle filtering
   \item embedded localization
   \item embedded decision making
 \end{itemize}
+
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+
+\begin{itemize}
+  \color{red}
+  \item only one MCU
+  \item no C++ libs
+  \item obsolete architectures
+  \item float instead of int
+\end{itemize}
+
+\end{column}
+\end{columns}
+
 
   \begin{figure}
     \includegraphics[scale=0.07]{../../pictures/robot_ascender.jpg}
@@ -170,7 +189,7 @@ target                                                       & bits & features  
 
 
 \begin{frame}[fragile]
-{\bf Basic math - discrete convolution}
+{\bf Discrete convolution}
 
 \begin{figure}
   \includegraphics[scale=0.2]{../../diagrams/convolution_2d.png}
@@ -209,7 +228,7 @@ for (unsigned x = 0; x < input_width; x++)
 
 
 \begin{frame}[fragile]
-{\bf Basic math - activation function}
+{\bf Activation function}
 
 tanh, sigmoid, gaussian, {\bf RELU}, leaky RELU ...
 \begin{figure}
@@ -238,7 +257,7 @@ tanh, sigmoid, gaussian, {\bf RELU}, leaky RELU ...
 \end{frame}
 
 
-\begin{frame}{\bf Basic math - pooling}
+\begin{frame}{\bf Pooling}
 
 \begin{figure}
   \includegraphics[scale=0.2]{../../diagrams/pooling.png}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.15)  7 OCT 2018 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  14 OCT 2018 06:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,19 +1446,22 @@ jpg> <../../pictures/nvidia.png>]
 File: ../../pictures/robot_ascender.jpg Graphic file (type jpg)
 <use ../../pictures/robot_ascender.jpg>
 Package pdftex.def Info: ../../pictures/robot_ascender.jpg  used on input line 
-113.
+132.
 (pdftex.def)             Requested size: 219.94409pt x 160.00406pt.
- [2
+
+Overfull \vbox (11.09834pt too high) detected at line 132
+ []
+
+[2
 
  <../../pictures/robot_ascender.jpg>]
 <../../pictures/robot_debug_app.png, id=43, 1284.8pt x 752.8125pt>
 File: ../../pictures/robot_debug_app.png Graphic file (type png)
 <use ../../pictures/robot_debug_app.png>
 Package pdftex.def Info: ../../pictures/robot_debug_app.png  used on input line
- 131.
+ 150.
 (pdftex.def)             Requested size: 256.95544pt x 150.55983pt.
-
-[3
+ [3
 
  <../../pictures/robot_debug_app.png>] [4
 
@@ -1468,10 +1471,10 @@ Package pdftex.def Info: ../../pictures/robot_debug_app.png  used on input line
 File: ../../diagrams/cnn_architecture_example.png Graphic file (type png)
 <use ../../diagrams/cnn_architecture_example.png>
 Package pdftex.def Info: ../../diagrams/cnn_architecture_example.png  used on i
-nput line 169.
+nput line 188.
 (pdftex.def)             Requested size: 323.20177pt x 94.95306pt.
 
-Overfull \hbox (15.9119pt too wide) in paragraph at lines 169--169
+Overfull \hbox (15.9119pt too wide) in paragraph at lines 188--188
  [] 
  []
 
@@ -1530,7 +1533,7 @@ Package pdftex.def Info: ../../pictures/activation.png  used on input line 5.
 <../../diagrams/pooling.png, id=88, 853.1875pt x 599.23875pt>
 File: ../../diagrams/pooling.png Graphic file (type png)
 <use ../../diagrams/pooling.png>
-Package pdftex.def Info: ../../diagrams/pooling.png  used on input line 247.
+Package pdftex.def Info: ../../diagrams/pooling.png  used on input line 266.
 (pdftex.def)             Requested size: 170.63448pt x 119.84563pt.
  [8
 
@@ -1538,7 +1541,7 @@ Package pdftex.def Info: ../../diagrams/pooling.png  used on input line 247.
 <../../diagrams/cnn.jpg, id=95, 475.7775pt x 357.335pt>
 File: ../../diagrams/cnn.jpg Graphic file (type jpg)
 <use ../../diagrams/cnn.jpg>
-Package pdftex.def Info: ../../diagrams/cnn.jpg  used on input line 256.
+Package pdftex.def Info: ../../diagrams/cnn.jpg  used on input line 275.
 (pdftex.def)             Requested size: 237.88815pt x 178.66705pt.
  [9
 
@@ -1546,10 +1549,10 @@ Package pdftex.def Info: ../../diagrams/cnn.jpg  used on input line 256.
 <../../diagrams/dense_net.png, id=102, 1553.805pt x 477.785pt>
 File: ../../diagrams/dense_net.png Graphic file (type png)
 <use ../../diagrams/dense_net.png>
-Package pdftex.def Info: ../../diagrams/dense_net.png  used on input line 281.
+Package pdftex.def Info: ../../diagrams/dense_net.png  used on input line 300.
 (pdftex.def)             Requested size: 310.7555pt x 95.5553pt.
 
-Overfull \hbox (3.46562pt too wide) in paragraph at lines 281--281
+Overfull \hbox (3.46562pt too wide) in paragraph at lines 300--300
  [] 
  []
 
@@ -1559,21 +1562,21 @@ Overfull \hbox (3.46562pt too wide) in paragraph at lines 281--281
 <../../pictures/mnist.jpg, id=109, 481.8pt x 361.35pt>
 File: ../../pictures/mnist.jpg Graphic file (type jpg)
 <use ../../pictures/mnist.jpg>
-Package pdftex.def Info: ../../pictures/mnist.jpg  used on input line 315.
+Package pdftex.def Info: ../../pictures/mnist.jpg  used on input line 334.
 (pdftex.def)             Requested size: 96.35829pt x 72.2687pt.
 <../../diagrams/cnn_architecture.png, id=110, 2441.12pt x 642.4pt>
 File: ../../diagrams/cnn_architecture.png Graphic file (type png)
 <use ../../diagrams/cnn_architecture.png>
 Package pdftex.def Info: ../../diagrams/cnn_architecture.png  used on input lin
-e 315.
+e 334.
 (pdftex.def)             Requested size: 341.75447pt x 89.93538pt.
 
-Overfull \hbox (34.4646pt too wide) in paragraph at lines 315--315
+Overfull \hbox (34.4646pt too wide) in paragraph at lines 334--334
  [] 
  []
 
 
-Overfull \vbox (8.96101pt too high) detected at line 315
+Overfull \vbox (8.96101pt too high) detected at line 334
  []
 
 [11
@@ -1587,7 +1590,7 @@ Overfull \vbox (8.96101pt too high) detected at line 315
 <../../diagrams/nn_memory.png, id=123, 875.27pt x 117.43875pt>
 File: ../../diagrams/nn_memory.png Graphic file (type png)
 <use ../../diagrams/nn_memory.png>
-Package pdftex.def Info: ../../diagrams/nn_memory.png  used on input line 369.
+Package pdftex.def Info: ../../diagrams/nn_memory.png  used on input line 388.
 (pdftex.def)             Requested size: 262.58302pt x 35.23189pt.
  [13
 
@@ -1613,7 +1616,7 @@ Package pdftex.def Info: ../../diagrams/nn_memory.png  used on input line 369.
 File: ../../pictures/stm32_screenshot.jpg Graphic file (type jpg)
 <use ../../pictures/stm32_screenshot.jpg>
 Package pdftex.def Info: ../../pictures/stm32_screenshot.jpg  used on input lin
-e 512.
+e 531.
 (pdftex.def)             Requested size: 285.0643pt x 160.34866pt.
  [17
 
@@ -1623,7 +1626,7 @@ e 512.
 <../../pictures/me.jpg, id=185, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 546.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 565.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
  [19
 
@@ -1637,12 +1640,12 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 546.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 568.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 568.
 
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 568.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 568.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1652,8 +1655,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  23842 strings out of 492982
- 427686 string characters out of 6134896
- 662397 words of memory out of 5000000
+ 427686 string characters out of 6134895
+ 662332 words of memory out of 5000000
  26788 multiletter control sequences out of 15000+600000
  22683 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1673,7 +1676,7 @@ ss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
 t0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on presentation.pdf (19 pages, 2129881 bytes).
+Output written on presentation.pdf (19 pages, 2130248 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

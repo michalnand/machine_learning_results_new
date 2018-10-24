@@ -98,12 +98,31 @@
 
 \begin{frame}{\bf Motivation}
 
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
 \begin{itemize}
   \item build smarter robots
   \item embedded particle filtering
   \item embedded localization
   \item embedded decision making
 \end{itemize}
+
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+
+\begin{itemize}
+  \color{red}
+  \item only one MCU
+  \item no C++ libs
+  \item obsolete architectures
+  \item float instead of int
+\end{itemize}
+
+\end{column}
+\end{columns}
+
 
   \begin{figure}
     \includegraphics[scale=0.07]{../../pictures/robot_ascender.jpg}
@@ -114,36 +133,63 @@
 
 
 
-\begin{frame}{\bf Basic math}
+\begin{frame}{\bf Motivation}
 
+\begin{itemize}
+  \item line type classification
+  \item prediction curve type
+  \item predictive braking
+  \item map creating
+\end{itemize}
+
+  \begin{figure}
+    \includegraphics[scale=0.2]{../../pictures/robot_debug_app.png}
+  \end{figure}
+
+
+\end{frame}
+
+
+\begin{frame}{\bf Target hardware}
 
 \begin{table}[]
 \begin{tabular}{|c|c|c|c|}
 \hline
-\textbf{name} & \textbf{marking}            & \textbf{dimension} & \textbf{C++ example}          \\ \hline
-scalar        & $s$                         & 0                  & float s;                      \\ \hline
-vector        & $\vec{v}$                   & 1                  & float v{[}10{]};              \\ \hline
-matrix        & \bf{M} & 2                  & float m{[}5{]}{[}7{]};        \\ \hline
-tensor        & \bf{T} & 3 .. N             & float t{[}6{]}{[}8{]}{[}3{]}; \\ \hline
+target                                                       & bits & features                                                                 & frequency                                              \\ \hline
+\begin{tabular}[c]{@{}c@{}}AVR\\ Atmega 328\end{tabular}     & 8    & single cycle ADD, MUL                                                    & 20MHz                                                  \\ \hline
+\begin{tabular}[c]{@{}c@{}}ARM \\ Cortex M0\end{tabular}     & 32   & single cycle ADD, MUL                                                    & 48MHz                                                  \\ \hline
+\begin{tabular}[c]{@{}c@{}}ARM \\ Cortex M4, M7\end{tabular} & 32   & \begin{tabular}[c]{@{}c@{}}SIMD DUAL 16bit MAC \\ , FPU ...\end{tabular} & \begin{tabular}[c]{@{}c@{}}72MHz\\ 216MHz\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
 
-examples :
+
+\end{frame}
+
+
+
+\begin{frame}{\bf Convolutional neural network}
+
+
+\begin{figure}
+  \includegraphics[scale=0.2]{../../diagrams/cnn_architecture_example.png}
+\end{figure}
+
 
 \begin{itemize}
-
-\item Energy is {\bf Scalar} property of Time-translation symetry
-\item Velocity is {\bf Vector}, defined as $\frac{d\vec{x}}{dt}$
-\item Rotation {\bf Matrix}
-\item RGB color image is {\bf Tensor} (3rd order vector)
-\item Color movie is {\bf Tensor} (4th order vector)
-
+  \item input tensor (image)
+  \item convolutional layer
+  \item dense convolutional layer
+  \item relu layer (nonlinearity)
+  \item pooling layer
+  \item full connected layer
 \end{itemize}
+
+
 \end{frame}
 
 
 \begin{frame}[fragile]
-{\bf Basic math - discrete convolution}
+{\bf Discrete convolution}
 
 \begin{figure}
   \includegraphics[scale=0.2]{../../diagrams/convolution_2d.png}
@@ -182,7 +228,7 @@ for (unsigned x = 0; x < input_width; x++)
 
 
 \begin{frame}[fragile]
-{\bf Basic math - activation function}
+{\bf Activation function}
 
 tanh, sigmoid, gaussian, {\bf RELU}, leaky RELU ...
 \begin{figure}
@@ -211,7 +257,7 @@ tanh, sigmoid, gaussian, {\bf RELU}, leaky RELU ...
 \end{frame}
 
 
-\begin{frame}{\bf Basic math - pooling}
+\begin{frame}{\bf Pooling}
 
 \begin{figure}
   \includegraphics[scale=0.2]{../../diagrams/pooling.png}

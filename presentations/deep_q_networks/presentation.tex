@@ -176,7 +176,22 @@ $\gamma \in \langle 0, 1 \rangle$ is discount factor \\
 
 
 
-\begin{frame}{\bf Deep Q learning}
+\begin{frame}{\bf Deep Q network - DQN}
+
+\begin{align*}
+\hat{Q}(s, a; w)&= R + \gamma \max \limits_{\alpha} \hat{Q}(s', \alpha; w), \\
+\hat{Q}(s, a; w)&= R + \gamma \max \limits_{\alpha} \hat{Q}(s', \alpha; w')
+\end{align*}
+
+
+\end{frame}
+
+
+\begin{frame}{\bf Dueling deep Q network - DDQN}
+
+\begin{align*}
+\hat{Q}(s, a; w)&= \hat{V}(s, a; w) + \hat{A}(s, a; w)
+\end{align*}
 
 \begin{align*}
 \hat{Q}(s, a; w)&= R + \gamma \max \limits_{\alpha} \hat{Q}(s', \alpha; w), \\

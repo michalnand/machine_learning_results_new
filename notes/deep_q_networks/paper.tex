@@ -1,0 +1,114 @@
+\documentclass[10pt,a4paper]{article}
+\renewcommand{\baselinestretch}{1.0}
+\usepackage{cite}
+\usepackage[dvips]{graphicx}
+\usepackage{psfrag}
+\usepackage{color}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsfonts}
+\usepackage[font=footnotesize, captionskip=10pt]{subfig}
+\usepackage{tikz}
+\usepackage{flushend}
+\usepackage{times}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[slovak]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{empty}
+
+\hyphenation{net-works}
+\newtheorem{remark}{Remark}
+
+\begin{document}
+
+\title{Deep Q networks}
+\author{Michal Chovanec, michal.nand@gmail.com}
+\date{}
+\maketitle
+\thispagestyle{empty}
+
+\section{Q-learning}
+
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.3]{../../diagrams/q_learning_detail.png}
+\end{figure}
+
+\begin{align}
+Q(s, a) = R + \gamma \max \limits_{\alpha'} Q(s', \alpha')
+\label{eq:q_learning}
+\end{align}
+
+where \\
+$s$ is state \\
+$a$ is action \\
+$s'$ is next state \\
+$a'$ is best action in next state \\
+$R$ is reward function \\
+$\gamma \in \langle 0, 1 \rangle$ is discount factor \\
+
+
+\section{Deep Q network - DQN}
+
+Approximate $Q(s, a)$ using neural network as $\hat{Q}(s, a; w)$, where $w$ are learnable network
+parameters
+
+resulted $Q$ value using \ref{eq:q_learning}
+\begin{align}
+  \hat{Q}(s, a; w) = R + \gamma \max \limits_{\alpha'} \hat{Q}(s', \alpha'; w)
+\end{align}
+
+error to minimize
+\begin{align}
+  E = \underset{\bf \color{green} target\ value}{R + \gamma \max \limits_{\alpha'} \hat{Q}(s', \alpha'; w)} - \underset{\bf \color{red} predicted\ value}{\hat{Q}(s, a; w) }
+\end{align}
+
+weights gradient
+\begin{align}
+  \Delta w = \eta E \nabla _w \hat{Q}(s, \alpha, w)
+\end{align}
+
+There is changing target value, $\hat{Q}(s, a; w)$ depends on $w$ which is changing and leads to unstable learning.
+
+{\bf Solution - fix $w$}, using temporary network with $w'$ weights. This leads to deep Q learning equation
+
+\begin{align}
+  \hat{Q}(s, a; w) = R + \gamma \max \limits_{\alpha'} \hat{Q}(s', \alpha'; w')
+  \label{eq:dqn}
+\end{align}
+
+and every $K$ steps update $w' \leftarrow w$, usually after training epoch.
+For agent decission making, the network $w'$ is used.
+
+
+\section{Dueling deep Q network - DDQN}
+
+\begin{align}
+  \hat{Q}(s, a, w) = \underset{\bf \color{green} value\ for\ being\ in\ state\ s}{\hat{V}(s, w)} + \underset{\bf \color{red} advantage\ of\ taking\ action\ a\ at\ state\ s}{\hat{A}(s, a, w)}
+\end{align}
+
+to avoid identifiability we substract average value of A truth all actions
+
+\begin{align}
+  \hat{Q}(s, a, w) = \hat{V}(s, w) + \hat{A}(s, a, w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha', w)
+\end{align}
+
+using equation \ref{eq:dqn} we obtain dueling deep Q network equation
+
+\begin{align}
+  \hat{Q}(s, a; w) = R + \gamma \left( \hat{V}(s', w') + \max \limits_{\alpha'} \hat{A}(s', \alpha', w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha', w') \right)
+  \label{eq:ddqn}
+\end{align}
+
+and finally the weights learning rule
+
+\begin{align}
+  \Delta w = \eta \left( R + \gamma \left( \hat{V}(s', w') + \max \limits_{\alpha'} \hat{A}(s', \alpha', w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha', w') \right) - \hat{Q}(s, a; w)\right) \nabla_w \hat{Q}(s, a; w)
+  \label{eq:ddqn_w_update}
+\end{align}
+
+
+\end{document}

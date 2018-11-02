@@ -1,0 +1,16 @@
+starting
+
+result log path dqn/experiment_2/
+training iterations 200000
+testing iterations 10000
+
+training
+training score -346.000000
+normalised training score -0.001730
+
+testing
+testing score 42.000000
+normalised testing score 0.004200
+
+done
+

@@ -1,0 +1,16 @@
+starting
+
+result log path dqn_priority/experiment_3/
+training iterations 200000
+testing iterations 10000
+
+training
+training score 1087.000000
+normalised training score 0.005435
+
+testing
+testing score 118.000000
+normalised testing score 0.011800
+
+done
+

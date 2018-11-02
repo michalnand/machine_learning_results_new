@@ -1,0 +1,16 @@
+starting
+
+result log path dueling_dqn_priority/experiment_2/
+training iterations 200000
+testing iterations 10000
+
+training
+training score -226.000000
+normalised training score -0.001130
+
+testing
+testing score 25.000000
+normalised testing score 0.002500
+
+done
+

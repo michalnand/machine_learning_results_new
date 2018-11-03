@@ -5,12 +5,12 @@ training iterations 200000
 testing iterations 10000
 
 training
-training score 497.000000
-normalised training score 0.002485
+training score 894.500000
+normalised training score 0.004473
 
 testing
-testing score 93.000000
-normalised testing score 0.009300
+testing score 220.000000
+normalised testing score 0.022000
 
 done
 

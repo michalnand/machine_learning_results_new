@@ -204,17 +204,24 @@
   \item DenseNet - 2018, 5.17\%
 \end{itemize}
 
-\begin{figure}
-  \includegraphics[scale=0.18]{../../diagrams/dnn_conv.png}
-\end{figure}
+\begin{itemize}
 
-\begin{figure}
-  \includegraphics[scale=0.18]{../../diagrams/dnn_resnet.png}
-\end{figure}
+    \item CNN
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_conv.png}
+    \end{figure}
 
-\begin{figure}
-  \includegraphics[scale=0.18]{../../diagrams/dnn_densenet.png}
-\end{figure}
+    \item ResNET
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_resnet.png}
+    \end{figure}
+
+    \item DenseNet
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_densenet.png}
+    \end{figure}
+
+\end{itemize}
 
 \end{frame}
 
@@ -241,7 +248,7 @@ Curve shape classification
     \begin{column}{0.5\textwidth}
 
     \begin{itemize}
-      \item stm32f303, 73MHz
+      \item stm32f303 (72MHz), stm32f746 (216MHz)
       \item 8x 500nm line sensors
       \item pololu motors, 1:30
       \item network input : 8 last line sensors results (8x8 matrix)
@@ -318,11 +325,11 @@ Curve shape classification
 \begin{frame}{\bf Dueling deep Q network - DDQN (2016)}
 
 \begin{align*}
-  \hat{Q}(s, a, w) = \underset{\bf \color{green} value\ for\ being\ in\ state\ s}{\hat{V}(s, w)} + \underset{\bf \color{red} advantage\ of\ taking\ action\ a\ at\ state\ s}{\hat{A}(s, a, w)}
+  \hat{Q}(s, a; w) = \underset{\bf \color{green} value\ for\ being\ in\ state\ s}{\hat{V}(s; w)} + \underset{\bf \color{red} advantage\ of\ taking\ action\ a\ at\ state\ s}{\hat{A}(s, a; w)}
 \end{align*}
 to avoid identifiability we substract average value of A truth all actions
 \begin{align*}
-  \hat{Q}(s, a, w) = \hat{V}(s, w) + \hat{A}(s, a, w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha', w)
+  \hat{Q}(s, a; w) = \hat{V}(s; w) + \hat{A}(s, a; w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha'; w)
 \end{align*}
 
 \begin{figure}[!htb]
@@ -347,18 +354,19 @@ we obtain dueling deep Q network equation
 
 {\footnotesize
 \begin{align*}
-  \hat{Q}(s, a; w)&= R + \gamma \left( \hat{V}(s', w') + \max \limits_{\alpha'} \hat{A}(s', \alpha', w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha', w') \right)
+  \hat{Q}(s, a; w)&= R + \gamma \left( \hat{V}(s'; w') + \max \limits_{\alpha'} \hat{A}(s', \alpha'; w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha'; w') \right)
 \end{align*}
 }
 
-and finally the weights learning rule
+and finally the weights update rule
 
 {\tiny
 
 \begin{align*}
-  \Delta w = \eta \left( R + \gamma \left( \hat{V}(s', w') + \max \limits_{\alpha'} \hat{A}(s', \alpha', w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha', w') \right) - \hat{Q}(s, a; w)\right) \nabla_w \hat{Q}(s, a; w)
+  \Delta w = \eta \left( R + \gamma \left( \hat{V}(s'; w') + \max \limits_{\alpha'} \hat{A}(s', \alpha'; w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha'; w') \right) - \hat{Q}(s, a; w)\right) \nabla_w \hat{Q}(s, a; w)
 \end{align*}
 }
+
 \end{frame}
 
 \begin{frame}{\bf Playing GO (October 2017)}

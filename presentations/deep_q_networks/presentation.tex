@@ -223,6 +223,7 @@ weights gradient
 \begin{frame}{\bf Deep Q network - DQN}
 
 \begin{itemize}
+\item {\bf \color{red} correlated states} : experience replay buffer\\
 \item {\bf \color{red} unstable training} : \\
 non-stationary target value $\hat{Q}(s, a; w)$, depends on $w$
 \item {\bf \color{red} solution - fix $w$} : \\
@@ -237,7 +238,7 @@ using temporary network with $w'$ weights.
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.2]{../../diagrams/dqn.png}
+  \includegraphics[scale=0.16]{../../diagrams/dqn.png}
   \label{img:dqn}
 \end{figure}
 
@@ -249,11 +250,11 @@ using temporary network with $w'$ weights.
 \begin{frame}{\bf Dueling deep Q network - DDQN (2016)}
 
 \begin{align*}
-  \hat{Q}(s, a, w) = \underset{\bf \color{green} value\ for\ being\ in\ state\ s}{\hat{V}(s, w)} + \underset{\bf \color{red} advantage\ of\ taking\ action\ a\ at\ state\ s}{\hat{A}(s, a, w)}
+  \hat{Q}(s, a; w) = \underset{\bf \color{green} value\ for\ being\ in\ state\ s}{\hat{V}(s; w)} + \underset{\bf \color{red} advantage\ of\ taking\ action\ a\ at\ state\ s}{\hat{A}(s, a; w)}
 \end{align*}
 to avoid identifiability we substract average value of A truth all actions
 \begin{align*}
-  \hat{Q}(s, a, w) = \hat{V}(s, w) + \hat{A}(s, a, w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha', w)
+  \hat{Q}(s, a; w) = \hat{V}(s; w) + \hat{A}(s, a; w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha'; w)
 \end{align*}
 
 \begin{figure}[!htb]
@@ -267,7 +268,7 @@ to avoid identifiability we substract average value of A truth all actions
 \begin{frame}{\bf Dueling deep Q network - DDQN}
 
 \begin{align*}
-  \hat{Q}(s, a, w) = \hat{V}(s, w) + \hat{A}(s, a, w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha', w)
+  \hat{Q}(s, a; w) = \hat{V}(s; w) + \hat{A}(s, a; w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha'; w)
 \end{align*}
 
 \begin{figure}[!htb]
@@ -293,18 +294,60 @@ we obtain dueling deep Q network equation
 
 {\footnotesize
 \begin{align*}
-  \hat{Q}(s, a; w)&= R + \gamma \left( \hat{V}(s', w') + \max \limits_{\alpha'} \hat{A}(s', \alpha', w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha', w') \right)
+  \hat{Q}(s, a; w)&= R + \gamma \left( \hat{V}(s'; w') + \max \limits_{\alpha'} \hat{A}(s', \alpha'; w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha'; w') \right)
 \end{align*}
 }
 
-and finally the weights learning rule
+and finally the weights update rule
 
 {\tiny
 
 \begin{align*}
-  \Delta w = \eta \left( R + \gamma \left( \hat{V}(s', w') + \max \limits_{\alpha'} \hat{A}(s', \alpha', w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha', w') \right) - \hat{Q}(s, a; w)\right) \nabla_w \hat{Q}(s, a; w)
+  \Delta w = \eta \left( R + \gamma \left( \hat{V}(s'; w') + \max \limits_{\alpha'} \hat{A}(s', \alpha'; w') - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s', \alpha'; w') \right) - \hat{Q}(s, a; w)\right) \nabla_w \hat{Q}(s, a; w)
 \end{align*}
 }
+\end{frame}
+
+\begin{frame}{\bf DenseNet}
+
+\begin{itemize}
+
+    \item CNN
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_conv.png}
+    \end{figure}
+
+    \item ResNET
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_resnet.png}
+    \end{figure}
+
+    \item DenseNet
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_densenet.png}
+    \end{figure}
+
+\end{itemize}
+
+
+\tiny
+{
+  \begin{table}[]
+  \centering
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+  \textbf{layer type}                       & \textbf{input dimensions} & \textbf{kernel dimensions} & \textbf{output dimensions} \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x4                   & 3x3x8   & 256x256x12              \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x12                  & 3x3x8   & 256x256x20              \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x20                  & 3x3x8   & 256x256x28              \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x28                  & 3x3x8   & 256x256x36              \\ \hline
+  \cellcolor[HTML]{34CDF9}convolution       & 256x256x36                  & 1x1x16  & 256x256x16              \\ \hline
+  \cellcolor[HTML]{F934CD}pooling           & 256x256x16                  & 2x2     & 128x128x16              \\ \hline
+  \end{tabular}
+  \end{table}
+}
+
+
 \end{frame}
 
 \begin{frame}{\bf Experiments}
@@ -352,12 +395,12 @@ and finally the weights learning rule
     \begin{tabular}{|l|c|c|}
     \hline
     \textbf{layer type}                       & \textbf{input dimensions} & \textbf{kernel dimensions} \\ \hline
-    \cellcolor[HTML]{0000FB}dense convolution & 22x22x1                   & 3x3x8                      \\ \hline
-    \cellcolor[HTML]{0000FB}dense convolution & 22x22x9                  & 3x3x8                      \\ \hline
-    \cellcolor[HTML]{0000FB}dense convolution & 22x22x17                  & 3x3x8                      \\ \hline
-    \cellcolor[HTML]{0000FB}dense convolution & 22x22x25                  & 3x3x8                      \\ \hline
-    \cellcolor[HTML]{67FD9A}convolution       & 22x22x33                  & 3x3x32                     \\ \hline
-    \cellcolor[HTML]{FD6864}full connected    & 22x22x32                  & actions\_count             \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x1                   & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x9                  & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x17                  & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x25                  & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{34CDF9}convolution       & 22x22x33                  & 3x3x32                     \\ \hline
+    \cellcolor[HTML]{67FD9A}full connected    & 22x22x32                  & actions\_count             \\ \hline
     \end{tabular}
     \end{table}
   }

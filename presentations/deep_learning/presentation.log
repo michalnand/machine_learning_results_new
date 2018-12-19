@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  17 DEC 2018 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  19 DEC 2018 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1597,47 +1597,54 @@ NG copy)> <../../pictures/robot_ascender.jpg>]
 File: ../../diagrams/rbc_net_6_cnn_architecture.png Graphic file (type png)
 <use ../../diagrams/rbc_net_6_cnn_architecture.png>
 Package pdftex.def Info: ../../diagrams/rbc_net_6_cnn_architecture.png  used on
- input line 299.
+ input line 316.
 (pdftex.def)             Requested size: 211.99632pt x 32.12065pt.
-<../../diagrams/rbc_deep_network_6.png, id=94, 803.0pt x 833.1125pt>
+<../../pictures/rbc_channel.png, id=94, 1394.20876pt x 758.835pt>
+File: ../../pictures/rbc_channel.png Graphic file (type png)
+<use ../../pictures/rbc_channel.png>
+Package pdftex.def Info: ../../pictures/rbc_channel.png  used on input line 316
+.
+(pdftex.def)             Requested size: 167.29782pt x 91.05626pt.
+
+Overfull \hbox (13.6529pt too wide) in paragraph at lines 316--316
+ [] 
+ []
+
+<../../diagrams/rbc_deep_network_6.png, id=95, 803.0pt x 833.1125pt>
 File: ../../diagrams/rbc_deep_network_6.png Graphic file (type png)
 <use ../../diagrams/rbc_deep_network_6.png>
 Package pdftex.def Info: ../../diagrams/rbc_deep_network_6.png  used on input l
-ine 299.
-(pdftex.def)             Requested size: 120.4448pt x 124.96147pt.
-
-Overfull \vbox (10.1764pt too high) detected at line 299
- []
-
+ine 316.
+(pdftex.def)             Requested size: 96.35583pt x 99.96918pt.
 [8
 
- <../../diagrams/rbc_net_6_cnn_architecture.png> <../../diagrams/rbc_deep_netwo
-rk_6.png>]
-<../../diagrams/rl_mechanism.png, id=102, 566.82353pt x 388.98265pt>
+ <../../diagrams/rbc_net_6_cnn_architecture.png> <../../pictures/rbc_channel.pn
+g (PNG copy)> <../../diagrams/rbc_deep_network_6.png>]
+<../../diagrams/rl_mechanism.png, id=103, 566.82353pt x 388.98265pt>
 File: ../../diagrams/rl_mechanism.png Graphic file (type png)
 <use ../../diagrams/rl_mechanism.png>
-Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 32
-1.
+Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 33
+8.
 (pdftex.def)             Requested size: 170.04837pt x 116.69568pt.
 
-Overfull \vbox (2.5778pt too high) detected at line 321
+Overfull \vbox (2.5778pt too high) detected at line 338
  []
 
 [9
 
  <../../diagrams/rl_mechanism.png>]
-Overfull \hbox (16.6601pt too wide) detected at line 341
+Overfull \hbox (16.6601pt too wide) detected at line 358
 []
  []
 
-<../../diagrams/dueling_dqn_0.png, id=110, 977.6525pt x 375.4025pt>
+<../../diagrams/dueling_dqn_0.png, id=111, 977.6525pt x 375.4025pt>
 File: ../../diagrams/dueling_dqn_0.png Graphic file (type png)
 <use ../../diagrams/dueling_dqn_0.png>
 Package pdftex.def Info: ../../diagrams/dueling_dqn_0.png  used on input line 3
-41.
+58.
 (pdftex.def)             Requested size: 293.298pt x 112.62161pt.
 
-Overfull \vbox (4.07417pt too high) detected at line 341
+Overfull \vbox (4.07417pt too high) detected at line 358
  []
 
 [10
@@ -1645,22 +1652,22 @@ Overfull \vbox (4.07417pt too high) detected at line 341
  <../../diagrams/dueling_dqn_0.png>] [11
 
 ]
-<../../pictures/go_board.png, id=141, 803.0pt x 833.1125pt>
+<../../pictures/go_board.png, id=142, 803.0pt x 833.1125pt>
 File: ../../pictures/go_board.png Graphic file (type png)
 <use ../../pictures/go_board.png>
-Package pdftex.def Info: ../../pictures/go_board.png  used on input line 397.
+Package pdftex.def Info: ../../pictures/go_board.png  used on input line 414.
 (pdftex.def)             Requested size: 144.53375pt x 149.95378pt.
  [12
 
  <../../pictures/go_board.png>]
-<../../pictures/go_deep_cnn_architecture.png, id=150, 6905.8pt x 803.0pt>
+<../../pictures/go_deep_cnn_architecture.png, id=151, 6905.8pt x 803.0pt>
 File: ../../pictures/go_deep_cnn_architecture.png Graphic file (type png)
 <use ../../pictures/go_deep_cnn_architecture.png>
 Package pdftex.def Info: ../../pictures/go_deep_cnn_architecture.png  used on i
-nput line 413.
+nput line 430.
 (pdftex.def)             Requested size: 338.35556pt x 39.34366pt.
 
-Overfull \hbox (31.06569pt too wide) in paragraph at lines 413--413
+Overfull \hbox (31.06569pt too wide) in paragraph at lines 430--430
  [] 
  []
 
@@ -1669,18 +1676,18 @@ Overfull \hbox (31.06569pt too wide) in paragraph at lines 413--413
  <../../pictures/go_deep_cnn_architecture.png (PNG copy)>] [14
 
 ]
-<../../pictures/moves_success_rate_testing_top5.png, id=164, 1644.544pt x 1731.
+<../../pictures/moves_success_rate_testing_top5.png, id=165, 1644.544pt x 1731.
 268pt>
 File: ../../pictures/moves_success_rate_testing_top5.png Graphic file (type png
 )
 <use ../../pictures/moves_success_rate_testing_top5.png>
 Package pdftex.def Info: ../../pictures/moves_success_rate_testing_top5.png  us
-ed on input line 460.
+ed on input line 477.
 (pdftex.def)             Requested size: 197.33676pt x 207.7432pt.
  [15
 
  <../../pictures/moves_success_rate_testing_top5.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 480.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 497.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1688,10 +1695,10 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [16
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-<../../pictures/me.jpg, id=198, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=199, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 499.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 516.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
  [17
 
@@ -1705,19 +1712,19 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 499.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 502.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 502.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 519.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 519.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 502.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 502.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 519.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 519.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23472 strings out of 492982
- 424928 string characters out of 6134895
+ 23477 strings out of 492982
+ 425082 string characters out of 6134895
  632858 words of memory out of 5000000
- 26411 multiletter control sequences out of 15000+600000
+ 26415 multiletter control sequences out of 15000+600000
  25246 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,62p,803b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1749,10 +1756,10 @@ f/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sftt1095.pfb>
-Output written on presentation.pdf (17 pages, 7464611 bytes).
+Output written on presentation.pdf (17 pages, 7554868 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
+ 317 PDF objects out of 1000 (max. 8388607)
  222 compressed objects within 3 object streams
  37 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

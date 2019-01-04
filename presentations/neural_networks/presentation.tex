@@ -320,6 +320,184 @@ special case for $y(x) = RELU(x)$
 
 
 \begin{frame}{\bf Convolutional neural networks}
+
+\begin{itemize}
+    \item goal : recognize image patterns
+    \item input   : RGB image, 256x256 pixels
+    \item output   : three classes mountain, car, fruit
+\end{itemize}
+
+\begin{figure}
+  \includegraphics[scale=0.35]{../../diagrams/nn/cnn_problem_1.png}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{\bf Convolutional neural networks}
+
+\begin{itemize}
+    \item goal : detect image patterns, X and Os
+    \item input   : grayscale image, 1000x1000 pixels
+    \item output  : two matrices 1000x1000
+                    \begin{itemize}
+                        \item one for X desctions
+                        \item second for Os detection
+                    \end{itemize}
+    \item total weights count {\bf \color{red} $2*(1000^2*1000^2)$ = 2T}
+\end{itemize}
+
+\begin{figure}
+  \includegraphics[scale=0.25]{../../diagrams/nn/cnn_problem_2.png}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf Convolution pattern search}
+
+\begin{itemize}
+    \item two neurons
+    \item 25 weights each
+    \item shift 5x5 window over whole 1000x1000 image
+\end{itemize}
+
+\begin{columns}
+
+
+    \begin{column}{0.5\textwidth}
+
+    {\tiny
+        \begin{equation*}
+        \begin{pmatrix}
+        \begin{array}{rrrrr}
+            1  & 0 & 0 & 0 & 1\\
+            0  & 1 & 0 & 1 & 0 \\
+            0  & 0 & 1 & 0 & 0 \\
+            0  & 1 & 0 & 1 & 0 \\
+            1  & 0 & 0 & 0 & 1 \\
+        \end{array}
+        \end{pmatrix}
+        \end{equation*}
+    }
+
+    \begin{figure}
+      \includegraphics[scale=0.05]{../../diagrams/nn/x.png}
+    \end{figure}
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+
+    {\tiny
+        \begin{equation*}
+        \begin{pmatrix}
+        \begin{array}{rrrrr}
+            0  & 1 & 1 & 1 & 0\\
+            1  & 0 & 0 & 0 & 1 \\
+            1  & 0 & 0 & 0 & 1 \\
+            1  & 0 & 0 & 0 & 1 \\
+            0  & 1 & 1 & 1 & 0 \\
+        \end{array}
+        \end{pmatrix}
+        \end{equation*}
+    }
+
+    \begin{figure}
+      \includegraphics[scale=0.05]{../../diagrams/nn/o.png}
+    \end{figure}
+
+    \end{column}
+
+
+\end{columns}
+
+\begin{figure}
+  \includegraphics[scale=0.8]{../../diagrams/nn/convolution_2d.png}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{\bf Minimal toy CNN}
+
+\begin{figure}
+  \includegraphics[scale=0.2]{../../diagrams/nn/toy_cnn.png}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf Minimal toy CNN parameters}
+
+\begin{figure}
+  \includegraphics[scale=0.1]{../../diagrams/nn/toy_cnn.png}
+\end{figure}
+
+\begin{itemize}
+    \item 5 kernels, 5x5 + 1 parameters each, 130 weights
+    \item 3 full connected, 5 + 1 parameters each, 18 weights
+    \item total parameters to learn {\bf \color{red} 148}
+    \item parameters count is {\bf \color{red} INVARIANT} to input size
+    \item recognition ability is also {\bf \color{red} SHIFT INVARIANT}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{\bf Pooling - subsampling}
+
+\begin{figure}
+  \includegraphics[scale=0.2]{../../diagrams/pooling.png}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{\bf Convolutional network example}
+
+\begin{figure}
+  \includegraphics[scale=0.25]{../../diagrams/nn/cnn.png}
+\end{figure}
+
+\begin{itemize}
+    \item layers count : 10 .. 100
+    \item kernels size : 1x1, 3x3 or 5x5
+    \item pooling size : 2x2
+    \item activation   : ReLU, LeakyReLU
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{\bf Advanced Convolutional network architectures}
+\begin{itemize}
+  \item Old methods (before NN) - 2011, 25.8\%
+  \item Convolutional, AlexNet - 2012, 16.4\%
+  \item Google inception - 2013, 6.7\%
+  \item Microsoft ResNet - 2015, 6.1\%
+  \item DenseNet - 2018, 5.17\%
+\end{itemize}
+
+\begin{itemize}
+
+    \item CNN
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_conv.png}
+    \end{figure}
+
+    \item ResNET
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_resnet.png}
+    \end{figure}
+
+    \item DenseNet
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_densenet.png}
+    \end{figure}
+
+\end{itemize}
+
 \end{frame}
 
 

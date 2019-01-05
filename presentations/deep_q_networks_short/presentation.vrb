@@ -1,0 +1,35 @@
+\frametitle{\bf Optimize kernel - SIMD}
+
+
+\lstset{language=C++,
+                basicstyle=\small,
+                emph={int,char,double,float,unsigned},
+                emphstyle={\color{blue}},
+                numberstyle=\color{green}\tiny,
+                keywordstyle=\color{red}\bf\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}
+}
+
+\begin{lstlisting}
+
+sum+= kernel[0][0]*input[y + 0][x + 0];
+sum+= kernel[0][1]*input[y + 0][x + 1];
+sum+= kernel[0][2]*input[y + 0][x + 2];
+
+
+smlabb	r2, fp, sl, r2
+ldrsb.w	sl, [r8, #1]
+ldrsb.w	fp, [r0, #-24]
+
+smlabb	r2, fp, sl, r2
+ldrsb.w	sl, [r8, #2]
+ldrsb.w	fp, [r0, #-23]
+
+smlabb	r2, fp, sl, r2
+ldrsb.w	sl, [r8, #3]
+ldrsb.w	fp, [r0, #-22]
+
+\end{lstlisting}
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  17 DEC 2018 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  5 JAN 2019 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1530,156 +1530,203 @@ ne 194.
 (pdftex.def)             Requested size: 141.70337pt x 95.79147pt.
  [4
 
- <../../diagrams/q_learning_detail.png>] [5
+ <../../diagrams/q_learning_detail.png>]
+<../../diagrams/q_learning_example_01.png, id=66, 642.4pt x 718.685pt>
+File: ../../diagrams/q_learning_example_01.png Graphic file (type png)
+<use ../../diagrams/q_learning_example_01.png>
+Package pdftex.def Info: ../../diagrams/q_learning_example_01.png  used on inpu
+t line 225.
+(pdftex.def)             Requested size: 128.47772pt x 143.73445pt.
 
-]
-<../../diagrams/dqn.png, id=74, 576.1525pt x 501.875pt>
-File: ../../diagrams/dqn.png Graphic file (type png)
-<use ../../diagrams/dqn.png>
-Package pdftex.def Info: ../../diagrams/dqn.png  used on input line 247.
-(pdftex.def)             Requested size: 92.18628pt x 80.30164pt.
+Overfull \hbox (10.81386pt too wide) in paragraph at lines 225--225
+ [] 
+ []
 
-Overfull \vbox (0.47119pt too high) detected at line 247
+[5
+
+ <../../diagrams/q_learning_example_01.png>]
+<../../diagrams/q_learning_example_02.png, id=77, 642.4pt x 744.381pt>
+File: ../../diagrams/q_learning_example_02.png Graphic file (type png)
+<use ../../diagrams/q_learning_example_02.png>
+Package pdftex.def Info: ../../diagrams/q_learning_example_02.png  used on inpu
+t line 276.
+(pdftex.def)             Requested size: 96.35583pt x 111.65233pt.
+
+Overfull \hbox (17.74275pt too wide) in paragraph at lines 276--276
+ [] 
+ []
+
+
+Overfull \hbox (2.64711pt too wide) in paragraph at lines 276--276
+ [] 
  []
 
 [6
 
- <../../diagrams/dqn.png>]
-Overfull \hbox (16.6601pt too wide) detected at line 266
-[]
- []
+ <../../diagrams/q_learning_example_02.png>]
+<../../diagrams/q_learning_example_03.png, id=87, 642.4pt x 718.685pt>
+File: ../../diagrams/q_learning_example_03.png Graphic file (type png)
+<use ../../diagrams/q_learning_example_03.png>
+Package pdftex.def Info: ../../diagrams/q_learning_example_03.png  used on inpu
+t line 329.
+(pdftex.def)             Requested size: 96.35583pt x 107.7981pt.
 
-<../../diagrams/dueling_dqn_0.png, id=83, 977.6525pt x 375.4025pt>
-File: ../../diagrams/dueling_dqn_0.png Graphic file (type png)
-<use ../../diagrams/dueling_dqn_0.png>
-Package pdftex.def Info: ../../diagrams/dueling_dqn_0.png  used on input line 2
-66.
-(pdftex.def)             Requested size: 293.298pt x 112.62161pt.
-
-Overfull \vbox (4.07417pt too high) detected at line 266
+Overfull \hbox (17.74275pt too wide) in paragraph at lines 329--329
+ [] 
  []
 
 [7
 
- <../../diagrams/dueling_dqn_0.png>]
-<../../diagrams/dueling_dqn_1.png, id=93, 1155.31625pt x 956.57375pt>
-File: ../../diagrams/dueling_dqn_1.png Graphic file (type png)
-<use ../../diagrams/dueling_dqn_1.png>
-Package pdftex.def Info: ../../diagrams/dueling_dqn_1.png  used on input line 2
-80.
-(pdftex.def)             Requested size: 207.94795pt x 172.17584pt.
-
-Overfull \vbox (4.50206pt too high) detected at line 280
- []
-
-[8
-
- <../../diagrams/dueling_dqn_1.png>] [9
+ <../../diagrams/q_learning_example_03.png>] [8
 
 ]
-<../../diagrams/dnn_conv.png, id=118, 759.83875pt x 138.5175pt>
-File: ../../diagrams/dnn_conv.png Graphic file (type png)
-<use ../../diagrams/dnn_conv.png>
-Package pdftex.def Info: ../../diagrams/dnn_conv.png  used on input line 351.
-(pdftex.def)             Requested size: 113.97089pt x 20.77672pt.
-<../../diagrams/dnn_resnet.png, id=119, 765.86125pt x 214.8025pt>
-File: ../../diagrams/dnn_resnet.png Graphic file (type png)
-<use ../../diagrams/dnn_resnet.png>
-Package pdftex.def Info: ../../diagrams/dnn_resnet.png  used on input line 351.
+<../../diagrams/dqn.png, id=104, 576.1525pt x 501.875pt>
+File: ../../diagrams/dqn.png Graphic file (type png)
+<use ../../diagrams/dqn.png>
+Package pdftex.def Info: ../../diagrams/dqn.png  used on input line 379.
+(pdftex.def)             Requested size: 92.18628pt x 80.30164pt.
 
-(pdftex.def)             Requested size: 114.87422pt x 32.21898pt.
-<../../diagrams/dnn_densenet.png, id=120, 782.925pt x 328.22626pt>
-File: ../../diagrams/dnn_densenet.png Graphic file (type png)
-<use ../../diagrams/dnn_densenet.png>
-Package pdftex.def Info: ../../diagrams/dnn_densenet.png  used on input line 35
-1.
-(pdftex.def)             Requested size: 117.43369pt x 49.23181pt.
- [10
+Overfull \vbox (0.47119pt too high) detected at line 379
+ []
 
- <../../diagrams/dnn_conv.png (PNG copy)> <../../diagrams/dnn_resnet.png (PNG c
-opy)> <../../diagrams/dnn_densenet.png (PNG copy)>]
-<../../diagrams/catcher.png, id=127, 803.0pt x 632.3625pt>
-File: ../../diagrams/catcher.png Graphic file (type png)
-<use ../../diagrams/catcher.png>
-Package pdftex.def Info: ../../diagrams/catcher.png  used on input line 408.
-(pdftex.def)             Requested size: 160.59715pt x 126.47026pt.
+[9
 
-Overfull \hbox (6.95222pt too wide) in paragraph at lines 408--408
- [] 
+ <../../diagrams/dqn.png>]
+Overfull \hbox (16.6601pt too wide) detected at line 398
+[]
+ []
+
+<../../diagrams/dueling_dqn_0.png, id=113, 977.6525pt x 375.4025pt>
+File: ../../diagrams/dueling_dqn_0.png Graphic file (type png)
+<use ../../diagrams/dueling_dqn_0.png>
+Package pdftex.def Info: ../../diagrams/dueling_dqn_0.png  used on input line 3
+98.
+(pdftex.def)             Requested size: 293.298pt x 112.62161pt.
+
+Overfull \vbox (4.07417pt too high) detected at line 398
+ []
+
+[10
+
+ <../../diagrams/dueling_dqn_0.png>]
+<../../diagrams/dueling_dqn_1.png, id=122, 1155.31625pt x 956.57375pt>
+File: ../../diagrams/dueling_dqn_1.png Graphic file (type png)
+<use ../../diagrams/dueling_dqn_1.png>
+Package pdftex.def Info: ../../diagrams/dueling_dqn_1.png  used on input line 4
+12.
+(pdftex.def)             Requested size: 207.94795pt x 172.17584pt.
+
+Overfull \vbox (4.50206pt too high) detected at line 412
  []
 
 [11
 
- <../../diagrams/catcher.png>]
-<../../rl_results/dqn_test/rl_progress_training.png, id=138, 770.88pt x 578.16p
-t>
-File: ../../rl_results/dqn_test/rl_progress_training.png Graphic file (type png
-)
-<use ../../rl_results/dqn_test/rl_progress_training.png>
-Package pdftex.def Info: ../../rl_results/dqn_test/rl_progress_training.png  us
-ed on input line 425.
-(pdftex.def)             Requested size: 138.75241pt x 104.0643pt.
-<../../rl_results/dqn_test/rl_progress_testing.png, id=139, 770.88pt x 578.16pt
->
-File: ../../rl_results/dqn_test/rl_progress_testing.png Graphic file (type png)
+ <../../diagrams/dueling_dqn_1.png>] [12
 
-<use ../../rl_results/dqn_test/rl_progress_testing.png>
-Package pdftex.def Info: ../../rl_results/dqn_test/rl_progress_testing.png  use
-d on input line 425.
-(pdftex.def)             Requested size: 138.75241pt x 104.0643pt.
- [12
+]
+<../../diagrams/dnn_conv.png, id=146, 759.83875pt x 138.5175pt>
+File: ../../diagrams/dnn_conv.png Graphic file (type png)
+<use ../../diagrams/dnn_conv.png>
+Package pdftex.def Info: ../../diagrams/dnn_conv.png  used on input line 483.
+(pdftex.def)             Requested size: 113.97089pt x 20.77672pt.
+<../../diagrams/dnn_resnet.png, id=147, 765.86125pt x 214.8025pt>
+File: ../../diagrams/dnn_resnet.png Graphic file (type png)
+<use ../../diagrams/dnn_resnet.png>
+Package pdftex.def Info: ../../diagrams/dnn_resnet.png  used on input line 483.
 
- <../../rl_results/dqn_test/rl_progress_training.png> <../../rl_results/dqn_tes
-t/rl_progress_testing.png>]
-<../../pictures/go_board.png, id=150, 803.0pt x 833.1125pt>
-File: ../../pictures/go_board.png Graphic file (type png)
-<use ../../pictures/go_board.png>
-Package pdftex.def Info: ../../pictures/go_board.png  used on input line 453.
-(pdftex.def)             Requested size: 144.53375pt x 149.95378pt.
+(pdftex.def)             Requested size: 114.87422pt x 32.21898pt.
+<../../diagrams/dnn_densenet.png, id=148, 782.925pt x 328.22626pt>
+File: ../../diagrams/dnn_densenet.png Graphic file (type png)
+<use ../../diagrams/dnn_densenet.png>
+Package pdftex.def Info: ../../diagrams/dnn_densenet.png  used on input line 48
+3.
+(pdftex.def)             Requested size: 117.43369pt x 49.23181pt.
  [13
 
- <../../pictures/go_board.png>]
-<../../pictures/go_deep_cnn_architecture.png, id=159, 6905.8pt x 803.0pt>
-File: ../../pictures/go_deep_cnn_architecture.png Graphic file (type png)
-<use ../../pictures/go_deep_cnn_architecture.png>
-Package pdftex.def Info: ../../pictures/go_deep_cnn_architecture.png  used on i
-nput line 469.
-(pdftex.def)             Requested size: 338.35556pt x 39.34366pt.
+ <../../diagrams/dnn_conv.png (PNG copy)> <../../diagrams/dnn_resnet.png (PNG c
+opy)> <../../diagrams/dnn_densenet.png (PNG copy)>]
+<../../diagrams/catcher.png, id=156, 803.0pt x 632.3625pt>
+File: ../../diagrams/catcher.png Graphic file (type png)
+<use ../../diagrams/catcher.png>
+Package pdftex.def Info: ../../diagrams/catcher.png  used on input line 540.
+(pdftex.def)             Requested size: 160.59715pt x 126.47026pt.
 
-Overfull \hbox (31.06569pt too wide) in paragraph at lines 469--469
+Overfull \hbox (6.95222pt too wide) in paragraph at lines 540--540
  [] 
  []
 
 [14
 
- <../../pictures/go_deep_cnn_architecture.png (PNG copy)>] [15
+ <../../diagrams/catcher.png>]
+<../../rl_results/dqn_test/rl_progress_training.png, id=166, 770.88pt x 578.16p
+t>
+File: ../../rl_results/dqn_test/rl_progress_training.png Graphic file (type png
+)
+<use ../../rl_results/dqn_test/rl_progress_training.png>
+Package pdftex.def Info: ../../rl_results/dqn_test/rl_progress_training.png  us
+ed on input line 557.
+(pdftex.def)             Requested size: 138.75241pt x 104.0643pt.
+<../../rl_results/dqn_test/rl_progress_testing.png, id=167, 770.88pt x 578.16pt
+>
+File: ../../rl_results/dqn_test/rl_progress_testing.png Graphic file (type png)
+
+<use ../../rl_results/dqn_test/rl_progress_testing.png>
+Package pdftex.def Info: ../../rl_results/dqn_test/rl_progress_testing.png  use
+d on input line 557.
+(pdftex.def)             Requested size: 138.75241pt x 104.0643pt.
+ [15
+
+ <../../rl_results/dqn_test/rl_progress_training.png> <../../rl_results/dqn_tes
+t/rl_progress_testing.png>]
+<../../pictures/go_board.png, id=178, 803.0pt x 833.1125pt>
+File: ../../pictures/go_board.png Graphic file (type png)
+<use ../../pictures/go_board.png>
+Package pdftex.def Info: ../../pictures/go_board.png  used on input line 585.
+(pdftex.def)             Requested size: 144.53375pt x 149.95378pt.
+ [16
+
+ <../../pictures/go_board.png>]
+<../../pictures/go_deep_cnn_architecture.png, id=186, 6905.8pt x 803.0pt>
+File: ../../pictures/go_deep_cnn_architecture.png Graphic file (type png)
+<use ../../pictures/go_deep_cnn_architecture.png>
+Package pdftex.def Info: ../../pictures/go_deep_cnn_architecture.png  used on i
+nput line 601.
+(pdftex.def)             Requested size: 338.35556pt x 39.34366pt.
+
+Overfull \hbox (31.06569pt too wide) in paragraph at lines 601--601
+ [] 
+ []
+
+[17
+
+ <../../pictures/go_deep_cnn_architecture.png (PNG copy)>] [18
 
 ]
-<../../pictures/moves_success_rate_testing_top5.png, id=172, 1644.544pt x 1731.
+<../../pictures/moves_success_rate_testing_top5.png, id=200, 1644.544pt x 1731.
 268pt>
 File: ../../pictures/moves_success_rate_testing_top5.png Graphic file (type png
 )
 <use ../../pictures/moves_success_rate_testing_top5.png>
 Package pdftex.def Info: ../../pictures/moves_success_rate_testing_top5.png  us
-ed on input line 516.
+ed on input line 648.
 (pdftex.def)             Requested size: 197.33676pt x 207.7432pt.
- [16
+ [19
 
  <../../pictures/moves_success_rate_testing_top5.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 536.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 668.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [17
+) [20
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-<../../pictures/me.jpg, id=206, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=234, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 555.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 687.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
- [18
+ [21
 
  <../../pictures/me.jpg>]
 \tf@nav=\write6
@@ -1691,20 +1738,20 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 555.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 690.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 690.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 690.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 690.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23473 strings out of 492982
- 424563 string characters out of 6134895
- 633189 words of memory out of 5000000
- 26406 multiletter control sequences out of 15000+600000
- 25246 words of font info for 65 fonts, out of 8000000 for 9000
+ 23515 strings out of 492982
+ 425482 string characters out of 6134895
+ 634191 words of memory out of 5000000
+ 26436 multiletter control sequences out of 15000+600000
+ 29993 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,62p,803b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -1728,17 +1775,19 @@ e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1728.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sftt1095.pfb>
-Output written on presentation.pdf (18 pages, 5896253 bytes).
+c/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1728.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfsx0600.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on presentation.pdf (21 pages, 6161040 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

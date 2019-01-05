@@ -1,0 +1,662 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,slovak]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usetheme{Pittsburgh}
+\useoutertheme{shadow}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[]{algorithm2e}
+\usepackage{listings}
+ \setbeamercovered{transparent}
+ \usepackage{cuted}
+\usepackage[export]{adjustbox}
+\usepackage{mathtools}
+
+\usepackage{lipsum}
+\usepackage{verbatim}
+\usepackage{transparent}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
+
+
+
+\iftrue
+
+\usetheme{Warsaw}
+
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+
+\setbeamercolor{alerted text}{fg=red!85!black}
+
+\setbeamercolor{item projected}{use=item,fg=black,bg=item.fg!35}
+
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+
+\setbeamercolor*{framesubtitle}{fg=white}
+
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+
+\fi
+
+
+
+%-------------------------------------------------------------------------------------
+\title{\color{white} \bf Deep Q networks}
+\author{\color{white} Michal CHOVANEC, PhD}
+
+
+%\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{navigation symbols}{}
+
+
+\date[EURP]{}
+\begin{document}
+
+{
+    \usebackgroundtemplate
+    {
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil
+
+        {\includegraphics[width=5.05in]{../../pictures/rl_square.jpg}}
+
+        \hfil}\vfil}
+    }
+    \begin{frame}
+
+    %\titlepage
+
+
+    \centering
+     \colorbox{black}
+     {
+        \begin{minipage}{7cm}
+           {\LARGE \color{white} \bf Deep Q networks} \\
+           {\LARGE \color{white} Michal CHOVANEC, PhD} \\
+       \end{minipage}
+     }
+
+
+    \end{frame}
+}
+
+
+
+\begin{frame}{\bf Reinforcement learning}
+
+\begin{itemize}
+  \item learn from punishment and rewards
+  \item learn to play a game with unknown rules
+\end{itemize}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+  \begin{figure}
+    \includegraphics[scale=0.5]{../../pictures/pacman.jpg}
+  \end{figure}
+
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+
+  \begin{figure}
+  \includegraphics[scale=0.15]{../../pictures/doom.jpg}
+  \end{figure}
+
+\end{column}
+\end{columns}
+
+\vspace{-40pt}
+\begin{figure}
+\includegraphics[scale=0.05]{../../pictures/chess.jpg}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{\bf Reinforcement learning}
+
+\begin{itemize}
+  \item obtain {\bf state}
+  \item choose {\bf action}
+  \item {\bf execute} action
+  \item obtain {\bf reward}
+  \item learn from {\bf experiences}
+\end{itemize}
+
+  \begin{figure}
+    \includegraphics[scale=0.3]{../../diagrams/rl_mechanism.png}
+  \end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf Q learning (1989)}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+  \begin{align*}
+  Q(s, a) = R + \gamma \max \limits_{\alpha'} Q(s', \alpha')
+  \end{align*}
+
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+
+
+  \begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.2]{../../diagrams/q_learning_detail.png}
+  \end{figure}
+
+\end{column}
+\end{columns}
+
+
+
+where \\
+$s$ is state \\
+$a$ is action \\
+$s'$ is next state \\
+$a'$ is best action in next state \\
+$R(s, a)$ is reward \\
+$\gamma \in \langle 0, 1 \rangle$ is discount factor \\
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{\bf Q learning - example}
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+
+        \begin{figure}
+          \includegraphics[scale=0.2]{../../diagrams/q_learning_example_01.png}
+        \end{figure}
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+
+    {\footnotesize
+        \begin{table}[]
+        \begin{tabular}{|l|l|l|l|l|l|l|}
+        \hline
+        \textbf{S} & \multicolumn{3}{c|}{\textbf{reward}}   & \multicolumn{3}{c|}{\textbf{Q(s,a)}} \\ \hline
+        \textbf{}  & \textbf{A0}       & \textbf{A1}        & \textbf{A2}       & \textbf{A0}       & \textbf{A1}      & \textbf{A2} \\ \hline
+        0          & 1                 & -1                 & 0.59              & 0                 & 0                & 0 \\ \hline
+        1          & -2                & x                  & x                 & 0                 & 0                & 0 \\ \hline
+        2          & 5                 & x                  & x                 & 0                 & 0                & 0  \\ \hline
+        3          & x                 & x                  & x                 & 0                 & 0                & 0 \\ \hline
+        \end{tabular}
+        \end{table}
+    }
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf Q learning - example}
+
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+
+        \begin{figure}
+          \includegraphics[scale=0.15]{../../diagrams/q_learning_example_02.png}
+        \end{figure}
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+
+    {\footnotesize
+
+
+    \begin{table}[]
+    \begin{tabular}{|l|l|l|l|l|l|l|}
+    \hline
+    \textbf{S} & \multicolumn{3}{c|}{\textbf{reward}} & \multicolumn{3}{c|}{\textbf{Q(s,a)}} \\ \hline
+    \textbf{}  & \textbf{A0}       & \textbf{A1}      & \textbf{A2} & \textbf{A0}       & \textbf{A1}      & \textbf{A2} \\ \hline
+    0          & 1                 & -1               & 0.5         & {\bf \color{red} 2.035}                 & {\bf \color{red} 3.5}                & 0 \\ \hline
+    1          & -2                & x                & x           & {\bf \color{red} 1.15}                   & 0                & 0 \\ \hline
+    2          & 5                 & x                & x           & {\bf \color{red} 5}                 & 0                & 0  \\ \hline
+    3          & x                 & x                & x           & 0                 & 0                & 0 \\ \hline
+    \end{tabular}
+    \end{table}
+
+    }
+
+    \end{column}
+\end{columns}
+
+{\small
+
+\begin{table}[]
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{state}  & \textbf{S0}                                                    & \textbf{S1}                                                    & \textbf{S0}                                              & \textbf{S2} & \textbf{S3} \\ \hline
+\textbf{action} & A0                                                             & A0                                                             & A1                                                       & A0          &             \\ \hline
+\textbf{reward} & +1                                                             & -2                                                             & -1                                                       & +5          &             \\ \hline
+\textbf{Q}      & \begin{tabular}[c]{@{}c@{}}1 + 0.9*1.15 =\\ 2.035\end{tabular} & \begin{tabular}[c]{@{}c@{}}-2 + 0.9*3.5 = \\ 1.15\end{tabular} & \begin{tabular}[c]{@{}c@{}}-1+0.9*5 =\\ 3.5\end{tabular} & 5           &             \\ \hline
+\end{tabular}
+\end{table}
+
+}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{\bf Q learning - example}
+
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+
+        \begin{figure}
+          \includegraphics[scale=0.15]{../../diagrams/q_learning_example_03.png}
+        \end{figure}
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+
+    {\footnotesize
+
+
+    \begin{table}[]
+    \begin{tabular}{|l|l|l|l|l|l|l|}
+    \hline
+    \textbf{S} & \multicolumn{3}{c|}{\textbf{reward}} & \multicolumn{3}{c|}{\textbf{Q(s,a)}} \\ \hline
+    \textbf{}  & \textbf{A0}       & \textbf{A1}      & \textbf{A2} & \textbf{A0}       & \textbf{A1}      & \textbf{A2} \\ \hline
+    0          & 1                 & -1               & 0.5         & {\bf 2.035}                 & {\bf 3.5}                & {\bf \color{red}5} \\ \hline
+    1          & -2                & x                & x           & {\bf 1.15}                   & 0                & 0 \\ \hline
+    2          & 5                 & x                & x           & {\bf \color{green} 5}                 & 0                & 0  \\ \hline
+    3          & x                 & x                & x           & 0                 & 0                & 0 \\ \hline
+    \end{tabular}
+    \end{table}
+
+    }
+
+    \end{column}
+\end{columns}
+
+{\small
+
+\begin{table}[]
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{state}  & \textbf{S0}                                               & \textbf{S2} & \textbf{S3} \\ \hline
+\textbf{action} & A2                                                        & A0          &             \\ \hline
+\textbf{reward} & 0.5                                                       & +5          &             \\ \hline
+\textbf{Q}      & \begin{tabular}[c]{@{}c@{}}0.5 + 0.9*5 =\\ 5\end{tabular} & 5           &             \\ \hline
+\end{tabular}
+\end{table}
+
+}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{\bf Deep Q network - DQN (2013)}
+
+
+Approximate $Q(s, a)$ using deep neural network as $\hat{Q}(s, a; w)$, where $w$ are learnable network parameters
+
+\begin{align*}
+  Q(s, a) &= R + \gamma \max \limits_{\alpha'} Q(s', \alpha') \\
+  \hat{Q}(s, a; w) &= R + \gamma \max \limits_{\alpha'} \hat{Q}(s', \alpha'; w)
+\end{align*}
+
+
+
+\begin{itemize}
+\item {\bf \color{red} correlated states} : experience replay buffer\\
+\item {\bf \color{red} unstable training} : \\
+non-stationary target value $\hat{Q}(s, a; w)$, depends on $w$
+\item {\bf \color{red} solution - fix $w$} : \\
+using temporary network with $w'$ weights.
+\end{itemize}
+{\bf DQN equation}
+\begin{align*}
+  \hat{Q}(s, a; w) &= R + \gamma \max \limits_{\alpha'} \hat{Q}(s', \alpha'; w') \\
+  \label{eq:dqn}
+\end{align*}
+
+
+
+\end{frame}
+
+\begin{frame}{\bf Deep Q network }
+
+    \begin{align*}
+      \hat{Q}(s, a; w) &= R + \gamma \max \limits_{\alpha'} \hat{Q}(s', \alpha'; w')
+    \end{align*}
+
+    \begin{figure}[!htb]
+      \centering
+      \includegraphics[scale=0.3]{../../diagrams/dqn.png}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}{\bf Dueling deep Q network - DDQN (2016)}
+
+\begin{align*}
+  \hat{Q}(s, a; w) = \underset{\bf \color{green} value\ for\ being\ in\ state\ s}{\hat{V}(s; w)} + \underset{\bf \color{red} advantage\ of\ taking\ action\ a\ at\ state\ s}{\hat{A}(s, a; w)}
+\end{align*}
+to avoid identifiability we substract average value of A truth all actions
+\begin{align*}
+  \hat{Q}(s, a; w) = \hat{V}(s; w) + \hat{A}(s, a; w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha'; w)
+\end{align*}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.3]{../../diagrams/dueling_dqn_0.png}
+  \label{img:ddqn_principle}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{\bf Dueling deep Q network - DDQN}
+
+\begin{align*}
+  \hat{Q}(s, a; w) = \hat{V}(s; w) + \hat{A}(s, a; w) - \frac{1}{N_{\alpha'}} \sum_{\alpha'} \hat{A}(s, \alpha'; w)
+\end{align*}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.18]{../../diagrams/dueling_dqn_1.png}
+  \label{img:ddqn_full}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf DenseNet}
+
+\begin{itemize}
+
+    \item CNN
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_conv.png}
+    \end{figure}
+
+    \item ResNET
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_resnet.png}
+    \end{figure}
+
+    \item DenseNet
+    \begin{figure}
+      \includegraphics[scale=0.15]{../../diagrams/dnn_densenet.png}
+    \end{figure}
+
+\end{itemize}
+
+
+\tiny
+{
+  \begin{table}[]
+  \centering
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+  \textbf{layer type}                       & \textbf{input dimensions} & \textbf{kernel dimensions} & \textbf{output dimensions} \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x4                   & 3x3x8   & 256x256x12              \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x12                  & 3x3x8   & 256x256x20              \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x20                  & 3x3x8   & 256x256x28              \\ \hline
+  \cellcolor[HTML]{FD6864}dense convolution & 256x256x28                  & 3x3x8   & 256x256x36              \\ \hline
+  \cellcolor[HTML]{34CDF9}convolution       & 256x256x36                  & 1x1x16  & 256x256x16              \\ \hline
+  \cellcolor[HTML]{F934CD}pooling           & 256x256x16                  & 2x2     & 128x128x16              \\ \hline
+  \end{tabular}
+  \end{table}
+}
+
+
+\end{frame}
+
+\begin{frame}{\bf Experiments}
+
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+
+    \begin{figure}[!htb]
+      \centering
+      \includegraphics[scale=0.2]{../../diagrams/catcher.png}
+      \label{img:dqn_test_game}
+    \end{figure}
+
+
+  \end{column}
+  \begin{column}{0.5\textwidth}  %%<--- here
+
+    \scriptsize
+    {
+      Network hyperparameters
+      \begin{itemize}
+        \item init weights  : XAVIER
+        \item learning rate : 0.0005
+        \item L1 regularization : 0.0000001
+        \item L2 regularization : 0.0000001
+        \item dropout           : 0.2
+        \item minibatch size    : 32
+      \end{itemize}
+
+      RL hyperparameters
+      \begin{itemize}
+        \item experience buffer size  : 1024
+        \item gamma : 0.95
+        \item epsilon training : 0.1
+        \item epsilon testing : 0.05
+      \end{itemize}
+    }
+  \end{column}
+  \end{columns}
+
+  \tiny
+  {
+    \begin{table}[]
+    \centering
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{layer type}                       & \textbf{input dimensions} & \textbf{kernel dimensions} \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x1                   & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x9                  & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x17                  & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{FD6864}dense convolution & 22x22x25                  & 3x3x8                      \\ \hline
+    \cellcolor[HTML]{34CDF9}convolution       & 22x22x33                  & 3x3x32                     \\ \hline
+    \cellcolor[HTML]{67FD9A}full connected    & 22x22x32                  & actions\_count             \\ \hline
+    \end{tabular}
+    \end{table}
+  }
+
+\end{frame}
+
+\begin{frame}{\bf Results}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.18]{../../rl_results/dqn_test/rl_progress_training.png}
+  \label{img:dqn_test_training_progress}
+\end{figure}
+
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.18]{../../rl_results/dqn_test/rl_progress_testing.png}
+  \label{img:dqn_test_testing_progress}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{\bf Playing GO (October 2017)}
+
+
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+
+    \begin{figure}[!htb]
+      \centering
+      \includegraphics[scale=0.18]{../../pictures/go_board.png}
+    \end{figure}
+
+
+  \end{column}
+  \begin{column}{0.5\textwidth}  %%<--- here
+
+    \scriptsize
+    {
+      \begin{itemize}
+        \item {\bf supervised training} - train game using Masters games
+        \item {\bf reinforcement learning} - let play two networks against each other
+      \end{itemize}
+    }
+  \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}{\bf Network architecture}
+we need to go much deeper for GO
+\begin{itemize}
+  \item {\bf 20 convolutional layers} \\ 4 blocks with 4 dense conv + 1 conv layer
+  \item {\bf input} \\ 4 matrices $19x19$: black stones, white stones, empty fields, active player
+  \item {\bf output} \\ recommended moves 19x19 + 1 for pass = 362 outputs
+
+\end{itemize}
+
+  \begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.049]{../../pictures/go_deep_cnn_architecture.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{\bf Network architecture}
+
+\scriptsize
+{
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{layer type}                       & \textbf{input size} & \textbf{kernel size} & \textbf{output size} \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x4             & 5x5x32               & 19x19x36             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x36            & 5x5x32               & 19x19x68             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x68            & 5x5x32               & 19x19x100            \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x100           & 5x5x32               & 19x19x132            \\ \hline
+\cellcolor[HTML]{34CDF9}convolution       & 19x19x132           & 1x1x32               & 19x19x32             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
+\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 1x1x32               & 19x19x32             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
+\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 1x1x32               & 19x19x32             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
+\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
+\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 5x5x64               & 19x19x64             \\ \hline
+\cellcolor[HTML]{67FD9A}full connected    & 19x19x64            & 19x19x362            & 362                  \\ \hline
+\end{tabular}
+\end{table}
+
+}
+
+\end{frame}
+
+
+\begin{frame}{\bf Supervised results}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.12]{../../pictures/moves_success_rate_testing_top5.png}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{\bf Usefull links}
+
+{\tiny
+  \begin{thebibliography}{9}
+    \bibitem {}CHRISTOPHER  J.C.H. WATKINS : Q-learning \\ \url{http://www.gatsby.ucl.ac.uk/~dayan/papers/cjch.pdf}
+    \bibitem {}Richard S. Sutton : Reinforcement Learning: An Introduction \\ \url{https://www.amazon.com/Reinforcement-Learning-Introduction-Adaptive-Computation/dp/0262193981}
+
+    \bibitem {}Google DeepMind : Playing Atari with Deep Reinforcement Learning \\ \url{https://arxiv.org/pdf/1312.5602.pdf}
+    \bibitem {}Google DeepMind : Dueling Network Architectures for Deep Reinforcement Learning \\ \url{https://arxiv.org/pdf/1511.06581.pdf}
+    \bibitem {}Google DeepMind :Mastering the Game of Go without Human Knowledge \\ \url{https://deepmind.com/documents/119/agz_unformatted\_nature.pdf}
+
+    \bibitem {}Andrej Karpathy : Pong from pixels \\ \url{http://karpathy.github.io/2016/05/31/rl/}
+    \bibitem {}Maxim Lapan : Deep reinforcement learning \\ \url{https://www.amazon.com/Practical-Reinforcement-Learning-Maxim-Lapan/dp/1788834240}
+    \bibitem {}Mohit Sewak : Practical Convolutional Neural \\ Networks \url{https://www.amazon.com/Practical-Convolutional-Neural-Networks-Implement/dp/1788392302}
+    \bibitem {}Densely Connected Convolutional Networks \\ \url{https://arxiv.org/pdf/1608.06993.pdf}
+  \end{thebibliography}
+}
+
+\end{frame}
+
+
+\begin{frame}{\bf Q\&A}
+
+\begin{figure}
+  \includegraphics[scale=0.25]{../../pictures/me.jpg}
+\end{figure}
+
+\centering {
+michal chovanec (michal.nand@gmail.com)
+\url{www.youtube.com/channel/UCzVvP2ou8v3afNiVrPAHQGg}
+}
+
+\centering {
+github
+\url{https://github.com/michalnand}
+}
+
+\end{frame}
+
+
+\end{document}

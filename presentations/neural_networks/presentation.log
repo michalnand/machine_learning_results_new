@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  5 JAN 2019 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  5 JAN 2019 13:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1649,12 +1649,12 @@ Package pdftex.def Info: ../../diagrams/pooling.png  used on input line 454.
  [18
 
  <../../diagrams/pooling.png (PNG copy)>]
-<../../diagrams/nn/cnn_layer.png, id=182, 1203.697pt x 411.939pt>
+<../../diagrams/nn/cnn_layer.png, id=182, 1205.303pt x 411.136pt>
 File: ../../diagrams/nn/cnn_layer.png Graphic file (type png)
 <use ../../diagrams/nn/cnn_layer.png>
 Package pdftex.def Info: ../../diagrams/nn/cnn_layer.png  used on input line 47
 4.
-(pdftex.def)             Requested size: 300.92351pt x 102.98448pt.
+(pdftex.def)             Requested size: 301.32501pt x 102.78374pt.
  [19
 
  <../../diagrams/nn/cnn_layer.png>]
@@ -1752,7 +1752,7 @@ m-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb
 onts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
 
-Output written on presentation.pdf (23 pages, 3932838 bytes).
+Output written on presentation.pdf (23 pages, 3932958 bytes).
 PDF statistics:
  326 PDF objects out of 1000 (max. 8388607)
  227 compressed objects within 3 object streams

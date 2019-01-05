@@ -453,6 +453,27 @@ special case for $y(x) = RELU(x)$
 
 \end{frame}
 
+\begin{frame}{\bf What is conv layer doing?}
+
+\begin{figure}
+  \includegraphics[scale=0.25]{../../diagrams/nn/cnn_layer.png}
+\end{figure}
+
+\begin{itemize}
+    \item tensor space transformation
+        from $I_w\times I_h \times I_d$ to $O_w\times O_h \times I_c$
+
+        using 4D kernel with dimensions $K_w \times K_h \times I_d \times K_c$
+
+    \item if  $K_c > I_d$ sparse features are searched
+    \item if  $K_c < I_d$ space compresion is done
+
+\end{itemize}
+
+
+\end{frame}
+
+
 
 \begin{frame}{\bf Convolutional network example}
 
@@ -468,6 +489,7 @@ special case for $y(x) = RELU(x)$
 \end{itemize}
 
 \end{frame}
+
 
 
 \begin{frame}{\bf Advanced Convolutional network architectures}

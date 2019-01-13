@@ -1,0 +1,60 @@
+\documentclass[10pt,a5paper]{article}
+\renewcommand{\baselinestretch}{1.0}
+\usepackage{cite}
+\usepackage[dvips]{graphicx}
+\usepackage{psfrag}
+\usepackage{color}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsfonts}
+\usepackage[font=footnotesize, captionskip=10pt]{subfig}
+\usepackage{tikz}
+\usepackage{flushend}
+\usepackage{times}
+\usepackage[margin=1.5cm]{geometry}
+\pagestyle{empty}
+
+\hyphenation{net-works}
+\newtheorem{remark}{Remark}
+
+\begin{document}
+
+\title{Deep Q networks}
+\author{Michal Chovanec$^1$
+michal.chovanec@fri.uniza.sk}
+\date{}
+\maketitle
+\thispagestyle{empty}
+
+\noindent$^1$\ Department of technical cybernetics, \\
+Faculty of management science and informatics, University of Zilina\\
+
+\noindent {\bf Keywords:} reinforcement learning, deep learning, deep Q network
+
+\noindent {\bf Abstract:}
+Reinforcement learning algorithms become more popular since
+DeepMind achieved super human performance on Atari Games \cite{bib:atari}.
+Deep Q networks (DQN) extends original Q-learning \cite{bib:q_learning} and solve
+the curse of dimensionality problem in huge state space.
+Algorithms are based on Q-function approximation, using deep neural networks - Q networks.
+Those networks are capable to learn control agent in Markov decision process
+ \cite{bib:rl_intro} to maximize resulted score.
+ We presents some experiments using DQN and their variations, such
+ prioritized DQN and dueling DQN. Our experiments are focused to compare
+ different approaches, such network architectures, hyperparameters and
+ state space modifications. Our long term goal, is to solve Go Game \cite{bib:alpha_go} using
+ end-to-end learning.
+
+
+%\bibliographystyle{IEEEtran}
+
+\begin{thebibliography}{9}
+
+    \bibitem{bib:atari} Google DeepMind : Playing Atari with Deep Reinforcement Learning
+    \bibitem{bib:q_learning} CHRISTOPHER  J.C.H. WATKINS : Q-learning
+    \bibitem{bib:rl_intro} Richard S. Sutton : Reinforcement Learning: An Introduction
+    \bibitem{bib:alpha_go} Google DeepMind :Mastering the Game of Go without Human Knowledge
+
+\end{thebibliography}
+
+
+\end{document}

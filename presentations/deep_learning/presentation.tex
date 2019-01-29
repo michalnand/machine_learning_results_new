@@ -27,6 +27,7 @@
 
 \usepackage{multirow}
 \usepackage{colortbl}
+\usepackage{lmodern}
 
 \newcommand\Wider[2][3em]{%
 \makebox[\linewidth][c]{%
@@ -39,7 +40,7 @@
 
 
 
-\iftrue
+\iffalse
 
 \usetheme{Warsaw}
 
@@ -153,7 +154,7 @@
 
 \end{frame}
 
-\begin{frame}{\bf Deep learning}
+\begin{frame}{\bf Deep learning \footnotemark}
 
 \begin{itemize}
   \item classification
@@ -162,6 +163,14 @@
   \item unsupervised features extraction
   \item reinforcement learning
 \end{itemize}
+
+
+\begin{figure}
+\includegraphics[scale=0.1]{../../pictures/dl_vs_ml.png}
+\end{figure}
+
+
+\footnotetext[1]{\url {https://medium.com/datamob/clearing-the-buzzwords-in-machine-learning-e395ad73178b}}
 
 \end{frame}
 
@@ -301,29 +310,75 @@ Curve shape classification
 \end{itemize}
 
 \begin{figure}
-  \includegraphics[scale=0.08]{../../diagrams/rbc_net_6_cnn_architecture.png}
+  \includegraphics[scale=0.1]{../../pictures/rbc_channel.png}
 \end{figure}
 
 
-\begin{columns}
-
-    \begin{column}{0.5\textwidth}
-    \begin{figure}
-      \includegraphics[scale=0.12]{../../pictures/rbc_channel.png}
-    \end{figure}
-    \end{column}
+\begin{figure}
+  \includegraphics[scale=0.15]{../../diagrams/cells_prediction_velocity_integration.png}
+\end{figure}
 
 
-    \begin{column}{0.5\textwidth}  %%<--- here
-    \begin{figure}
-      \includegraphics[scale=0.12]{../../diagrams/rbc_deep_network_6.png}
-    \end{figure}
-    \end{column}
-
-\end{columns}
+\end{frame}
 
 
+\begin{frame}{\bf Networks}
 
+
+{\fontsize{5.2}{7}\selectfont
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{layer} & \textbf{net 0}                 & \textbf{net 1}                                                                 & \textbf{net 2}                                                                      & \textbf{net 3}                                                                      & \textbf{net 4}                                                                      & \textbf{net 5}                                                                      & \textbf{net 6}                                                                      & \textbf{net 7}                                                                      \\ \hline
+0              & \cellcolor[HTML]{67FD9A}fc 256 & \cellcolor[HTML]{34CDF9}\begin{tabular}[c]{@{}l@{}}conv \\ 3x3x32\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+1              & \cellcolor[HTML]{67FD9A}fc 64  & \cellcolor[HTML]{67FD9A}fc 64                                                  & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+2              & \cellcolor[HTML]{67FD9A}fc 32  & \cellcolor[HTML]{67FD9A}fc 32                                                  & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+3              & \cellcolor[HTML]{67FD9A}fc 3   & \cellcolor[HTML]{67FD9A}fc 3                                                   & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+4              &                                &                                                                                & \cellcolor[HTML]{34CDF9}conv 1x1x32                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x16                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x32                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x16                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x16                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x32                                                 \\ \hline
+5              &                                &                                                                                & \cellcolor[HTML]{67FD9A}fc 3                                                        & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{67FD9A}fc 3                                                        & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+6              &                                &                                                                                &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+7              &                                &                                                                                &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+8              &                                &                                                                                &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+9              &                                &                                                                                &                                                                                     & \cellcolor[HTML]{34CDF9}conv 1x1x32                                                 &                                                                                     & \cellcolor[HTML]{34CDF9}conv 1x1x32                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x16                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x32                                                 \\ \hline
+10             &                                &                                                                                &                                                                                     & \cellcolor[HTML]{67FD9A}fc 3                                                        &                                                                                     & \cellcolor[HTML]{67FD9A}fc 3                                                        & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+11             &                                &                                                                                &                                                                                     &                                                                                     &                                                                                     &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+12             &                                &                                                                                &                                                                                     &                                                                                     &                                                                                     &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+13             &                                &                                                                                &                                                                                     &                                                                                     &                                                                                     &                                                                                     & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} & \cellcolor[HTML]{FD6864}\begin{tabular}[c]{@{}l@{}}dense conv\\  3x3x8\end{tabular} \\ \hline
+14             &                                &                                                                                &                                                                                     &                                                                                     &                                                                                     &                                                                                     & \cellcolor[HTML]{34CDF9}conv 1x1x32                                                 & \cellcolor[HTML]{34CDF9}conv 1x1x64                                                 \\ \hline
+15             &                                &                                                                                &                                                                                     &                                                                                     &                                                                                     &                                                                                     & \cellcolor[HTML]{67FD9A}fc 3                                                        & \cellcolor[HTML]{67FD9A}fc 3                                                        \\ \hline
+\end{tabular}
+\end{table}
+}
+
+\end{frame}
+
+\begin{frame}{\bf Results}
+
+\begin{figure}
+  \includegraphics[scale=0.25]{../../diagrams/rbc_deep_network_6.png}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{\bf Results}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}error\\ mean\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}error\\ sigma\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}rms\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}ams\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}relative\_error\\ {[}\%{]}\end{tabular}}} \\ \hline
+0                                 & -8.937                                                                                        & 37.229                                                                                         & 38.287                                                                               & 14.473                                                                               & 14.681                                                                                           \\ \hline
+1                                 & {\color[HTML]{FE0000} \textbf{-33.725}}                                                       & {\color[HTML]{FE0000} \textbf{205.573}}                                                        & {\color[HTML]{FE0000} \textbf{208.321}}                                              & {\color[HTML]{FE0000} \textbf{41.814}}                                               & {\color[HTML]{FE0000} \textbf{42.588}}                                                           \\ \hline
+2                                 & -3.513                                                                                        & 22.089                                                                                         & 22.367                                                                               & 9.055                                                                                & 12.907                                                                                           \\ \hline
+3                                 & -0.292                                                                                        & 15.36                                                                                          & 15.363                                                                               & 6.942                                                                                & 11.321                                                                                           \\ \hline
+4                                 & -1.151                                                                                        & 10.928                                                                                         & 10.988                                                                               & 3.824                                                                                & 7.701                                                                                            \\ \hline
+5                                 & {\color[HTML]{32CB00} \textbf{-0.224}}                                                        & {\color[HTML]{32CB00} \textbf{10.765}}                                                         & {\color[HTML]{32CB00} \textbf{10.767}}                                               & 4.248                                                                                & 7.95                                                                                             \\ \hline
+6                                 & -0.777                                                                                        & 11.711                                                                & 11.736                                                                               & 4.156                                                                                & 8.428                                                                                            \\ \hline
+7                                 & -1.526                                                                                        & 11.373                                                                                         & 11.474                                                                               & {\color[HTML]{32CB00} \textbf{3.735}}                                                & {\color[HTML]{32CB00} \textbf{7.556}}                                                            \\ \hline
+\end{tabular}
+\end{table}
 
 \end{frame}
 
@@ -428,7 +483,7 @@ and finally the weights update rule
 \begin{frame}{\bf Network architecture}
 we need to go much deeper for GO
 \begin{itemize}
-  \item {\bf 20 convolutional layers} \\ 4 blocks with 4 dense conv + 1 conv layer
+  \item {\bf 28 convolutional layers} \\ 3 blocks with 8 dense conv + 1 conv layer
   \item {\bf input} \\ 4 matrices $19x19$: black stones, white stones, empty fields, active player
   \item {\bf output} \\ recommended moves 19x19 + 1 for pass = 362 outputs
 
@@ -443,37 +498,45 @@ we need to go much deeper for GO
 
 \begin{frame}{\bf Network architecture}
 
-\scriptsize
-{
+{\fontsize{8}{6}\selectfont
+
 \begin{table}[]
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|c|l|l|}
 \hline
-\textbf{layer type}                       & \textbf{input size} & \textbf{kernel size} & \textbf{output size} \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x4             & 5x5x32               & 19x19x36             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x36            & 5x5x32               & 19x19x68             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x68            & 5x5x32               & 19x19x100            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x100           & 5x5x32               & 19x19x132            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x132           & 1x1x32               & 19x19x32             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 1x1x32               & 19x19x32             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 1x1x32               & 19x19x32             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 5x5x64               & 19x19x64             \\ \hline
-\cellcolor[HTML]{67FD9A}full connected    & 19x19x64            & 19x19x362            & 362                  \\ \hline
+\textbf{layer} & \multicolumn{1}{c|}{\textbf{net 3}}       & \multicolumn{1}{c|}{\textbf{net 5}}       \\ \hline
+0              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+1              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+2              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+3              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+4              & \cellcolor[HTML]{38FFF8}conv 1x1x32       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+5              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+6              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+7              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+8              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{38FFF8}conv 1x1x32       \\ \hline
+9              & \cellcolor[HTML]{38FFF8}conv 1x1x32       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+10             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+11             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+12             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+13             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+14             & \cellcolor[HTML]{38FFF8}conv 1x1x32       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+15             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+16             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+17             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{38FFF8}conv 1x1x32       \\ \hline
+18             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+19             & \cellcolor[HTML]{38FFF8}conv 5x5x64       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+20             & \cellcolor[HTML]{67FD9A}fc 362            & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+21             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+22             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+23             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+24             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+25             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+26             &                                           & \cellcolor[HTML]{38FFF8}conv 1x1x32       \\ \hline
+27             &                                           & \cellcolor[HTML]{38FFF8}conv 3x3x64       \\ \hline
+28             &                                           & \cellcolor[HTML]{67FD9A}fc 362            \\ \hline
 \end{tabular}
 \end{table}
-
 }
+
 
 \end{frame}
 

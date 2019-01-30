@@ -371,6 +371,31 @@
 \end{frame}
 
 
+\begin{frame}{\bf Fitting network into embedded}
+
+convert float weights to int8\_t
+\begin{align*}
+  scale &= max{(|\vec{w}|_1)} \\
+  \vec{w}' &= \vec{w}\frac{127}{scale}
+\end{align*}
+
+
+use double buffer memory trick
+
+\begin{itemize}
+  \item unsigned buffer\_size = $\max_{i}$(layers[i].input\_size());
+  \item buffer\_a = new int8\_t(buffer\_size);
+  \item buffer\_b = new int8\_t(buffer\_size);
+\end{itemize}
+
+\begin{figure}
+  \includegraphics[scale=0.3]{../../diagrams/nn_memory.png}
+\end{figure}
+
+\end{frame}
+
+
+
 
 \begin{frame}{\bf Q\&A}
 

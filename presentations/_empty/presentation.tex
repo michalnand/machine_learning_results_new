@@ -1,0 +1,132 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,slovak]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usetheme{Pittsburgh}
+\useoutertheme{shadow}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[]{algorithm2e}
+\usepackage{listings}
+ \setbeamercovered{transparent}
+ \usepackage{cuted}
+\usepackage[export]{adjustbox}
+\usepackage{mathtools}
+
+\usepackage{lipsum}
+\usepackage{verbatim}
+\usepackage{transparent}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{lmodern}
+
+\newcommand\Wider[2][3em]{%
+\makebox[\linewidth][c]{%
+  \begin{minipage}{\dimexpr\textwidth+#1\relax}
+  \raggedright#2
+  \end{minipage}%
+  }%
+}
+
+
+
+
+\iftrue
+
+\usetheme{Warsaw}
+
+\setbeamercolor{normal text}{fg=white,bg=black!90}
+\setbeamercolor{structure}{fg=white}
+
+\setbeamercolor{alerted text}{fg=red!85!black}
+
+\setbeamercolor{item projected}{use=item,fg=black,bg=item.fg!35}
+
+\setbeamercolor*{palette primary}{use=structure,fg=structure.fg}
+\setbeamercolor*{palette secondary}{use=structure,fg=structure.fg!95!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=structure.fg!90!black}
+\setbeamercolor*{palette quaternary}{use=structure,fg=structure.fg!95!black,bg=black!80}
+
+\setbeamercolor*{framesubtitle}{fg=white}
+
+\setbeamercolor*{block title}{parent=structure,bg=black!60}
+\setbeamercolor*{block body}{fg=black,bg=black!10}
+\setbeamercolor*{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor*{block title example}{parent=example text,bg=black!15}
+
+\fi
+
+
+
+%-------------------------------------------------------------------------------------
+\title{\color{white} \bf empty}
+\author{\color{white} Michal CHOVANEC, PhD}
+
+
+%\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{navigation symbols}{}
+
+
+\date[EURP]{}
+\begin{document}
+
+{
+    \usebackgroundtemplate
+    {
+        \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil
+
+        {\includegraphics[width=5.05in]{../../pictures/rl_square.jpg}}
+
+        \hfil}\vfil}
+    }
+    \begin{frame}
+
+    %\titlepage
+
+
+    \centering
+     \colorbox{black}
+     {
+        \begin{minipage}{7cm}
+           {\LARGE \color{white} \bf Empty} \\
+           {\LARGE \color{white} Michal CHOVANEC, PhD} \\
+       \end{minipage}
+     }
+
+
+    \end{frame}
+}
+
+\begin{frame}{\bf First frame}
+\end{frame}
+
+
+\begin{frame}{\bf Q\&A}
+
+\begin{figure}
+  \includegraphics[scale=0.25]{../../pictures/me.jpg}
+\end{figure}
+
+\centering {
+michal chovanec (michal.nand@gmail.com)
+\url{www.youtube.com/channel/UCzVvP2ou8v3afNiVrPAHQGg}
+}
+
+\centering {
+github
+\url{https://github.com/michalnand}
+}
+
+\end{frame}
+
+
+\end{document}

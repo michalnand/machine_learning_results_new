@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  29 JAN 2019 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  1 FEB 2019 19:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1568,255 +1568,273 @@ ne 155.
 
  <../../pictures/chess.jpg> <../../pictures/nvidia_car.jpg> <../../pictures/spe
 ach_recognition.jpg> <../../pictures/image_recognition.png>]
-<../../pictures/dl_vs_ml.png, id=44, 1606.0pt x 984.67876pt>
-File: ../../pictures/dl_vs_ml.png Graphic file (type png)
-<use ../../pictures/dl_vs_ml.png>
-Package pdftex.def Info: ../../pictures/dl_vs_ml.png  used on input line 175.
-(pdftex.def)             Requested size: 160.6094pt x 98.47363pt.
+<../../pictures/end_to_end_learning.png, id=44, 695.59875pt x 339.2675pt>
+File: ../../pictures/end_to_end_learning.png Graphic file (type png)
+<use ../../pictures/end_to_end_learning.png>
+Package pdftex.def Info: ../../pictures/end_to_end_learning.png  used on input 
+line 166.
+(pdftex.def)             Requested size: 278.23457pt x 135.70459pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 175.
+(Font)              <9> on input line 166.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 175.
+(Font)              <5> on input line 166.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 175.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 166.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 175.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 175.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 166.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 166.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 175.
+(Font)              <14.4> on input line 166.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 175.
+(Font)              <10> on input line 166.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 175.
+(Font)              <7> on input line 166.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 175.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 166.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 175.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 166.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 175.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 166.
  [3
 
- <../../pictures/dl_vs_ml.png (PNG copy)>]
-<../../pictures/end_to_end_learning.png, id=54, 695.59875pt x 339.2675pt>
-File: ../../pictures/end_to_end_learning.png Graphic file (type png)
-<use ../../pictures/end_to_end_learning.png>
-Package pdftex.def Info: ../../pictures/end_to_end_learning.png  used on input 
-line 184.
-(pdftex.def)             Requested size: 278.23457pt x 135.70459pt.
+ <../../pictures/end_to_end_learning.png (PNG copy)>]
+<../../pictures/dl_vs_ml.png, id=54, 1606.0pt x 984.67876pt>
+File: ../../pictures/dl_vs_ml.png Graphic file (type png)
+<use ../../pictures/dl_vs_ml.png>
+Package pdftex.def Info: ../../pictures/dl_vs_ml.png  used on input line 184.
+(pdftex.def)             Requested size: 160.6094pt x 98.47363pt.
  [4
 
- <../../pictures/end_to_end_learning.png (PNG copy)>]
-<../../diagrams/neuron_model.png, id=61, 376.40625pt x 194.97844pt>
+ <../../pictures/dl_vs_ml.png (PNG copy)>]
+Overfull \hbox (22.2345pt too wide) in paragraph at lines 216--216
+\T1/lmtt/m/n/9 4824-[]imagenet-[]classification-[]with-[]deep-[]convolutional-[
+]neural-[]networks . 
+ []
+
+[5
+
+]
+<../../diagrams/neuron_model.png, id=74, 376.40625pt x 194.97844pt>
 File: ../../diagrams/neuron_model.png Graphic file (type png)
 <use ../../diagrams/neuron_model.png>
-Package pdftex.def Info: ../../diagrams/neuron_model.png  used on input line 21
-6.
+Package pdftex.def Info: ../../diagrams/neuron_model.png  used on input line 24
+8.
 (pdftex.def)             Requested size: 150.55983pt x 77.98999pt.
 
-Overfull \hbox (27.64577pt too wide) in paragraph at lines 216--216
+Overfull \hbox (27.64577pt too wide) in paragraph at lines 248--248
  [] 
  []
 
-<../../diagrams/deep_nn.png, id=62, 692.5875pt x 259.97125pt>
+<../../diagrams/deep_nn.png, id=75, 692.5875pt x 259.97125pt>
 File: ../../diagrams/deep_nn.png Graphic file (type png)
 <use ../../diagrams/deep_nn.png>
-Package pdftex.def Info: ../../diagrams/deep_nn.png  used on input line 216.
+Package pdftex.def Info: ../../diagrams/deep_nn.png  used on input line 248.
 (pdftex.def)             Requested size: 207.77785pt x 77.99197pt.
-[5
-
- <../../diagrams/neuron_model.png> <../../diagrams/deep_nn.png (PNG copy)>]
-<../../diagrams/dnn_conv.png, id=74, 759.83875pt x 138.5175pt>
-File: ../../diagrams/dnn_conv.png Graphic file (type png)
-<use ../../diagrams/dnn_conv.png>
-Package pdftex.def Info: ../../diagrams/dnn_conv.png  used on input line 247.
-(pdftex.def)             Requested size: 113.97089pt x 20.77672pt.
-<../../diagrams/dnn_resnet.png, id=75, 765.86125pt x 214.8025pt>
-File: ../../diagrams/dnn_resnet.png Graphic file (type png)
-<use ../../diagrams/dnn_resnet.png>
-Package pdftex.def Info: ../../diagrams/dnn_resnet.png  used on input line 247.
-
-(pdftex.def)             Requested size: 114.87422pt x 32.21898pt.
-<../../diagrams/dnn_densenet.png, id=76, 782.925pt x 328.22626pt>
-File: ../../diagrams/dnn_densenet.png Graphic file (type png)
-<use ../../diagrams/dnn_densenet.png>
-Package pdftex.def Info: ../../diagrams/dnn_densenet.png  used on input line 24
-7.
-(pdftex.def)             Requested size: 117.43369pt x 49.23181pt.
-
-Overfull \vbox (1.98495pt too high) detected at line 247
- []
-
 [6
 
+ <../../diagrams/neuron_model.png> <../../diagrams/deep_nn.png (PNG copy)>]
+<../../diagrams/nn/convolution_2d.png, id=87, 236.52pt x 111.252pt>
+File: ../../diagrams/nn/convolution_2d.png Graphic file (type png)
+<use ../../diagrams/nn/convolution_2d.png>
+Package pdftex.def Info: ../../diagrams/nn/convolution_2d.png  used on input li
+ne 261.
+(pdftex.def)             Requested size: 189.21625pt x 89.00171pt.
+
+[7
+
+ <../../diagrams/nn/convolution_2d.png>]
+<../../diagrams/dnn_conv.png, id=98, 759.83875pt x 138.5175pt>
+File: ../../diagrams/dnn_conv.png Graphic file (type png)
+<use ../../diagrams/dnn_conv.png>
+Package pdftex.def Info: ../../diagrams/dnn_conv.png  used on input line 292.
+(pdftex.def)             Requested size: 113.97089pt x 20.77672pt.
+<../../diagrams/dnn_resnet.png, id=99, 765.86125pt x 214.8025pt>
+File: ../../diagrams/dnn_resnet.png Graphic file (type png)
+<use ../../diagrams/dnn_resnet.png>
+Package pdftex.def Info: ../../diagrams/dnn_resnet.png  used on input line 292.
+
+(pdftex.def)             Requested size: 114.87422pt x 32.21898pt.
+<../../diagrams/dnn_densenet.png, id=100, 782.925pt x 328.22626pt>
+File: ../../diagrams/dnn_densenet.png Graphic file (type png)
+<use ../../diagrams/dnn_densenet.png>
+Package pdftex.def Info: ../../diagrams/dnn_densenet.png  used on input line 29
+2.
+(pdftex.def)             Requested size: 117.43369pt x 49.23181pt.
+
+Overfull \vbox (1.98495pt too high) detected at line 292
+ []
+
+[8
+
  <../../diagrams/dnn_conv.png (PNG copy)> <../../diagrams/dnn_resnet.png (PNG c
-opy)> <../../diagrams/dnn_densenet.png (PNG copy)>] [7
+opy)> <../../diagrams/dnn_densenet.png (PNG copy)>] [9
 
 ]
-<../../pictures/robot_debug_app.png, id=90, 1284.8pt x 752.8125pt>
+<../../pictures/robot_debug_app.png, id=113, 1284.8pt x 752.8125pt>
 File: ../../pictures/robot_debug_app.png Graphic file (type png)
 <use ../../pictures/robot_debug_app.png>
 Package pdftex.def Info: ../../pictures/robot_debug_app.png  used on input line
- 300.
+ 345.
 (pdftex.def)             Requested size: 128.48752pt x 75.28566pt.
-<../../diagrams/line_following_net.png, id=91, 803.0pt x 401.5pt>
+<../../diagrams/line_following_net.png, id=114, 803.0pt x 401.5pt>
 File: ../../diagrams/line_following_net.png Graphic file (type png)
 <use ../../diagrams/line_following_net.png>
 Package pdftex.def Info: ../../diagrams/line_following_net.png  used on input l
-ine 300.
+ine 345.
 (pdftex.def)             Requested size: 144.53375pt x 72.26688pt.
-<../../pictures/robot_ascender.jpg, id=92, 3141.7375pt x 2285.53876pt>
+<../../pictures/robot_ascender.jpg, id=115, 3141.7375pt x 2285.53876pt>
 File: ../../pictures/robot_ascender.jpg Graphic file (type jpg)
 <use ../../pictures/robot_ascender.jpg>
 Package pdftex.def Info: ../../pictures/robot_ascender.jpg  used on input line 
-300.
+345.
 (pdftex.def)             Requested size: 125.64809pt x 91.40598pt.
- [8
+ [10
 
  <../../pictures/robot_debug_app.png> <../../diagrams/line_following_net.png (P
 NG copy)> <../../pictures/robot_ascender.jpg>]
-<../../pictures/rbc_channel.png, id=100, 1394.20876pt x 758.835pt>
+<../../pictures/rbc_channel.png, id=123, 1394.20876pt x 758.835pt>
 File: ../../pictures/rbc_channel.png Graphic file (type png)
 <use ../../pictures/rbc_channel.png>
-Package pdftex.def Info: ../../pictures/rbc_channel.png  used on input line 322
+Package pdftex.def Info: ../../pictures/rbc_channel.png  used on input line 367
 .
 (pdftex.def)             Requested size: 139.42903pt x 75.88794pt.
-<../../diagrams/cells_prediction_velocity_integration.png, id=101, 1605.197pt x
+<../../diagrams/cells_prediction_velocity_integration.png, id=124, 1605.197pt x
  529.177pt>
 File: ../../diagrams/cells_prediction_velocity_integration.png Graphic file (ty
 pe png)
 <use ../../diagrams/cells_prediction_velocity_integration.png>
 Package pdftex.def Info: ../../diagrams/cells_prediction_velocity_integration.p
-ng  used on input line 322.
+ng  used on input line 367.
 (pdftex.def)             Requested size: 240.76917pt x 79.37312pt.
 
-Overfull \vbox (8.24762pt too high) detected at line 322
+Overfull \vbox (8.24762pt too high) detected at line 367
  []
 
-[9
+[11
 
  <../../pictures/rbc_channel.png (PNG copy)> <../../diagrams/cells_prediction_v
 elocity_integration.png>]
-LaTeX Font Info:    Calculating math sizes for size <5.2> on input line 354.
+LaTeX Font Info:    Calculating math sizes for size <5.2> on input line 399.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.2> on input line 354.
+(Font)              <5.2> on input line 399.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.63997> on input line 354.
+(Font)              <3.63997> on input line 399.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <2.59999> on input line 354.
+(Font)              <2.59999> on input line 399.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.2> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 354.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 399.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.63997> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 354.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 399.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <2.59999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 354.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 399.
 
-Overfull \hbox (17.72021pt too wide) in paragraph at lines 354--354
+Overfull \hbox (17.72021pt too wide) in paragraph at lines 399--399
  [] 
  []
 
-[10
+[12
 
 ]
-<../../diagrams/rbc_deep_network_6.png, id=115, 803.0pt x 833.1125pt>
+<../../diagrams/rbc_deep_network_6.png, id=138, 803.0pt x 833.1125pt>
 File: ../../diagrams/rbc_deep_network_6.png Graphic file (type png)
 <use ../../diagrams/rbc_deep_network_6.png>
 Package pdftex.def Info: ../../diagrams/rbc_deep_network_6.png  used on input l
-ine 362.
+ine 407.
 (pdftex.def)             Requested size: 200.74951pt x 208.27762pt.
- [11
+ [13
 
- <../../diagrams/rbc_deep_network_6.png>] [12
+ <../../diagrams/rbc_deep_network_6.png>] [14
 
 ]
-<../../diagrams/rl_mechanism.png, id=129, 566.82353pt x 388.98265pt>
+<../../diagrams/rl_mechanism.png, id=153, 566.82353pt x 388.98265pt>
 File: ../../diagrams/rl_mechanism.png Graphic file (type png)
 <use ../../diagrams/rl_mechanism.png>
-Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 40
-5.
+Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 45
+0.
 (pdftex.def)             Requested size: 170.04837pt x 116.69568pt.
 
-Overfull \vbox (2.48225pt too high) detected at line 405
- []
-
-[13
-
- <../../diagrams/rl_mechanism.png>]
-Overfull \hbox (10.36696pt too wide) detected at line 425
-[]
- []
-
-<../../diagrams/dueling_dqn_0.png, id=137, 977.6525pt x 375.4025pt>
-File: ../../diagrams/dueling_dqn_0.png Graphic file (type png)
-<use ../../diagrams/dueling_dqn_0.png>
-Package pdftex.def Info: ../../diagrams/dueling_dqn_0.png  used on input line 4
-25.
-(pdftex.def)             Requested size: 293.298pt x 112.62161pt.
-
-Overfull \vbox (2.1249pt too high) detected at line 425
- []
-
-[14
-
- <../../diagrams/dueling_dqn_0.png>]
-Overfull \hbox (5.9569pt too wide) detected at line 454
-[]
+Overfull \vbox (2.48225pt too high) detected at line 450
  []
 
 [15
 
-]
-<../../pictures/go_board.png, id=164, 803.0pt x 833.1125pt>
-File: ../../pictures/go_board.png Graphic file (type png)
-<use ../../pictures/go_board.png>
-Package pdftex.def Info: ../../pictures/go_board.png  used on input line 481.
-(pdftex.def)             Requested size: 144.53375pt x 149.95378pt.
- [16
+ <../../diagrams/rl_mechanism.png>]
+Overfull \hbox (10.36696pt too wide) detected at line 470
+[]
+ []
 
- <../../pictures/go_board.png>]
-<../../pictures/go_deep_cnn_architecture.png, id=172, 6905.8pt x 803.0pt>
-File: ../../pictures/go_deep_cnn_architecture.png Graphic file (type png)
-<use ../../pictures/go_deep_cnn_architecture.png>
-Package pdftex.def Info: ../../pictures/go_deep_cnn_architecture.png  used on i
-nput line 497.
-(pdftex.def)             Requested size: 338.35556pt x 39.34366pt.
+<../../diagrams/dueling_dqn_0.png, id=160, 977.6525pt x 375.4025pt>
+File: ../../diagrams/dueling_dqn_0.png Graphic file (type png)
+<use ../../diagrams/dueling_dqn_0.png>
+Package pdftex.def Info: ../../diagrams/dueling_dqn_0.png  used on input line 4
+70.
+(pdftex.def)             Requested size: 293.298pt x 112.62161pt.
 
-Overfull \hbox (31.06569pt too wide) in paragraph at lines 497--497
- [] 
+Overfull \vbox (2.1249pt too high) detected at line 470
+ []
+
+[16
+
+ <../../diagrams/dueling_dqn_0.png>]
+Overfull \hbox (5.9569pt too wide) detected at line 499
+[]
  []
 
 [17
 
- <../../pictures/go_deep_cnn_architecture.png (PNG copy)>]
-Overfull \vbox (10.91176pt too high) detected at line 541
+]
+<../../pictures/go_board.png, id=183, 803.0pt x 833.1125pt>
+File: ../../pictures/go_board.png Graphic file (type png)
+<use ../../pictures/go_board.png>
+Package pdftex.def Info: ../../pictures/go_board.png  used on input line 526.
+(pdftex.def)             Requested size: 144.53375pt x 149.95378pt.
+ [18
+
+ <../../pictures/go_board.png>]
+<../../pictures/go_deep_cnn_architecture.png, id=192, 6905.8pt x 803.0pt>
+File: ../../pictures/go_deep_cnn_architecture.png Graphic file (type png)
+<use ../../pictures/go_deep_cnn_architecture.png>
+Package pdftex.def Info: ../../pictures/go_deep_cnn_architecture.png  used on i
+nput line 542.
+(pdftex.def)             Requested size: 338.35556pt x 39.34366pt.
+
+Overfull \hbox (31.06569pt too wide) in paragraph at lines 542--542
+ [] 
  []
 
-[18
+[19
+
+ <../../pictures/go_deep_cnn_architecture.png (PNG copy)>]
+Overfull \vbox (10.91176pt too high) detected at line 586
+ []
+
+[20
 
 ]
-<../../pictures/moves_success_rate_testing_top5.png, id=185, 1644.544pt x 1731.
+<../../pictures/moves_success_rate_testing_top5.png, id=206, 1644.544pt x 1731.
 268pt>
 File: ../../pictures/moves_success_rate_testing_top5.png Graphic file (type png
 )
 <use ../../pictures/moves_success_rate_testing_top5.png>
 Package pdftex.def Info: ../../pictures/moves_success_rate_testing_top5.png  us
-ed on input line 552.
+ed on input line 597.
 (pdftex.def)             Requested size: 197.33676pt x 207.7432pt.
- [19
+ [21
 
- <../../pictures/moves_success_rate_testing_top5.png>] [20
+ <../../pictures/moves_success_rate_testing_top5.png>] [22
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-<../../pictures/me.jpg, id=220, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=239, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 591.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 636.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
- [21
+ [23
 
  <../../pictures/me.jpg>]
 \tf@nav=\write6
@@ -1828,25 +1846,25 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 591.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 594.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 639.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 639.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 639.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 639.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23602 strings out of 492982
- 425419 string characters out of 6134895
- 657444 words of memory out of 5000000
- 26525 multiletter control sequences out of 15000+600000
- 136991 words of font info for 108 fonts, out of 8000000 for 9000
+ 23647 strings out of 492982
+ 426682 string characters out of 6134895
+ 657706 words of memory out of 5000000
+ 26564 multiletter control sequences out of 15000+600000
+ 139759 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,55p,803b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
 5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts
@@ -1862,10 +1880,10 @@ f/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6
 type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmtt9.pfb>
-Output written on presentation.pdf (21 pages, 7775310 bytes).
+Output written on presentation.pdf (23 pages, 7842787 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 339 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

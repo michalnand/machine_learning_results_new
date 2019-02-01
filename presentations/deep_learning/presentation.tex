@@ -154,7 +154,19 @@
 
 \end{frame}
 
+
 \begin{frame}{\bf Deep learning \footnotemark}
+
+  \begin{figure}
+    \includegraphics[scale=0.4]{../../pictures/end_to_end_learning.png}
+  \end{figure}
+
+\footnotetext[1]{\url {https://medium.com/datamob/clearing-the-buzzwords-in-machine-learning-e395ad73178b}}
+
+\end{frame}
+
+
+\begin{frame}{\bf Deep learning}
 
 \begin{itemize}
   \item classification
@@ -169,17 +181,37 @@
 \includegraphics[scale=0.1]{../../pictures/dl_vs_ml.png}
 \end{figure}
 
-
-\footnotetext[1]{\url {https://medium.com/datamob/clearing-the-buzzwords-in-machine-learning-e395ad73178b}}
-
 \end{frame}
 
+\begin{frame}{\bf Milestones}
 
-\begin{frame}{\bf Deep learning}
+{ \footnotesize
+    \begin{itemize}
+        \item Specters of past
+            \begin{itemize}
+                \item vanishing gradient, {\bf solution} : ReLU, Inception, Resnet, DenseNet
+                \item overfitting, {\bf solution} : L1, L2 regularization, dropout, batch normalisation
+                \item computation cost, {\bf solution} : NVIDIA Cuda, sharing weights
+            \end{itemize}
+        \item ImageNet Classification with Deep ConvolutionalNeural Networks \footnotemark
+            \begin{itemize}
+                \item 2012, Alex Krizhevsky, 34887 citations
+            \end{itemize}
+        \item Adam
+            \begin{itemize}
+                \item 2014,  Method for Stochastic Optimization \footnotemark
+            \end{itemize}
+        \item AlphaGO, AlphaZero, AlphaStar \footnotemark
+            \begin{itemize}
+                \item march 2016, december 2017, januray 2019
+            \end{itemize}
+    \end{itemize}
+}
 
-  \begin{figure}
-    \includegraphics[scale=0.4]{../../pictures/end_to_end_learning.png}
-  \end{figure}
+
+\footnotetext[2]{\url {https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}}
+\footnotetext[3]{\url {https://arxiv.org/abs/1412.6980}}
+\footnotetext[4]{\url {https://deepmind.com/}}
 
 \end{frame}
 
@@ -212,6 +244,19 @@
   \begin{figure}
     \includegraphics[scale=0.3]{../../diagrams/deep_nn.png}
   \end{figure}
+
+\end{frame}
+
+\begin{frame}{\bf Convolutional layer}
+
+
+\begin{figure}
+  \includegraphics[scale=0.8]{../../diagrams/nn/convolution_2d.png}
+\end{figure}
+
+\begin{align*}
+    Y_{yxl} = \sum_{k}^{in\_depth}\sum_{j}^{kh}\sum_{i}^{kw} X_{k, j+y, i+x}W_{lkji} + b_l
+\end{align*}
 
 \end{frame}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  30 JAN 2019 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  3 FEB 2019 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1590,80 +1590,94 @@ Overfull \hbox (10.19241pt too wide) in paragraph at lines 203--203
 [4
 
  <../../diagrams/motoko_uprising_hw.png>]
-File: ../../diagrams/motoko_uprising_hw.png Graphic file (type png)
-<use ../../diagrams/motoko_uprising_hw.png>
-Package pdftex.def Info: ../../diagrams/motoko_uprising_hw.png  used on input l
-ine 242.
-(pdftex.def)             Requested size: 163.83734pt x 193.25146pt.
+<../../diagrams/motoko_suftware_blocks.png, id=59, 1606.0pt x 809.424pt>
+File: ../../diagrams/motoko_suftware_blocks.png Graphic file (type png)
+<use ../../diagrams/motoko_suftware_blocks.png>
+Package pdftex.def Info: ../../diagrams/motoko_suftware_blocks.png  used on inp
+ut line 242.
+(pdftex.def)             Requested size: 160.6094pt x 80.94713pt.
 
-Overfull \hbox (10.19241pt too wide) in paragraph at lines 242--242
+Overfull \hbox (6.96448pt too wide) in paragraph at lines 242--242
  [] 
  []
 
 [5
 
-]
-<../../diagrams/line_classification.png, id=65, 754.017pt x 321.2pt>
-File: ../../diagrams/line_classification.png Graphic file (type png)
-<use ../../diagrams/line_classification.png>
-Package pdftex.def Info: ../../diagrams/line_classification.png  used on input 
-line 264.
-(pdftex.def)             Requested size: 226.20683pt x 96.36073pt.
- [6
+ <../../diagrams/motoko_suftware_blocks.png>]
+File: ../../diagrams/motoko_suftware_blocks.png Graphic file (type png)
+<use ../../diagrams/motoko_suftware_blocks.png>
+Package pdftex.def Info: ../../diagrams/motoko_suftware_blocks.png  used on inp
+ut line 252.
+(pdftex.def)             Requested size: 321.19432pt x 161.88193pt.
 
- <../../diagrams/line_classification.png>]
-<../../pictures/line_follower_dataset.png, id=73, 200.75pt x 200.75pt>
-File: ../../pictures/line_follower_dataset.png Graphic file (type png)
-<use ../../pictures/line_follower_dataset.png>
-Package pdftex.def Info: ../../pictures/line_follower_dataset.png  used on inpu
-t line 304.
-(pdftex.def)             Requested size: 180.67331pt x 180.67331pt.
-
-Overfull \hbox (27.02838pt too wide) in paragraph at lines 304--304
+Overfull \hbox (13.90445pt too wide) in paragraph at lines 252--252
  [] 
  []
 
-[7
+[6
+
+]
+<../../diagrams/line_classification.png, id=73, 754.017pt x 321.2pt>
+File: ../../diagrams/line_classification.png Graphic file (type png)
+<use ../../diagrams/line_classification.png>
+Package pdftex.def Info: ../../diagrams/line_classification.png  used on input 
+line 273.
+(pdftex.def)             Requested size: 226.20683pt x 96.36073pt.
+ [7
+
+ <../../diagrams/line_classification.png>]
+<../../pictures/line_follower_dataset.png, id=82, 200.75pt x 200.75pt>
+File: ../../pictures/line_follower_dataset.png Graphic file (type png)
+<use ../../pictures/line_follower_dataset.png>
+Package pdftex.def Info: ../../pictures/line_follower_dataset.png  used on inpu
+t line 313.
+(pdftex.def)             Requested size: 180.67331pt x 180.67331pt.
+
+Overfull \hbox (27.02838pt too wide) in paragraph at lines 313--313
+ [] 
+ []
+
+[8
 
  <../../pictures/line_follower_dataset.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 330.
+(Font)              <9> on input line 339.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 330.
+(Font)              <5> on input line 339.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 330.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 339.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 330.
-<../../diagrams/line_following_net.png, id=81, 803.0pt x 401.5pt>
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 339.
+<../../diagrams/line_following_net.png, id=89, 803.0pt x 401.5pt>
 File: ../../diagrams/line_following_net.png Graphic file (type png)
 <use ../../diagrams/line_following_net.png>
 Package pdftex.def Info: ../../diagrams/line_following_net.png  used on input l
-ine 330.
+ine 339.
 (pdftex.def)             Requested size: 160.59715pt x 80.29857pt.
- [8
+ [9
 
- <../../diagrams/line_following_net.png (PNG copy)>] [9
+ <../../diagrams/line_following_net.png (PNG copy)>] [10
 
 ]
-<../../diagrams/nn_memory.png, id=95, 875.27pt x 117.43875pt>
+<../../diagrams/nn_memory.png, id=103, 875.27pt x 117.43875pt>
 File: ../../diagrams/nn_memory.png Graphic file (type png)
 <use ../../diagrams/nn_memory.png>
-Package pdftex.def Info: ../../diagrams/nn_memory.png  used on input line 395.
+Package pdftex.def Info: ../../diagrams/nn_memory.png  used on input line 404.
 (pdftex.def)             Requested size: 262.58302pt x 35.23189pt.
- [10
+ [11
 
  <../../diagrams/nn_memory.png (PNG copy)>]
-<../../pictures/me.jpg, id=107, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=116, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 416.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 425.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 416.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 425.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [11
+) [12
 
  <../../pictures/me.jpg>]
 \tf@nav=\write6
@@ -1675,20 +1689,20 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
 
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 419.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 419.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23496 strings out of 492982
- 424361 string characters out of 6134895
- 634943 words of memory out of 5000000
- 26449 multiletter control sequences out of 15000+600000
+ 23507 strings out of 492982
+ 424621 string characters out of 6134895
+ 633943 words of memory out of 5000000
+ 26457 multiletter control sequences out of 15000+600000
  85681 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,62p,803b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1702,10 +1716,10 @@ f/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss
 fb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on presentation.pdf (11 pages, 12486044 bytes).
+Output written on presentation.pdf (12 pages, 12575360 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

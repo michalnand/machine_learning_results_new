@@ -190,7 +190,7 @@
         \item Specters of past
             \begin{itemize}
                 \item vanishing gradient, {\bf solution} : ReLU, Inception, Resnet, DenseNet
-                \item overfitting, {\bf solution} : L1, L2 regularization, dropout, batch normalisation
+                \item overfitting, {\bf solution} : Xavier, L1, L2 regularization, dropout, batch normalisation
                 \item computation cost, {\bf solution} : NVIDIA Cuda, sharing weights
             \end{itemize}
         \item ImageNet Classification with Deep ConvolutionalNeural Networks \footnotemark
@@ -199,7 +199,8 @@
             \end{itemize}
         \item Adam
             \begin{itemize}
-                \item 2014,  Method for Stochastic Optimization \footnotemark
+                \item 2014, Method for Stochastic Optimization \footnotemark
+                \item 2014, VGG net, 3x3 kernels instead of 5x5 \footnotemark
             \end{itemize}
         \item AlphaGO, AlphaZero, AlphaStar \footnotemark
             \begin{itemize}
@@ -211,7 +212,8 @@
 
 \footnotetext[2]{\url {https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf}}
 \footnotetext[3]{\url {https://arxiv.org/abs/1412.6980}}
-\footnotetext[4]{\url {https://deepmind.com/}}
+\footnotetext[4]{\url {https://medium.com/coinmonks/paper-review-of-vggnet-1st-runner-up-of-ilsvlc-2014-image-classification-d02355543a11}}
+\footnotetext[5]{\url {https://deepmind.com/}}
 
 \end{frame}
 
@@ -407,21 +409,21 @@ Curve shape classification
 \end{frame}
 
 
-
 \begin{frame}{\bf Results}
 
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
+\begin{table}[]
+\begin{tabular}{|l|llll|}
 \hline
-\multicolumn{1}{|c|}{\textbf{ID}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}error\\ mean\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}error\\ sigma\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}rms\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}ams\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}relative\_error\\ {[}\%{]}\end{tabular}}} \\ \hline
-0                                 & -8.937                                                                                        & 37.229                                                                                         & 38.287                                                                               & 14.473                                                                               & 14.681                                                                                           \\ \hline
-1                                 & {\color[HTML]{FE0000} \textbf{-33.725}}                                                       & {\color[HTML]{FE0000} \textbf{205.573}}                                                        & {\color[HTML]{FE0000} \textbf{208.321}}                                              & {\color[HTML]{FE0000} \textbf{41.814}}                                               & {\color[HTML]{FE0000} \textbf{42.588}}                                                           \\ \hline
-2                                 & -3.513                                                                                        & 22.089                                                                                         & 22.367                                                                               & 9.055                                                                                & 12.907                                                                                           \\ \hline
-3                                 & -0.292                                                                                        & 15.36                                                                                          & 15.363                                                                               & 6.942                                                                                & 11.321                                                                                           \\ \hline
-4                                 & -1.151                                                                                        & 10.928                                                                                         & 10.988                                                                               & 3.824                                                                                & 7.701                                                                                            \\ \hline
-5                                 & {\color[HTML]{32CB00} \textbf{-0.224}}                                                        & {\color[HTML]{32CB00} \textbf{10.765}}                                                         & {\color[HTML]{32CB00} \textbf{10.767}}                                               & 4.248                                                                                & 7.95                                                                                             \\ \hline
-6                                 & -0.777                                                                                        & 11.711                                                                & 11.736                                                                               & 4.156                                                                                & 8.428                                                                                            \\ \hline
-7                                 & -1.526                                                                                        & 11.373                                                                                         & 11.474                                                                               & {\color[HTML]{32CB00} \textbf{3.735}}                                                & {\color[HTML]{32CB00} \textbf{7.556}}                                                            \\ \hline
+\textbf{ID} & \multicolumn{1}{c}{}                                                                  & \multicolumn{1}{c}{}                                                                   & \multicolumn{1}{c}{\textbf{total error}}                                             & \multicolumn{1}{c|}{}                                                                            \\ \hline
+            & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}mean\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}sigma\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}rms\\ {[}um{]}\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}rms \\ relative\\ {[}\%{]}\end{tabular}}} \\ \hline
+\textbf{0}  & \multicolumn{1}{l|}{{\color[HTML]{333333} -9.8}}                                      & \multicolumn{1}{l|}{{\color[HTML]{333333} 38.88}}                                      & \multicolumn{1}{l|}{{\color[HTML]{333333} 40.1}}                                     & {\color[HTML]{333333} 7.23}                                                                      \\ \hline
+\textbf{1}  & \multicolumn{1}{l|}{{\color[HTML]{FE0000} \textbf{-36.99}}}                           & \multicolumn{1}{l|}{{\color[HTML]{FE0000} \textbf{215.02}}}                            & \multicolumn{1}{l|}{{\color[HTML]{FE0000} \textbf{218.18}}}                          & {\color[HTML]{FE0000} \textbf{39.32}}                                                            \\ \hline
+\textbf{2}  & \multicolumn{1}{l|}{{\color[HTML]{333333} -3.85}}                                     & \multicolumn{1}{l|}{{\color[HTML]{333333} 23.11}}                                      & \multicolumn{1}{l|}{{\color[HTML]{333333} 23.43}}                                    & {\color[HTML]{333333} 4.22}                                                                      \\ \hline
+\textbf{3}  & \multicolumn{1}{l|}{{\color[HTML]{333333} -0.32}}                                     & \multicolumn{1}{l|}{{\color[HTML]{333333} 16.09}}                                      & \multicolumn{1}{l|}{{\color[HTML]{333333} 16.09}}                                    & {\color[HTML]{333333} 2.9}                                                                       \\ \hline
+\textbf{4}  & \multicolumn{1}{l|}{{\color[HTML]{333333} -1.26}}                                     & \multicolumn{1}{l|}{{\color[HTML]{333333} 11.44}}                                      & \multicolumn{1}{l|}{{\color[HTML]{333333} 11.51}}                                    & {\color[HTML]{333333} 2.07}                                                                      \\ \hline
+\textbf{5}  & \multicolumn{1}{l|}{{\color[HTML]{32CB00} \textbf{-0.25}}}                            & \multicolumn{1}{l|}{{\color[HTML]{32CB00} \textbf{11.27}}}                             & \multicolumn{1}{l|}{{\color[HTML]{32CB00} \textbf{11.28}}}                           & {\color[HTML]{32CB00} \textbf{2.03}}                                                             \\ \hline
+\textbf{6}  & \multicolumn{1}{l|}{{\color[HTML]{333333} -0.85}}                                     & \multicolumn{1}{l|}{{\color[HTML]{333333} 12.26}}                                      & \multicolumn{1}{l|}{{\color[HTML]{333333} 12.29}}                                    & {\color[HTML]{333333} 2.22}                                                                      \\ \hline
+\textbf{7}  & \multicolumn{1}{l|}{{\color[HTML]{333333} -1.67}}                                     & \multicolumn{1}{l|}{{\color[HTML]{333333} 11.9}}                                       & \multicolumn{1}{l|}{{\color[HTML]{333333} 12.02}}                                    & {\color[HTML]{333333} 2.17}                                                                      \\ \hline
 \end{tabular}
 \end{table}
 
@@ -433,19 +435,29 @@ Curve shape classification
 \begin{itemize}
   \item learn from punishment and rewards
   \item learn to play a game with unknown rules
-\end{itemize}
-
-\begin{itemize}
-  \item obtain {\bf state}
-  \item choose {\bf action}
+  \item obtain {\bf state}, $s$
+  \item choose {\bf action}, $a$
   \item {\bf execute} action
-  \item obtain {\bf reward}
-  \item learn from {\bf experiences}
+  \item obtain {\bf reward}, $R$
+  \item learn from {\bf experiences}, $Q(s, a) = R + \gamma \max \limits_{\alpha'} Q(s', \alpha')$
 \end{itemize}
 
+
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+\begin{align*}
+Q(s, a) \approx \hat{Q}(s, a; w)
+\end{align*}
+
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
   \begin{figure}
-    \includegraphics[scale=0.3]{../../diagrams/rl_mechanism.png}
+    \includegraphics[scale=0.28]{../../diagrams/rl_mechanism.png}
   \end{figure}
+\end{column}
+\end{columns}
 
 \end{frame}
 

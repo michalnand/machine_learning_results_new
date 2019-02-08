@@ -6,7 +6,7 @@ all :
 	pdflatex $(latexfile).tex
 
 	cp $(latexfile).pdf bin/.
-	#pdftoppm -rx 900 -ry 900 -png bin/$(latexfile).pdf bin/images/img_$(latexfile)
+	pdftoppm -rx 900 -ry 900 -png bin/$(latexfile).pdf bin/images/img_$(latexfile)
 
 
 clean:

@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper]{article}
+
+\renewcommand{\baselinestretch}{1.0}
+\usepackage{cite}
+\usepackage[dvips]{graphicx}
+\usepackage{psfrag}
+\usepackage{color}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsfonts}
+\usepackage[font=footnotesize, captionskip=10pt]{subfig}
+\usepackage{tikz}
+\usepackage{flushend}
+\usepackage{times}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[slovak]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\pagestyle{empty}
+
+\hyphenation{net-works}
+\newtheorem{remark}{Remark}
+
+\newcommand\pro{\item[{\bf \color{green} +}]}
+\newcommand\con{\item[{\bf \color{red} -}]}
+
+\begin{document}
+
+\section{Activity assistant}
+Cieľom projektu je vytvoriť náramok - fitness band, ktorý bude schopný automaticky
+určiť typ aktivity, prípade určiť či je daná aktivita vykonávaná správne, resp. podľa plánu.
+Predpokladá sa overenie rôznych architektúr embedded sieti.
+
+{\bf Projekt požaduje}
+
+\begin{itemize}
+    \item návrh hardvéru - pravdepodobne cortex M0+, acc + gyro, oled display, bluetooth
+    \item tvorba android aplikácie
+    \item tvorba datasetu - pre vybrané športové aktivity bude treba zozbierať dataset
+            (beh, lezenie, box, posilovanie, lukostrelba ...)
+    \item tvorba modelu siete a trénovanie, zvažuje sa použitie preprocessingu pomocou DCT alebo FFT
+    \item validácia riešenia v praktických podmienkach
+\end{itemize}
+
+{\bf Zhrnutie}
+
+\begin{itemize}
+    \pro skúsenosti s návrhom podobných zariadení
+    \pro hotový framework na embedded siete
+    \pro uskutočniteľnosť - nie je to megalomanský projekt
+    \con tvorba datasetu
+    \con miniaturizácia riešenia
+    \con nulový vedecký prínos - len inžiniersky
+\end{itemize}
+
+\section{Aeris}
+Pokračovanie (reštart) projektu Aeris, nie ako produkt dvoch ľudí ale celého týmu.
+Predpokladaný ďalší smer v AI sú aktívne konajúci agenti - nie len pasívne entity
+merajúce dáta či robiace klasifikáciu, ale aktívne sa zapájajúci do zmeny prostredia.
+Cieľom projektu Aeris Reloaded je posunúť ďalej multiagentové systémy, kde správanie
+sa agenta nie je vnútené (napevno naprogramované) ale získané / naučené v prostredí.
+Chceme ukázať riešenie problémov vyžadujúce spoluprácu viacerích agentov učených pomocou
+reinforcement learning.
+
+{\bf Projekt požaduje}
+
+\begin{itemize}
+    \item návrh rozhraní virtuálneho prostredia
+    \item návrh simulátora - podpora GPU, automatizácia experimentov ...
+    \item návrh reálnych robotov - nepovinné
+    \item detekcia a trasovanie robotov - nepovinné
+\end{itemize}
+
+{\bf Zhrnutie}
+
+\begin{itemize}
+    \pro vedecký prínos v čiastočne pozorovateľných markovových rozhodovacích procesoch
+    \pro vedecký prínos v kolaboratívnom RL
+    \pro vedecký prínos v rekurentnych sietiach pre RL
+    \pro prestížny projekt svetového významu
+    \con mimoriadne náročný na spoluprácu týmu - už som raz vyhorel keď mi nik nepomohol s Aeris 1
+    \con nie je to projekt na tri nedele
+\end{itemize}
+
+\end{document}

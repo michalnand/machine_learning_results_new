@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  5 JAN 2019 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  14 MAR 2019 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1560,7 +1560,7 @@ Package pdftex.def Info: ../../diagrams/q_learning_example_01.png  used on inpu
 t line 308.
 (pdftex.def)             Requested size: 128.47772pt x 143.73445pt.
 
-Overfull \hbox (7.61401pt too wide) in paragraph at lines 308--308
+Overfull \hbox (2.99014pt too wide) in paragraph at lines 308--308
  [] 
  []
 
@@ -1761,7 +1761,7 @@ ic/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sftt1095.pfb>
-Output written on presentation.pdf (27 pages, 5285550 bytes).
+Output written on presentation.pdf (27 pages, 5285359 bytes).
 PDF statistics:
  357 PDF objects out of 1000 (max. 8388607)
  259 compressed objects within 3 object streams

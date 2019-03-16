@@ -540,7 +540,7 @@ and finally the weights update rule
 \begin{frame}{\bf Network architecture}
 we need to go much deeper for GO
 \begin{itemize}
-  \item {\bf 28 convolutional layers} \\ 3 blocks with 8 dense conv + 1 conv layer
+  \item {\bf 27 convolutional layers} \\ 3 blocks with 8 dense conv + 1 conv layer
   \item {\bf input} \\ 4 matrices $19x19$: black stones, white stones, empty fields, active player
   \item {\bf output} \\ recommended moves 19x19 + 1 for pass = 362 outputs
 
@@ -548,7 +548,7 @@ we need to go much deeper for GO
 
   \begin{figure}[!htb]
     \centering
-    \includegraphics[scale=0.049]{../../pictures/go_deep_cnn_architecture.png}
+    \includegraphics[scale=0.07]{../../pictures/go_cnn.png}
   \end{figure}
 
 \end{frame}
@@ -587,9 +587,8 @@ we need to go much deeper for GO
 23             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
 24             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
 25             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
-26             &                                           & \cellcolor[HTML]{38FFF8}conv 1x1x56       \\ \hline
-27             &                                           & \cellcolor[HTML]{38FFF8}conv 3x3x64       \\ \hline
-28             &                                           & \cellcolor[HTML]{67FD9A}fc 362            \\ \hline
+26             &                                           & \cellcolor[HTML]{38FFF8}conv 1x1x64       \\ \hline
+27             &                                           & \cellcolor[HTML]{67FD9A}fc 362            \\ \hline
 \end{tabular}
 \end{table}
 }
@@ -602,7 +601,7 @@ we need to go much deeper for GO
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.12]{../../pictures/moves_success_rate_testing_top5.png}
+  \includegraphics[scale=0.22]{../../pictures/moves_success_rate_testing_top5.png}
 \end{figure}
 
 

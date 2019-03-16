@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  14 MAR 2019 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  16 MAR 2019 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1250,10 +1250,6 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \everycr=\toks52
 \minrowclearance=\skip89
 )
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\color' on input line 71.
@@ -1489,12 +1485,12 @@ Overfull \vbox (90.73662pt too high) has occurred while \output is active []
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../pictures/rl_square.j
 pg>]
-<../../pictures/pacman.jpg, id=31, 168.8182pt x 216.81pt>
+<../../pictures/pacman.jpg, id=29, 168.8182pt x 216.81pt>
 File: ../../pictures/pacman.jpg Graphic file (type jpg)
 <use ../../pictures/pacman.jpg>
 Package pdftex.def Info: ../../pictures/pacman.jpg  used on input line 139.
 (pdftex.def)             Requested size: 84.40889pt x 108.40472pt.
-<../../pictures/doom.jpg, id=32, 1027.84pt x 770.88pt>
+<../../pictures/doom.jpg, id=30, 1027.84pt x 770.88pt>
 File: ../../pictures/doom.jpg Graphic file (type jpg)
 <use ../../pictures/doom.jpg>
 Package pdftex.def Info: ../../pictures/doom.jpg  used on input line 139.
@@ -1504,7 +1500,7 @@ Overfull \hbox (0.52441pt too wide) in paragraph at lines 139--139
  [] 
  []
 
-<../../pictures/chess.jpg, id=33, 2544.50626pt x 1550.79375pt>
+<../../pictures/chess.jpg, id=31, 2544.50626pt x 1550.79375pt>
 File: ../../pictures/chess.jpg Graphic file (type jpg)
 <use ../../pictures/chess.jpg>
 Package pdftex.def Info: ../../pictures/chess.jpg  used on input line 139.
@@ -1513,7 +1509,7 @@ Package pdftex.def Info: ../../pictures/chess.jpg  used on input line 139.
 
  <../../pictures/pacman.jpg> <../../pictures/doom.jpg> <../../pictures/chess.jp
 g>]
-<../../diagrams/rl_mechanism.png, id=44, 566.82353pt x 388.98265pt>
+<../../diagrams/rl_mechanism.png, id=43, 566.82353pt x 388.98265pt>
 File: ../../diagrams/rl_mechanism.png Graphic file (type png)
 <use ../../diagrams/rl_mechanism.png>
 Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 15
@@ -1522,7 +1518,7 @@ Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 15
  [3
 
  <../../diagrams/rl_mechanism.png>]
-<../../diagrams/q_learning_detail.png, id=52, 708.52942pt x 478.96588pt>
+<../../diagrams/q_learning_detail.png, id=51, 708.52942pt x 478.96588pt>
 File: ../../diagrams/q_learning_detail.png Graphic file (type png)
 <use ../../diagrams/q_learning_detail.png>
 Package pdftex.def Info: ../../diagrams/q_learning_detail.png  used on input li
@@ -1531,7 +1527,7 @@ ne 194.
  [4
 
  <../../diagrams/q_learning_detail.png>]
-<../../diagrams/q_learning_example_01.png, id=66, 642.4pt x 718.685pt>
+<../../diagrams/q_learning_example_01.png, id=64, 642.4pt x 718.685pt>
 File: ../../diagrams/q_learning_example_01.png Graphic file (type png)
 <use ../../diagrams/q_learning_example_01.png>
 Package pdftex.def Info: ../../diagrams/q_learning_example_01.png  used on inpu
@@ -1545,7 +1541,7 @@ Overfull \hbox (6.18999pt too wide) in paragraph at lines 225--225
 [5
 
  <../../diagrams/q_learning_example_01.png>]
-<../../diagrams/q_learning_example_02.png, id=77, 642.4pt x 744.381pt>
+<../../diagrams/q_learning_example_02.png, id=75, 642.4pt x 744.381pt>
 File: ../../diagrams/q_learning_example_02.png Graphic file (type png)
 <use ../../diagrams/q_learning_example_02.png>
 Package pdftex.def Info: ../../diagrams/q_learning_example_02.png  used on inpu
@@ -1564,7 +1560,7 @@ Overfull \hbox (2.64711pt too wide) in paragraph at lines 276--276
 [6
 
  <../../diagrams/q_learning_example_02.png>]
-<../../diagrams/q_learning_example_03.png, id=87, 642.4pt x 718.685pt>
+<../../diagrams/q_learning_example_03.png, id=85, 642.4pt x 718.685pt>
 File: ../../diagrams/q_learning_example_03.png Graphic file (type png)
 <use ../../diagrams/q_learning_example_03.png>
 Package pdftex.def Info: ../../diagrams/q_learning_example_03.png  used on inpu
@@ -1580,7 +1576,7 @@ Overfull \hbox (17.74275pt too wide) in paragraph at lines 329--329
  <../../diagrams/q_learning_example_03.png>] [8
 
 ]
-<../../diagrams/dqn.png, id=104, 576.1525pt x 501.875pt>
+<../../diagrams/dqn.png, id=102, 576.1525pt x 501.875pt>
 File: ../../diagrams/dqn.png Graphic file (type png)
 <use ../../diagrams/dqn.png>
 Package pdftex.def Info: ../../diagrams/dqn.png  used on input line 381.
@@ -1596,7 +1592,7 @@ Overfull \hbox (16.6601pt too wide) detected at line 400
 []
  []
 
-<../../diagrams/dueling_dqn_0.png, id=113, 977.6525pt x 375.4025pt>
+<../../diagrams/dueling_dqn_0.png, id=111, 977.6525pt x 375.4025pt>
 File: ../../diagrams/dueling_dqn_0.png Graphic file (type png)
 <use ../../diagrams/dueling_dqn_0.png>
 Package pdftex.def Info: ../../diagrams/dueling_dqn_0.png  used on input line 4
@@ -1609,7 +1605,7 @@ Overfull \vbox (4.07417pt too high) detected at line 400
 [10
 
  <../../diagrams/dueling_dqn_0.png>]
-<../../diagrams/dueling_dqn_1.png, id=122, 1155.31625pt x 956.57375pt>
+<../../diagrams/dueling_dqn_1.png, id=120, 1155.31625pt x 956.57375pt>
 File: ../../diagrams/dueling_dqn_1.png Graphic file (type png)
 <use ../../diagrams/dueling_dqn_1.png>
 Package pdftex.def Info: ../../diagrams/dueling_dqn_1.png  used on input line 4
@@ -1624,18 +1620,18 @@ Overfull \vbox (4.50206pt too high) detected at line 414
  <../../diagrams/dueling_dqn_1.png>] [12
 
 ]
-<../../diagrams/dnn_conv.png, id=146, 759.83875pt x 138.5175pt>
+<../../diagrams/dnn_conv.png, id=144, 759.83875pt x 138.5175pt>
 File: ../../diagrams/dnn_conv.png Graphic file (type png)
 <use ../../diagrams/dnn_conv.png>
 Package pdftex.def Info: ../../diagrams/dnn_conv.png  used on input line 485.
 (pdftex.def)             Requested size: 113.97089pt x 20.77672pt.
-<../../diagrams/dnn_resnet.png, id=147, 765.86125pt x 214.8025pt>
+<../../diagrams/dnn_resnet.png, id=145, 765.86125pt x 214.8025pt>
 File: ../../diagrams/dnn_resnet.png Graphic file (type png)
 <use ../../diagrams/dnn_resnet.png>
 Package pdftex.def Info: ../../diagrams/dnn_resnet.png  used on input line 485.
 
 (pdftex.def)             Requested size: 114.87422pt x 32.21898pt.
-<../../diagrams/dnn_densenet.png, id=148, 782.925pt x 328.22626pt>
+<../../diagrams/dnn_densenet.png, id=146, 782.925pt x 328.22626pt>
 File: ../../diagrams/dnn_densenet.png Graphic file (type png)
 <use ../../diagrams/dnn_densenet.png>
 Package pdftex.def Info: ../../diagrams/dnn_densenet.png  used on input line 48
@@ -1645,7 +1641,7 @@ Package pdftex.def Info: ../../diagrams/dnn_densenet.png  used on input line 48
 
  <../../diagrams/dnn_conv.png (PNG copy)> <../../diagrams/dnn_resnet.png (PNG c
 opy)> <../../diagrams/dnn_densenet.png (PNG copy)>]
-<../../diagrams/catcher.png, id=156, 803.0pt x 632.3625pt>
+<../../diagrams/catcher.png, id=154, 803.0pt x 632.3625pt>
 File: ../../diagrams/catcher.png Graphic file (type png)
 <use ../../diagrams/catcher.png>
 Package pdftex.def Info: ../../diagrams/catcher.png  used on input line 542.
@@ -1658,7 +1654,7 @@ Overfull \hbox (6.95222pt too wide) in paragraph at lines 542--542
 [14
 
  <../../diagrams/catcher.png>]
-<../../rl_results/dqn_test/rl_progress_training.png, id=166, 770.88pt x 578.16p
+<../../rl_results/dqn_test/rl_progress_training.png, id=164, 770.88pt x 578.16p
 t>
 File: ../../rl_results/dqn_test/rl_progress_training.png Graphic file (type png
 )
@@ -1666,7 +1662,7 @@ File: ../../rl_results/dqn_test/rl_progress_training.png Graphic file (type png
 Package pdftex.def Info: ../../rl_results/dqn_test/rl_progress_training.png  us
 ed on input line 559.
 (pdftex.def)             Requested size: 138.75241pt x 104.0643pt.
-<../../rl_results/dqn_test/rl_progress_testing.png, id=167, 770.88pt x 578.16pt
+<../../rl_results/dqn_test/rl_progress_testing.png, id=165, 770.88pt x 578.16pt
 >
 File: ../../rl_results/dqn_test/rl_progress_testing.png Graphic file (type png)
 
@@ -1678,42 +1674,49 @@ d on input line 559.
 
  <../../rl_results/dqn_test/rl_progress_training.png> <../../rl_results/dqn_tes
 t/rl_progress_testing.png>]
-<../../pictures/go_board.png, id=178, 803.0pt x 833.1125pt>
+<../../pictures/go_board.png, id=176, 803.0pt x 833.1125pt>
 File: ../../pictures/go_board.png Graphic file (type png)
 <use ../../pictures/go_board.png>
-Package pdftex.def Info: ../../pictures/go_board.png  used on input line 587.
+Package pdftex.def Info: ../../pictures/go_board.png  used on input line 586.
 (pdftex.def)             Requested size: 144.53375pt x 149.95378pt.
  [16
 
  <../../pictures/go_board.png>]
-<../../pictures/go_deep_cnn_architecture.png, id=186, 6905.8pt x 803.0pt>
-File: ../../pictures/go_deep_cnn_architecture.png Graphic file (type png)
-<use ../../pictures/go_deep_cnn_architecture.png>
-Package pdftex.def Info: ../../pictures/go_deep_cnn_architecture.png  used on i
-nput line 603.
-(pdftex.def)             Requested size: 338.35556pt x 39.34366pt.
+<../../pictures/go_cnn.png, id=184, 4577.1pt x 401.5pt>
+File: ../../pictures/go_cnn.png Graphic file (type png)
+<use ../../pictures/go_cnn.png>
+Package pdftex.def Info: ../../pictures/go_cnn.png  used on input line 602.
+(pdftex.def)             Requested size: 320.42973pt x 28.10786pt.
 
-Overfull \hbox (31.06569pt too wide) in paragraph at lines 603--603
+Overfull \hbox (13.13986pt too wide) in paragraph at lines 602--602
  [] 
  []
 
 [17
 
- <../../pictures/go_deep_cnn_architecture.png (PNG copy)>] [18
+ <../../pictures/go_cnn.png (PNG copy)>]
+Overfull \vbox (7.42929pt too high) detected at line 645
+ []
+
+[18
 
 ]
-<../../pictures/moves_success_rate_testing_top5.png, id=200, 1644.544pt x 1731.
-268pt>
+<../../pictures/moves_success_rate_testing_top5.png, id=198, 963.6pt x 1014.429
+9pt>
 File: ../../pictures/moves_success_rate_testing_top5.png Graphic file (type png
 )
 <use ../../pictures/moves_success_rate_testing_top5.png>
 Package pdftex.def Info: ../../pictures/moves_success_rate_testing_top5.png  us
-ed on input line 650.
-(pdftex.def)             Requested size: 197.33676pt x 207.7432pt.
- [19
+ed on input line 656.
+(pdftex.def)             Requested size: 211.99266pt x 223.17526pt.
+
+Overfull \vbox (1.74089pt too high) detected at line 656
+ []
+
+[19
 
  <../../pictures/moves_success_rate_testing_top5.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 670.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 676.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1721,10 +1724,10 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [20
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
-<../../pictures/me.jpg, id=234, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=232, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 689.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 695.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
  [21
 
@@ -1738,26 +1741,22 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 689.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 692.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 692.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 698.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 698.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 692.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 692.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 698.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 698.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 23515 strings out of 492982
- 425482 string characters out of 6134895
- 634191 words of memory out of 5000000
- 26436 multiletter control sequences out of 15000+600000
+ 23433 strings out of 492982
+ 422586 string characters out of 6134895
+ 635008 words of memory out of 5000000
+ 26366 multiletter control sequences out of 15000+600000
  29993 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,62p,803b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,55p,803b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-
@@ -1788,10 +1787,10 @@ fb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf
 cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pf
 b></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/
 fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on presentation.pdf (21 pages, 6160663 bytes).
+Output written on presentation.pdf (21 pages, 6404237 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
+ 361 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
  51 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

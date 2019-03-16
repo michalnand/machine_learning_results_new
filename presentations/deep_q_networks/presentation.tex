@@ -39,7 +39,7 @@
 
 
 
-\iftrue
+\iffalse
 
 \usetheme{Warsaw}
 
@@ -558,7 +558,6 @@ and finally the weights update rule
 
 \end{frame}
 
-
 \begin{frame}{\bf Playing GO (October 2017)}
 
 
@@ -589,7 +588,7 @@ and finally the weights update rule
 \begin{frame}{\bf Network architecture}
 we need to go much deeper for GO
 \begin{itemize}
-  \item {\bf 20 convolutional layers} \\ 4 blocks with 4 dense conv + 1 conv layer
+  \item {\bf 27 convolutional layers} \\ 3 blocks with 8 dense conv + 1 conv layer
   \item {\bf input} \\ 4 matrices $19x19$: black stones, white stones, empty fields, active player
   \item {\bf output} \\ recommended moves 19x19 + 1 for pass = 362 outputs
 
@@ -597,44 +596,51 @@ we need to go much deeper for GO
 
   \begin{figure}[!htb]
     \centering
-    \includegraphics[scale=0.049]{../../pictures/go_deep_cnn_architecture.png}
+    \includegraphics[scale=0.07]{../../pictures/go_cnn.png}
   \end{figure}
 
 \end{frame}
 
 \begin{frame}{\bf Network architecture}
 
-\scriptsize
-{
+{\fontsize{8}{6}\selectfont
+
 \begin{table}[]
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|c|l|l|}
 \hline
-\textbf{layer type}                       & \textbf{input size} & \textbf{kernel size} & \textbf{output size} \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x4             & 5x5x32               & 19x19x36             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x36            & 5x5x32               & 19x19x68             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x68            & 5x5x32               & 19x19x100            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x100           & 5x5x32               & 19x19x132            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x132           & 1x1x32               & 19x19x32             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 1x1x32               & 19x19x32             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 1x1x32               & 19x19x32             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x32            & 5x5x32               & 19x19x64             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x64            & 5x5x32               & 19x19x96             \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x96            & 5x5x32               & 19x19x128            \\ \hline
-\cellcolor[HTML]{FD6864}dense convolution & 19x19x128           & 5x5x32               & 19x19x160            \\ \hline
-\cellcolor[HTML]{34CDF9}convolution       & 19x19x160           & 5x5x64               & 19x19x64             \\ \hline
-\cellcolor[HTML]{67FD9A}full connected    & 19x19x64            & 19x19x362            & 362                  \\ \hline
+\textbf{layer} & \multicolumn{1}{c|}{\textbf{net 3}}       & \multicolumn{1}{c|}{\textbf{net 5}}       \\ \hline
+0              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+1              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+2              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+3              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+4              & \cellcolor[HTML]{38FFF8}conv 1x1x32       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+5              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+6              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+7              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+8              & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{38FFF8}conv 1x1x56       \\ \hline
+9              & \cellcolor[HTML]{38FFF8}conv 1x1x32       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+10             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+11             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+12             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+13             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+14             & \cellcolor[HTML]{38FFF8}conv 1x1x32       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+15             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+16             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+17             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{38FFF8}conv 1x1x56       \\ \hline
+18             & \cellcolor[HTML]{FD6864}dense conv 5x5x32 & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+19             & \cellcolor[HTML]{38FFF8}conv 5x5x64       & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+20             & \cellcolor[HTML]{67FD9A}fc 362            & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+21             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+22             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+23             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+24             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+25             &                                           & \cellcolor[HTML]{FD6864}dense conv 3x3x32 \\ \hline
+26             &                                           & \cellcolor[HTML]{38FFF8}conv 1x1x64       \\ \hline
+27             &                                           & \cellcolor[HTML]{67FD9A}fc 362            \\ \hline
 \end{tabular}
 \end{table}
-
 }
+
 
 \end{frame}
 
@@ -643,7 +649,7 @@ we need to go much deeper for GO
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.12]{../../pictures/moves_success_rate_testing_top5.png}
+  \includegraphics[scale=0.22]{../../pictures/moves_success_rate_testing_top5.png}
 \end{figure}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  3 FEB 2019 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  16 MAR 2019 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1811,35 +1811,38 @@ Package pdftex.def Info: ../../pictures/go_board.png  used on input line 538.
  [18
 
  <../../pictures/go_board.png>]
-<../../pictures/go_deep_cnn_architecture.png, id=194, 6905.8pt x 803.0pt>
-File: ../../pictures/go_deep_cnn_architecture.png Graphic file (type png)
-<use ../../pictures/go_deep_cnn_architecture.png>
-Package pdftex.def Info: ../../pictures/go_deep_cnn_architecture.png  used on i
-nput line 554.
-(pdftex.def)             Requested size: 338.35556pt x 39.34366pt.
+<../../pictures/go_cnn.png, id=194, 4577.1pt x 401.5pt>
+File: ../../pictures/go_cnn.png Graphic file (type png)
+<use ../../pictures/go_cnn.png>
+Package pdftex.def Info: ../../pictures/go_cnn.png  used on input line 554.
+(pdftex.def)             Requested size: 320.42973pt x 28.10786pt.
 
-Overfull \hbox (31.06569pt too wide) in paragraph at lines 554--554
+Overfull \hbox (13.13986pt too wide) in paragraph at lines 554--554
  [] 
  []
 
 [19
 
- <../../pictures/go_deep_cnn_architecture.png (PNG copy)>]
-Overfull \vbox (10.91176pt too high) detected at line 598
+ <../../pictures/go_cnn.png (PNG copy)>]
+Overfull \vbox (3.46175pt too high) detected at line 597
  []
 
 [20
 
 ]
-<../../pictures/moves_success_rate_testing_top5.png, id=208, 1644.544pt x 1731.
-268pt>
+<../../pictures/moves_success_rate_testing_top5.png, id=208, 963.6pt x 1014.429
+9pt>
 File: ../../pictures/moves_success_rate_testing_top5.png Graphic file (type png
 )
 <use ../../pictures/moves_success_rate_testing_top5.png>
 Package pdftex.def Info: ../../pictures/moves_success_rate_testing_top5.png  us
-ed on input line 609.
-(pdftex.def)             Requested size: 197.33676pt x 207.7432pt.
- [21
+ed on input line 608.
+(pdftex.def)             Requested size: 211.99266pt x 223.17526pt.
+
+Overfull \vbox (1.63266pt too high) detected at line 608
+ []
+
+[21
 
  <../../pictures/moves_success_rate_testing_top5.png>] [22
 
@@ -1847,7 +1850,7 @@ ed on input line 609.
 <../../pictures/me.jpg, id=241, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 648.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 647.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
  [23
 
@@ -1861,17 +1864,17 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 648.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 651.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 651.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 650.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 650.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 651.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 651.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 650.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 650.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  23647 strings out of 492982
- 426682 string characters out of 6134895
+ 426592 string characters out of 6134895
  657737 words of memory out of 5000000
  26564 multiletter control sequences out of 15000+600000
  139759 words of font info for 109 fonts, out of 8000000 for 9000
@@ -1895,7 +1898,7 @@ f/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6
 type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmtt9.pfb>
-Output written on presentation.pdf (23 pages, 7844147 bytes).
+Output written on presentation.pdf (23 pages, 8087000 bytes).
 PDF statistics:
  341 PDF objects out of 1000 (max. 8388607)
  246 compressed objects within 3 object streams

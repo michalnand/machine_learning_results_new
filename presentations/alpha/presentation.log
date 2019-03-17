@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  16 MAR 2019 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  17 MAR 2019 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1597,12 +1597,32 @@ Overfull \vbox (1.74089pt too high) detected at line 334
 [11
 
  <../../pictures/moves_success_rate_testing_top5.png>]
-<../../pictures/me.jpg, id=116, 360.34625pt x 641.39626pt>
+<../../pictures/AlphaZero_Stockfish_2017_01.png, id=116, 537.00626pt x 538.01pt
+>
+File: ../../pictures/AlphaZero_Stockfish_2017_01.png Graphic file (type png)
+<use ../../pictures/AlphaZero_Stockfish_2017_01.png>
+Package pdftex.def Info: ../../pictures/AlphaZero_Stockfish_2017_01.png  used o
+n input line 350.
+(pdftex.def)             Requested size: 134.25124pt x 134.50217pt.
+ [12
+
+ <../../pictures/AlphaZero_Stockfish_2017_01.png>]
+<../../pictures/AlphaZero_Stockfish_2017_02.png, id=127, 537.00626pt x 538.01pt
+>
+File: ../../pictures/AlphaZero_Stockfish_2017_02.png Graphic file (type png)
+<use ../../pictures/AlphaZero_Stockfish_2017_02.png>
+Package pdftex.def Info: ../../pictures/AlphaZero_Stockfish_2017_02.png  used o
+n input line 364.
+(pdftex.def)             Requested size: 134.25124pt x 134.50217pt.
+ [13
+
+ <../../pictures/AlphaZero_Stockfish_2017_02.png>]
+<../../pictures/me.jpg, id=138, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 354.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 384.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
- [12
+ [14
 
  <../../pictures/me.jpg>]
 \tf@nav=\write6
@@ -1614,19 +1634,19 @@ Package pdftex.def Info: ../../pictures/me.jpg  used on input line 354.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 387.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 387.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 387.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 387.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23362 strings out of 492982
- 421685 string characters out of 6134895
+ 23380 strings out of 492982
+ 422223 string characters out of 6134895
  635912 words of memory out of 5000000
- 26329 multiletter control sequences out of 15000+600000
+ 26341 multiletter control sequences out of 15000+600000
  23724 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,62p,803b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1642,10 +1662,10 @@ public/cm-super/sfss1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx
 ublic/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1
 728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/
 texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on presentation.pdf (12 pages, 5204024 bytes).
+Output written on presentation.pdf (14 pages, 5294559 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

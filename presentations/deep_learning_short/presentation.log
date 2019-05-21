@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.5)  18 MAY 2019 19:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.5)  21 MAY 2019 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1534,30 +1534,30 @@ Package: movie15 2012/05/16
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color' on input line 74.
+(hyperref)                removing `\color' on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color' on input line 82.
+(hyperref)                removing `\color' on input line 83.
 
 (./presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 83.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1627,7 +1627,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box92
-Package hyperref Info: Link coloring OFF on input line 82.
+Package hyperref Info: Link coloring OFF on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1637,60 +1637,60 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count371
 )
-LaTeX Info: Redefining \ref on input line 82.
-LaTeX Info: Redefining \pageref on input line 82.
-LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
 
 (./presentation.out) (./presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 82.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 83.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 82.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 83.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 82.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 83.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 82.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 83.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 82.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 82.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 83.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 82.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 82.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 82.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 83.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 82.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 82.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 82.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 83.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 82.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 82.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 82.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 83.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 82.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 82.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 83.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 82.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 83.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 82.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 82.
+(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 82.
+(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 82.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 82.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 83.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 82.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 83.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1721,59 +1721,59 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count372
  (./presentation.nav)
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 108
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 109
 .
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 108.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 109.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 108
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 109
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 108
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 109
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 108.
+(Font)              <10.95> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 108.
+(Font)              <8> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 108.
-LaTeX Font Info:    Try loading font information for U+msa on input line 108.
+(Font)              <6> on input line 109.
+LaTeX Font Info:    Try loading font information for U+msa on input line 109.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 108.
+LaTeX Font Info:    Try loading font information for U+msb on input line 109.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 108.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 109.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 108.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 109.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 108.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 109.
 <../../pictures/rl_square.jpg, id=16, 4694.53876pt x 4681.49pt>
 File: ../../pictures/rl_square.jpg Graphic file (type jpg)
 <use ../../pictures/rl_square.jpg>
-Package pdftex.def Info: ../../pictures/rl_square.jpg  used on input line 108.
+Package pdftex.def Info: ../../pictures/rl_square.jpg  used on input line 109.
 (pdftex.def)             Requested size: 364.96371pt x 363.88324pt.
 
 Overfull \hbox (3.20169pt too wide) has occurred while \output is active
@@ -1792,12 +1792,12 @@ pg>]
 File: ../../diagrams/arkanoid_net.png Graphic file (type png)
 <use ../../diagrams/arkanoid_net.png>
 Package pdftex.def Info: ../../diagrams/arkanoid_net.png  used on input line 15
-2.
+5.
 (pdftex.def)             Requested size: 107.91853pt x 77.08467pt.
 <../../pictures/arkanoid.png, id=30, 513.92pt x 672.5125pt>
 File: ../../pictures/arkanoid.png Graphic file (type png)
 <use ../../pictures/arkanoid.png>
-Package pdftex.def Info: ../../pictures/arkanoid.png  used on input line 152.
+Package pdftex.def Info: ../../pictures/arkanoid.png  used on input line 155.
 (pdftex.def)             Requested size: 102.78217pt x 134.5001pt.
  [2
 
@@ -1805,25 +1805,25 @@ Package pdftex.def Info: ../../pictures/arkanoid.png  used on input line 152.
 <../../pictures/chess.jpg, id=44, 2544.50626pt x 1550.79375pt>
 File: ../../pictures/chess.jpg Graphic file (type jpg)
 <use ../../pictures/chess.jpg>
-Package pdftex.def Info: ../../pictures/chess.jpg  used on input line 200.
+Package pdftex.def Info: ../../pictures/chess.jpg  used on input line 203.
 (pdftex.def)             Requested size: 76.3319pt x 46.5218pt.
 <../../pictures/nvidia_car.jpg, id=45, 582.175pt x 359.3425pt>
 File: ../../pictures/nvidia_car.jpg Graphic file (type jpg)
 <use ../../pictures/nvidia_car.jpg>
-Package pdftex.def Info: ../../pictures/nvidia_car.jpg  used on input line 200.
+Package pdftex.def Info: ../../pictures/nvidia_car.jpg  used on input line 203.
 
 (pdftex.def)             Requested size: 87.32248pt x 53.89905pt.
 <../../pictures/speach_recognition.jpg, id=46, 640.3925pt x 360.34625pt>
 File: ../../pictures/speach_recognition.jpg Graphic file (type jpg)
 <use ../../pictures/speach_recognition.jpg>
 Package pdftex.def Info: ../../pictures/speach_recognition.jpg  used on input l
-ine 200.
+ine 203.
 (pdftex.def)             Requested size: 96.05472pt x 54.04959pt.
 <../../pictures/image_recognition.png, id=47, 1047.915pt x 282.05376pt>
 File: ../../pictures/image_recognition.png Graphic file (type png)
 <use ../../pictures/image_recognition.png>
 Package pdftex.def Info: ../../pictures/image_recognition.png  used on input li
-ne 200.
+ne 203.
 (pdftex.def)             Requested size: 209.57928pt x 56.40974pt.
  [3
 
@@ -1833,34 +1833,34 @@ ach_recognition.jpg> <../../pictures/image_recognition.png>]
 File: ../../pictures/end_to_end_learning.png Graphic file (type png)
 <use ../../pictures/end_to_end_learning.png>
 Package pdftex.def Info: ../../pictures/end_to_end_learning.png  used on input 
-line 211.
+line 214.
 (pdftex.def)             Requested size: 278.23457pt x 135.70459pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 211.
+(Font)              <9> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 211.
+(Font)              <5> on input line 214.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 211.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 211.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 211.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 214.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 211.
+(Font)              <14.4> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 211.
+(Font)              <10> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 211.
+(Font)              <7> on input line 214.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 211.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 211.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 211.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 214.
  [4
 
  <../../pictures/end_to_end_learning.png (PNG copy)>]
@@ -1868,20 +1868,20 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
 File: ../../diagrams/neuron_model.png Graphic file (type png)
 <use ../../diagrams/neuron_model.png>
 Package pdftex.def Info: ../../diagrams/neuron_model.png  used on input line 24
-5.
+8.
 (pdftex.def)             Requested size: 112.92273pt x 58.49397pt.
 <../../diagrams/deep_nn.png, id=66, 692.5875pt x 259.97125pt>
 File: ../../diagrams/deep_nn.png Graphic file (type png)
 <use ../../diagrams/deep_nn.png>
-Package pdftex.def Info: ../../diagrams/deep_nn.png  used on input line 245.
+Package pdftex.def Info: ../../diagrams/deep_nn.png  used on input line 248.
 (pdftex.def)             Requested size: 138.51505pt x 51.99332pt.
 <../../pictures/cnn.jpg, id=67, 1606.0pt x 859.21pt>
 File: ../../pictures/cnn.jpg Graphic file (type jpg)
 <use ../../pictures/cnn.jpg>
-Package pdftex.def Info: ../../pictures/cnn.jpg  used on input line 245.
+Package pdftex.def Info: ../../pictures/cnn.jpg  used on input line 248.
 (pdftex.def)             Requested size: 160.6094pt x 85.92603pt.
 
-Overfull \vbox (1.87071pt too high) detected at line 245
+Overfull \vbox (1.87071pt too high) detected at line 248
  []
 
 [5
@@ -1891,22 +1891,22 @@ Overfull \vbox (1.87071pt too high) detected at line 245
 <../../diagrams/dnn_conv.png, id=79, 759.83875pt x 138.5175pt>
 File: ../../diagrams/dnn_conv.png Graphic file (type png)
 <use ../../diagrams/dnn_conv.png>
-Package pdftex.def Info: ../../diagrams/dnn_conv.png  used on input line 276.
+Package pdftex.def Info: ../../diagrams/dnn_conv.png  used on input line 279.
 (pdftex.def)             Requested size: 113.97089pt x 20.77672pt.
 <../../diagrams/dnn_resnet.png, id=80, 765.86125pt x 214.8025pt>
 File: ../../diagrams/dnn_resnet.png Graphic file (type png)
 <use ../../diagrams/dnn_resnet.png>
-Package pdftex.def Info: ../../diagrams/dnn_resnet.png  used on input line 276.
+Package pdftex.def Info: ../../diagrams/dnn_resnet.png  used on input line 279.
 
 (pdftex.def)             Requested size: 114.87422pt x 32.21898pt.
 <../../diagrams/dnn_densenet.png, id=81, 782.925pt x 328.22626pt>
 File: ../../diagrams/dnn_densenet.png Graphic file (type png)
 <use ../../diagrams/dnn_densenet.png>
 Package pdftex.def Info: ../../diagrams/dnn_densenet.png  used on input line 27
-6.
+9.
 (pdftex.def)             Requested size: 117.43369pt x 49.23181pt.
 
-Overfull \vbox (1.98495pt too high) detected at line 276
+Overfull \vbox (1.98495pt too high) detected at line 279
  []
 
 [6
@@ -1919,136 +1919,144 @@ opy)> <../../diagrams/dnn_densenet.png (PNG copy)>] [7
 File: ../../pictures/robot_debug_app.png Graphic file (type png)
 <use ../../pictures/robot_debug_app.png>
 Package pdftex.def Info: ../../pictures/robot_debug_app.png  used on input line
- 329.
+ 332.
 (pdftex.def)             Requested size: 128.48752pt x 75.28566pt.
 <../../diagrams/line_following_net.png, id=96, 803.0pt x 401.5pt>
 File: ../../diagrams/line_following_net.png Graphic file (type png)
 <use ../../diagrams/line_following_net.png>
 Package pdftex.def Info: ../../diagrams/line_following_net.png  used on input l
-ine 329.
+ine 332.
 (pdftex.def)             Requested size: 144.53375pt x 72.26688pt.
 <../../pictures/robot_ascender.jpg, id=97, 3141.7375pt x 2285.53876pt>
 File: ../../pictures/robot_ascender.jpg Graphic file (type jpg)
 <use ../../pictures/robot_ascender.jpg>
 Package pdftex.def Info: ../../pictures/robot_ascender.jpg  used on input line 
-329.
+332.
 (pdftex.def)             Requested size: 125.64809pt x 91.40598pt.
  [8
 
  <../../pictures/robot_debug_app.png> <../../diagrams/line_following_net.png (P
 NG copy)> <../../pictures/robot_ascender.jpg>]
-<../../pictures/rbc_channel.png, id=105, 1394.20876pt x 758.835pt>
+File: ../../pictures/robot_debug_app.png Graphic file (type png)
+<use ../../pictures/robot_debug_app.png>
+Package pdftex.def Info: ../../pictures/robot_debug_app.png  used on input line
+ 356.
+(pdftex.def)             Requested size: 192.71169pt x 112.91699pt.
+ [9
+
+]
+<../../pictures/rbc_channel.png, id=113, 1394.20876pt x 758.835pt>
 File: ../../pictures/rbc_channel.png Graphic file (type png)
 <use ../../pictures/rbc_channel.png>
-Package pdftex.def Info: ../../pictures/rbc_channel.png  used on input line 353
+Package pdftex.def Info: ../../pictures/rbc_channel.png  used on input line 380
 .
 (pdftex.def)             Requested size: 111.53897pt x 60.70804pt.
-<../../diagrams/cells_prediction_velocity_integration.png, id=106, 1605.197pt x
+<../../diagrams/cells_prediction_velocity_integration.png, id=114, 1605.197pt x
  529.177pt>
 File: ../../diagrams/cells_prediction_velocity_integration.png Graphic file (ty
 pe png)
 <use ../../diagrams/cells_prediction_velocity_integration.png>
 Package pdftex.def Info: ../../diagrams/cells_prediction_velocity_integration.p
-ng  used on input line 353.
+ng  used on input line 380.
 (pdftex.def)             Requested size: 192.61533pt x 63.49849pt.
 
-Overfull \vbox (4.3931pt too high) detected at line 353
- []
-
-[9
-
- <../../pictures/rbc_channel.png (PNG copy)> <../../diagrams/cells_prediction_v
-elocity_integration.png>]
-LaTeX Font Info:    Calculating math sizes for size <5.2> on input line 385.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.2> on input line 385.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.63997> on input line 385.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <2.59999> on input line 385.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.2> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 385.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.63997> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 385.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <2.59999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 385.
-
-Overfull \hbox (17.72021pt too wide) in paragraph at lines 385--385
- [] 
+Overfull \vbox (4.3931pt too high) detected at line 380
  []
 
 [10
 
-]
-<../../diagrams/rbc_deep_network_6_7.png, id=121, 803.0pt x 833.1125pt>
-File: ../../diagrams/rbc_deep_network_6_7.png Graphic file (type png)
-<use ../../diagrams/rbc_deep_network_6_7.png>
-Package pdftex.def Info: ../../diagrams/rbc_deep_network_6_7.png  used on input
- line 414.
-(pdftex.def)             Requested size: 160.59715pt x 166.61954pt.
+ <../../pictures/rbc_channel.png (PNG copy)> <../../diagrams/cells_prediction_v
+elocity_integration.png>]
+LaTeX Font Info:    Calculating math sizes for size <5.2> on input line 412.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.2> on input line 412.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <3.63997> on input line 412.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <2.59999> on input line 412.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.2> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 412.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.63997> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 412.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <2.59999> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 412.
 
-Overfull \hbox (6.95222pt too wide) in paragraph at lines 414--414
+Overfull \hbox (17.72021pt too wide) in paragraph at lines 412--412
  [] 
  []
 
 [11
 
- <../../diagrams/rbc_deep_network_6_7.png>] [12
+]
+<../../diagrams/rbc_deep_network_6_7.png, id=129, 803.0pt x 833.1125pt>
+File: ../../diagrams/rbc_deep_network_6_7.png Graphic file (type png)
+<use ../../diagrams/rbc_deep_network_6_7.png>
+Package pdftex.def Info: ../../diagrams/rbc_deep_network_6_7.png  used on input
+ line 441.
+(pdftex.def)             Requested size: 160.59715pt x 166.61954pt.
+
+Overfull \hbox (6.95222pt too wide) in paragraph at lines 441--441
+ [] 
+ []
+
+[12
+
+ <../../diagrams/rbc_deep_network_6_7.png>] [13
 
 ]
-<../../pictures/go_board.png, id=136, 803.0pt x 833.1125pt>
+<../../pictures/go_board.png, id=145, 803.0pt x 833.1125pt>
 File: ../../pictures/go_board.png Graphic file (type png)
 <use ../../pictures/go_board.png>
-Package pdftex.def Info: ../../pictures/go_board.png  used on input line 464.
+Package pdftex.def Info: ../../pictures/go_board.png  used on input line 491.
 (pdftex.def)             Requested size: 144.53375pt x 149.95378pt.
- [13
+ [14
 
  <../../pictures/go_board.png>]
-<../../diagrams/net_go_1_28_layers.png, id=146, 4577.1pt x 401.5pt>
+<../../diagrams/net_go_1_28_layers.png, id=154, 4577.1pt x 401.5pt>
 File: ../../diagrams/net_go_1_28_layers.png Graphic file (type png)
 <use ../../diagrams/net_go_1_28_layers.png>
 Package pdftex.def Info: ../../diagrams/net_go_1_28_layers.png  used on input l
-ine 485.
+ine 512.
 (pdftex.def)             Requested size: 274.61415pt x 24.08896pt.
-<../../diagrams/net_go_5_35_layers.png, id=147, 5701.3pt x 401.5pt>
+<../../diagrams/net_go_5_35_layers.png, id=155, 5701.3pt x 401.5pt>
 File: ../../diagrams/net_go_5_35_layers.png Graphic file (type png)
 <use ../../diagrams/net_go_5_35_layers.png>
 Package pdftex.def Info: ../../diagrams/net_go_5_35_layers.png  used on input l
-ine 485.
+ine 512.
 (pdftex.def)             Requested size: 342.06325pt x 24.08896pt.
 
-Overfull \hbox (34.77338pt too wide) in paragraph at lines 485--485
+Overfull \hbox (34.77338pt too wide) in paragraph at lines 512--512
  [] 
- []
-
-[14
-
- <../../diagrams/net_go_1_28_layers.png (PNG copy)> <../../diagrams/net_go_5_35
-_layers.png (PNG copy)>]
-<../../diagrams/rl_mechanism.png, id=154, 566.82353pt x 388.98265pt>
-File: ../../diagrams/rl_mechanism.png Graphic file (type png)
-<use ../../diagrams/rl_mechanism.png>
-Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 51
-7.
-(pdftex.def)             Requested size: 158.7095pt x 108.9144pt.
-
-Overfull \hbox (5.06458pt too wide) in paragraph at lines 517--517
- [] 
- []
-
-
-Overfull \vbox (10.44962pt too high) detected at line 517
  []
 
 [15
 
+ <../../diagrams/net_go_1_28_layers.png (PNG copy)> <../../diagrams/net_go_5_35
+_layers.png (PNG copy)>]
+<../../diagrams/rl_mechanism.png, id=162, 566.82353pt x 388.98265pt>
+File: ../../diagrams/rl_mechanism.png Graphic file (type png)
+<use ../../diagrams/rl_mechanism.png>
+Package pdftex.def Info: ../../diagrams/rl_mechanism.png  used on input line 54
+4.
+(pdftex.def)             Requested size: 158.7095pt x 108.9144pt.
+
+Overfull \hbox (5.06458pt too wide) in paragraph at lines 544--544
+ [] 
+ []
+
+
+Overfull \vbox (10.44962pt too high) detected at line 544
+ []
+
+[16
+
  <../../diagrams/rl_mechanism.png>]
-<../../pictures/me.jpg, id=164, 360.34625pt x 641.39626pt>
+<../../pictures/me.jpg, id=172, 360.34625pt x 641.39626pt>
 File: ../../pictures/me.jpg Graphic file (type jpg)
 <use ../../pictures/me.jpg>
-Package pdftex.def Info: ../../pictures/me.jpg  used on input line 537.
+Package pdftex.def Info: ../../pictures/me.jpg  used on input line 564.
 (pdftex.def)             Requested size: 90.08633pt x 160.34866pt.
- [16
+ [17
 
  <../../pictures/me.jpg>]
 \tf@nav=\write6
@@ -2067,22 +2075,27 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
+
+Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(movie15)                @@ Rerun to get object references right! @@
+(movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 567.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 567.
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 567.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 567.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33611 strings out of 492982
- 636013 string characters out of 6134897
- 898554 words of memory out of 5000000
- 36501 multiletter control sequences out of 15000+600000
+ 33626 strings out of 492982
+ 636516 string characters out of 6134897
+ 898604 words of memory out of 5000000
+ 36513 multiletter control sequences out of 15000+600000
  657766 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,55p,10395b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,55p,10416b,758s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
@@ -2096,10 +2109,10 @@ usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt9.pfb>
-Output written on presentation.pdf (16 pages, 7535333 bytes).
+Output written on presentation.pdf (17 pages, 7389794 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

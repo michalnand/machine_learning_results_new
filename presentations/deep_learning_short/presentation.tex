@@ -30,6 +30,7 @@
 \usepackage{lmodern}
 
 \usepackage{animate,media9,movie15}
+\usepackage{hyperref}
 
 \newcommand\Wider[2][3em]{%
 \makebox[\linewidth][c]{%
@@ -115,13 +116,15 @@
 
     \begin{column}{0.5\textwidth}
 
-        \includemovie[
-          poster,
-          autoplay,
-          externalviewer,
-          inline=false,
-          text={\small(video)}
-        ]{4cm}{4cm}{../../video/rl_arkanoid_05.mp4}
+
+      \includemovie[
+        poster,
+        autoplay,
+        externalviewer,
+        inline=false,
+        text={\small(video)}
+      ]{4cm}{4cm}{../../video/rl_arkanoid.mp4}
+
 
         \begin{figure}
         \includegraphics[scale=0.12]{../../diagrams/arkanoid_net.png}
@@ -329,9 +332,33 @@ Curve shape classification
 \end{frame}
 
 
+
+
+\begin{frame}{\bf Robotics - line follower}
+
+
+        \begin{figure}
+          \includegraphics[scale=0.15]{../../pictures/robot_debug_app.png}
+        \end{figure}
+
+        \centering
+        \includemovie[
+          poster,
+          autoplay,
+          externalviewer,
+          inline=false,
+          text={\small(video)}
+        ]{2cm}{2cm}{../../video/robot_line_cnn_out.mp4}
+
+
+
+
+\end{frame}
+
+
 \begin{frame}{\bf Red blood cells trajectory prediction}
-Research group Cell in fluid
-(Mgr. Katarína Jasenčáková, PhD thesis)
+Research group {\bf Cell in fluid} \\
+{\bf Mgr. Katarína Jasenčáková}, PhD thesis
 
 \begin{itemize}
   \item train DNN to predict RBC trajectory from past

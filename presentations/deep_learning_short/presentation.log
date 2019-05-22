@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.5)  22 MAY 2019 07:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.5)  22 MAY 2019 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1788,12 +1788,17 @@ Overfull \vbox (90.73662pt too high) has occurred while \output is active []
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../pictures/rl_square.j
 pg>]
-<../../diagrams/arkanoid_net.png, id=29, 899.36pt x 642.4pt>
+<../../diagrams/arkanoid_net.png, id=29, 883.3pt x 401.5pt>
 File: ../../diagrams/arkanoid_net.png Graphic file (type png)
 <use ../../diagrams/arkanoid_net.png>
 Package pdftex.def Info: ../../diagrams/arkanoid_net.png  used on input line 16
 1.
-(pdftex.def)             Requested size: 107.91853pt x 77.08467pt.
+(pdftex.def)             Requested size: 158.98714pt x 72.26688pt.
+
+Overfull \hbox (5.34221pt too wide) in paragraph at lines 161--161
+ [] 
+ []
+
 <../../pictures/arkanoid.png, id=30, 513.92pt x 672.5125pt>
 File: ../../pictures/arkanoid.png Graphic file (type png)
 <use ../../pictures/arkanoid.png>
@@ -2111,7 +2116,7 @@ usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb>
-Output written on presentation.pdf (18 pages, 7422475 bytes).
+Output written on presentation.pdf (18 pages, 7415629 bytes).
 PDF statistics:
  272 PDF objects out of 1000 (max. 8388607)
  191 compressed objects within 2 object streams

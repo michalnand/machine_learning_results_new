@@ -257,22 +257,46 @@
 \begin{columns}
 \begin{column}{0.5\textwidth}
 
+    \centering
+    \includemovie[
+      poster,
+      autoplay,
+      externalviewer,
+      inline=false,
+      text={ \includegraphics[scale=0.15]{../../diagrams/rl/arkanoid.png}}
+    ]{4cm}{4cm}{../../video/rl_arkanoid.mp4}
+
+
   \begin{figure}[!htb]
     \centering
-    \includegraphics[scale=0.18]{../../pictures/go_board.png}
+    \includegraphics[scale=0.14]{../../diagrams/rl/go_board.png}
   \end{figure}
 
 
 \end{column}
 \begin{column}{0.5\textwidth}  %%<--- here
 
-  \scriptsize
-  {
-    \begin{itemize}
-      \item {\bf supervised training} - train game using Masters games
-      \item {\bf reinforcement learning} - let play two networks against each other
+      \begin{itemize}
+      \item {\bf playing Atari}
+      \item {\bf playing Doom} -> scheduled on next month
+      \item {\bf playing GO}
+                              {
+                                  \scriptsize
+                                  {
+                                    \begin{itemize}
+                                      \item {\bf supervised training} - train game using Masters games
+                                      \item {\bf reinforcement learning} - let play two networks against each other
+                                    \end{itemize}
+                                  }
+                               }
     \end{itemize}
-  }
+
+
+    \begin{figure}[!htb]
+      \centering
+      \includegraphics[scale=0.12]{../../diagrams/rl/net_1.png}
+    \end{figure}
+
 \end{column}
 \end{columns}
 
@@ -280,7 +304,7 @@
 
 
 
-\begin{frame}{\bf Network architecture}
+\begin{frame}{\bf GO Network architecture}
 we need to go much deeper for GO
 \begin{itemize}
   \item {\bf 28, 35 layers} \\ dense blocks + feature pooling layer
@@ -311,7 +335,7 @@ we need to go much deeper for GO
 
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.3]{../../pictures/me_03.jpg}
+  \includegraphics[scale=0.4]{../../pictures/me_03.jpg}
 \end{figure}
 
 \begin{figure}[!htb]
